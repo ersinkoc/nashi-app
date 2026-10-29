@@ -24,6 +24,5 @@ public struct PublicUpdateChannel:Equatable {
         if let automatic=defaults.object(forKey:"TangerineUpdateGitHubAutomaticChecks") as? Bool {
             defaults.set(automatic,forKey:"SUEnableAutomaticChecks")
         }
-        defaults.set(repository.slug,forKey:"NashiPublicChannelMigration")
     }
 }
