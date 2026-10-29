@@ -14,7 +14,7 @@ enum SubtitleCodec {
         let cues = try parse(source)
         switch format {
         case "vtt":
-            return "WEBVTT\n\n" + cues.map { "\(timestamp($0.start, vtt: true)) --> \(timestamp($0.end, vtt: true))\($0.settings.isEmpty ? "" : " " + $0.settings)\n\($0.text)\n" }.joined(separator: "\n")
+            return "WEBVTT\n\n" + cues.map { "\(timestamp($0.start, vtt: true)) --> \(timestamp($0.end, vtt: true))\($0.settings.isEmpty ? "" : " " + $0.settings)\n\($0.text.replacingOccurrences(of: "-->", with: "--&gt;"))\n" }.joined(separator: "\n")
         case "srt":
             return cues.enumerated().map { index, cue in
                 "\(index + 1)\n\(timestamp(cue.start, vtt: false)) --> \(timestamp(cue.end, vtt: false))\n\(srtText(cue.text))\n"
