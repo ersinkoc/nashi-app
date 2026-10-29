@@ -73,7 +73,8 @@ enum SubtitleCodec {
         return String(format: "%02lld:%02lld:%02lld%@%03lld", hour, min, sec, vtt ? "." : ",", ms)
     }
     private static func srtText(_ text: String) -> String {
-        text.replacingOccurrences(of: #"</?(?:c(?:\.[^ >]*)?|v|lang|ruby|rt)(?:\s+[^>]*)?>|<\d{2}:\d{2}[^>]*>"#, with: "", options: .regularExpression)
+        text.replacingOccurrences(of: #"</?(?:c|v|lang|ruby|rt)(?:\.[^\s>]*)?(?:\s+[^>]*)?>|<\d{2}:\d{2}[^>]*>"#, with: "", options: .regularExpression)
+            .replacingOccurrences(of: #"<(/?[ibu])\.[^\s>]*>"#, with: "<$1>", options: .regularExpression)
     }
     private static func plainText(_ text: String) -> String {
         DocumentText.decodeEntities(text.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression))
