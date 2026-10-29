@@ -22,6 +22,7 @@ enum ArchiveCodec {
         }
         let gzip = ["gz", "gzip"].contains(input.pathExtension.lowercased())
         try verifyGzip(input, maximumBytes: limits.maximumBytes, token: token)
+        try verifyFilteredStream(input, maximumBytes: limits.maximumBytes, token: token)
         if gzip {
             let prefix = try Data(contentsOf: input, options: .mappedIfSafe).prefix(2)
             guard prefix.elementsEqual([0x1f, 0x8b]) else { throw NashiError.invalidInput("This file is not a GZIP stream.") }
@@ -200,6 +201,36 @@ enum ArchiveCodec {
         }
     }
 
+    /// The bzip2 and xz filters verify their CRCs and check fields only when the
+    /// stream is decoded to its end, but the tar reader stops at its end marker
+    /// and skipped entries are never counted. Decode the whole stream first.
+    private static func verifyFilteredStream(_ input: URL, maximumBytes: Int64, token: CancellationToken) throws {
+        let a = try api.get()
+        guard let reader = a.readNew() else { throw NashiError.failed("Could not initialize the archive reader.") }
+        defer { _ = a.readFree(reader) }
+        for filter in [a.readSupportBzip2, a.readSupportXz, a.readSupportLzma, a.readSupportCompress] {
+            try a.check(filter(reader), handle: reader)
+        }
+        try a.check(a.readSupportRaw(reader), handle: reader)
+        // Unfiltered input (including gzip, checked above) is left to the main reader.
+        guard input.path.withCString({ a.readOpen(reader, $0, 128 * 1024) }) >= -20, a.filterCount(reader) > 1 else { return }
+        let damaged = NashiError.invalidInput("The compressed stream is damaged and fails its integrity check.")
+        var entry: OpaquePointer?
+        let status = a.readNext(reader, &entry)
+        if status == 1 { return }
+        guard status >= -20 else { throw damaged }
+        var buffer = [UInt8](repeating: 0, count: 128 * 1024)
+        var expanded: Int64 = 0
+        while true {
+            try token.check()
+            let count = buffer.withUnsafeMutableBytes { a.readData(reader, $0.baseAddress, $0.count) }
+            if count == 0 { return }
+            guard count > 0 else { throw damaged }
+            expanded += Int64(count)
+            guard expanded <= maximumBytes else { throw NashiError.invalidInput("The archive expands beyond the 20 GB safety limit.") }
+        }
+    }
+
     static func create(from root: URL, at output: URL, format: String, compressionLevel: Int = 6, token: CancellationToken) throws {
         let a = try api.get()
         guard let writer = a.writeNew() else { throw NashiError.failed("Could not initialize the archive writer.") }
@@ -366,6 +397,7 @@ enum ArchiveCodec {
         var readSkip: Call { symbol("archive_read_data_skip", Call.self) }
         var readFree: Call { symbol("archive_read_free", Call.self) }
         var format: Call { symbol("archive_format", Call.self) }
+        var filterCount: Call { symbol("archive_filter_count", Call.self) }
         var errorString: StringGet { symbol("archive_error_string", StringGet.self) }
         var entryPath: StringGet { symbol("archive_entry_pathname_utf8", StringGet.self) }
         var entrySymlink: StringGet { symbol("archive_entry_symlink_utf8", StringGet.self) }
