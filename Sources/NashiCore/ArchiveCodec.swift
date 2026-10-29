@@ -214,8 +214,14 @@ enum ArchiveCodec {
         try a.check(a.readSupportRaw(reader), handle: reader)
         // Unfiltered or gzip-only input (checked above) is left to the main reader,
         // but a gzip member can wrap a bzip2 or xz stream that still needs decoding.
-        guard input.path.withCString({ a.readOpen(reader, $0, 128 * 1024) }) >= -20,
-              (0..<a.filterCount(reader)).contains(where: { a.filterCode(reader, $0) > 1 }) else { return }
+        guard input.path.withCString({ a.readOpen(reader, $0, 128 * 1024) }) >= -20 else { return }
+        // Index 0 is the innermost layer. Only an outermost gzip layer has its
+        // trailers checked, and no supported extension puts gzip anywhere else.
+        let codes = (0..<a.filterCount(reader)).map { a.filterCode(reader, $0) }
+        if let gzip = codes.firstIndex(of: 1), codes[(gzip + 1)...].contains(where: { $0 > 0 }) {
+            throw NashiError.invalidInput("This archive nests a GZIP stream inside another compression layer, which cannot be checked for damage.")
+        }
+        guard codes.contains(where: { $0 > 1 }) else { return }
         let damaged = NashiError.invalidInput("The compressed stream is damaged and fails its integrity check.")
         var entry: OpaquePointer?
         let status = a.readNext(reader, &entry)
