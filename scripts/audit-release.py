@@ -13,8 +13,10 @@ require(info.get('SUFeedURL')=='https://github.com/orkunisitmak/nashi-app/releas
 require(info.get('NashiExternalTools') is True,'NashiExternalTools must be true')
 require(info.get('SUPublicEDKey')==public['PublicEDKey'],'SUPublicEDKey must match Configuration/Updates.public.plist')
 require(not (root/'Contents/XPCServices').exists(),'Public archive must not include a private credential broker')
-require(not (root/'Contents/Resources/Tools/ffmpeg').exists(),'Upstream media tools use direct first-use acquisition')
-require(not (root/'Contents/Resources/Tools/LibreOffice.app').exists(),'LibreOffice must not be bundled')
+tools=root/'Contents/Resources/Tools'
+for tool in ['ffmpeg','ffprobe','yt-dlp','deno','LibreOffice.app']:
+    require(not os.path.lexists(tools/tool),f'Upstream {tool} uses direct first-use acquisition and must not be bundled')
+require((tools/'ExifTool/exiftool').is_file(),'Public archive must bundle Tools/ExifTool/exiftool')
 username=os.environ.get('USER','').encode()
 issues=[];count=0
 for path in root.rglob('*'):
