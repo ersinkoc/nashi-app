@@ -208,12 +208,14 @@ enum ArchiveCodec {
         let a = try api.get()
         guard let reader = a.readNew() else { throw NashiError.failed("Could not initialize the archive reader.") }
         defer { _ = a.readFree(reader) }
-        for filter in [a.readSupportBzip2, a.readSupportXz, a.readSupportLzma, a.readSupportCompress] {
+        for filter in [a.readSupportGzip, a.readSupportBzip2, a.readSupportXz, a.readSupportLzma, a.readSupportCompress] {
             try a.check(filter(reader), handle: reader)
         }
         try a.check(a.readSupportRaw(reader), handle: reader)
-        // Unfiltered input (including gzip, checked above) is left to the main reader.
-        guard input.path.withCString({ a.readOpen(reader, $0, 128 * 1024) }) >= -20, a.filterCount(reader) > 1 else { return }
+        // Unfiltered or gzip-only input (checked above) is left to the main reader,
+        // but a gzip member can wrap a bzip2 or xz stream that still needs decoding.
+        guard input.path.withCString({ a.readOpen(reader, $0, 128 * 1024) }) >= -20,
+              (0..<a.filterCount(reader)).contains(where: { a.filterCode(reader, $0) > 1 }) else { return }
         let damaged = NashiError.invalidInput("The compressed stream is damaged and fails its integrity check.")
         var entry: OpaquePointer?
         let status = a.readNext(reader, &entry)
@@ -369,6 +371,7 @@ enum ArchiveCodec {
         typealias SetInt64 = @convention(c) (OpaquePointer?, Int64) -> Void
         typealias SetTime = @convention(c) (OpaquePointer?, Int64, Int) -> Void
         typealias FreeEntry = @convention(c) (OpaquePointer?) -> Void
+        typealias FilterCode = @convention(c) (OpaquePointer?, Int32) -> Int32
         let library: UnsafeMutableRawPointer?
         init() { library = dlopen("/usr/lib/libarchive.2.dylib", RTLD_NOW | RTLD_LOCAL) }
         func get() throws -> ArchiveAPI { guard library != nil else { throw NashiError.missingDependency("macOS libarchive") }; return self }
@@ -398,6 +401,7 @@ enum ArchiveCodec {
         var readFree: Call { symbol("archive_read_free", Call.self) }
         var format: Call { symbol("archive_format", Call.self) }
         var filterCount: Call { symbol("archive_filter_count", Call.self) }
+        var filterCode: FilterCode { symbol("archive_filter_code", FilterCode.self) }
         var errorString: StringGet { symbol("archive_error_string", StringGet.self) }
         var entryPath: StringGet { symbol("archive_entry_pathname_utf8", StringGet.self) }
         var entrySymlink: StringGet { symbol("archive_entry_symlink_utf8", StringGet.self) }
