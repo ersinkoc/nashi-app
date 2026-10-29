@@ -17,10 +17,7 @@ public struct PublicUpdateChannel:Equatable {
     /// Migrate the project's two legacy private channels without reading or
     /// deleting their Keychain items. Unrelated custom channels are preserved.
     public func migrate(_ defaults:UserDefaults) {
-        let key="TangerineUpdateGitHubRepository",marker="NashiPublicChannelMigration"
-        // Run once per official channel, so a connection saved later is kept.
-        guard defaults.string(forKey:marker) != repository.slug else { return }
-        defaults.set(repository.slug,forKey:marker)
+        let key="TangerineUpdateGitHubRepository"
         guard let saved=defaults.string(forKey:key),
               ["orkunisitmak/tangerine","orkunisitmak/nashi",repository.slug].contains(saved.lowercased()) else { return }
         if saved.lowercased() != repository.slug {
