@@ -11,7 +11,7 @@ with zipfile.ZipFile(output,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=9
         relative=root.name if path==root else root.name+'/'+path.relative_to(root).as_posix()
         mode=path.lstat().st_mode
         if stat.S_ISLNK(mode):
-            if not path.resolve().is_relative_to(root):raise ValueError('App symlink leaves bundle')
+            if os.path.isabs(os.readlink(path)) or not path.resolve().is_relative_to(root):raise ValueError('App symlink leaves bundle')
             data=os.readlink(path).encode()
         elif stat.S_ISDIR(mode):relative+='/';data=b''
         elif stat.S_ISREG(mode):data=path.read_bytes()
