@@ -7,14 +7,20 @@ public struct PublicUpdateChannel:Equatable {
     public init?(info:[String:Any]) {
         guard let slug=info["NashiPublicUpdateRepository"] as? String,
               let repository=try? GitHubRepository(slug),
-              info["SUFeedURL"] as? String == repository.websiteURL.appendingPathComponent("releases/latest/download/appcast.xml").absoluteString else { return nil }
+              let feed=info["SUFeedURL"] as? String,
+              // The slug is lowercased; the bundled feed keeps the configured owner/name spelling.
+              feed == repository.websiteURL.appendingPathComponent("releases/latest/download/appcast.xml").absoluteString ||
+              feed == "https://github.com/\(slug)/releases/latest/download/appcast.xml" else { return nil }
         self.repository=repository
     }
 
     /// Migrate the project's two legacy private channels without reading or
     /// deleting their Keychain items. Unrelated custom channels are preserved.
     public func migrate(_ defaults:UserDefaults) {
-        let key="TangerineUpdateGitHubRepository"
+        let key="TangerineUpdateGitHubRepository",marker="NashiPublicChannelMigration"
+        // Run once per official channel, so a connection saved later is kept.
+        guard defaults.string(forKey:marker) != repository.slug else { return }
+        defaults.set(repository.slug,forKey:marker)
         guard let saved=defaults.string(forKey:key),
               ["orkunisitmak/tangerine","orkunisitmak/nashi",repository.slug].contains(saved.lowercased()) else { return }
         if saved.lowercased() != repository.slug {
