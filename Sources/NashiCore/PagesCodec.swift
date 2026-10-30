@@ -186,7 +186,7 @@ private enum PagesDOCXReader {
         // A paragraph-level sectPr ends a section; unless the break is
         // continuous (or a column break) the next section starts a new page.
         var blocks: [[String: Any]] = [], sectionStartsPage = false
-        for element in body.elements(nil) {
+        for element in blockElements(body) {
             guard var block = try reader.block(element) else { continue }
             // A table has no paragraph properties to carry the break.
             if sectionStartsPage, block["type"] as? String == "paragraph" { block["paragraph"] = (block["paragraph"] as? [String:Any] ?? [:]).merging(["pageBreakBefore":true]) { _,new in new } }
@@ -265,7 +265,8 @@ private enum PagesDOCXReader {
                         guard column <= maximumColumns - span else {
                             throw NashiError.invalidInput("This Word document contains a table wider than the supported limit of \(maximumColumns) columns. It could not be converted to Pages.")
                         }
-                        let value = cell.elements("p").map { paragraph in paragraph.descendants("t").map(text).joined() }.joined(separator:"\n")
+                        let cellParagraphs = blockElements(cell).filter { $0.local == "p" }
+                        let value = cellParagraphs.map { $0.descendants("t").map(text).joined() }.joined(separator:"\n")
                         var cellModel: [String:Any] = ["text":value]
                         if let fill = properties?.first("shd")?.attr("fill"), let color = color(fill) { cellModel["formatting"] = ["fill":["kind":"color","color":color]] }
                         cells.append(cellModel)
@@ -329,6 +330,10 @@ private enum PagesDOCXReader {
         let raw=element.xmlString
         guard let open=raw.firstIndex(of:">"),let close=raw.lastIndex(of:"<"),open<close else{return ""}
         return DocumentText.decodeEntities(String(raw[raw.index(after:open)..<close]))
+    }
+    /// Block-level content controls and custom XML only wrap ordinary paragraphs and tables.
+    static func blockElements(_ parent: XMLElement) -> [XMLElement] {
+        parent.elements(nil).flatMap { ["sdt","sdtContent","customXml"].contains($0.local) ? blockElements($0) : [$0] }
     }
     static func character(_ element: XMLElement?) -> [String:Any] {
         guard let element else{return [:]};var result:[String:Any]=[:]
