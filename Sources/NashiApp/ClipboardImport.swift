@@ -10,7 +10,7 @@ import NashiCore
             guard !existing.isEmpty else { throw ImportError.unavailable };return Result(urls:existing,label:"Pasted files")
         }
         let folder=directory ?? FileManager.default.urls(for:.applicationSupportDirectory,in:.userDomainMask)[0].appendingPathComponent("Nashi/Imports",isDirectory:true)
-        func destination(_ ext:String)throws->URL {try FileManager.default.createDirectory(at:folder,withIntermediateDirectories:true);let date=DateFormatter();date.dateFormat="yyyy-MM-dd HH-mm-ss";return folder.appendingPathComponent("Clipboard \(date.string(from:Date()))-\(UUID().uuidString.prefix(6)).\(ext)")}
+        func destination(_ ext:String)throws->URL {try FileManager.default.createDirectory(at:folder,withIntermediateDirectories:true);let date=DateFormatter();date.locale=Locale(identifier:"en_US_POSIX");date.dateFormat="yyyy-MM-dd HH-mm-ss";return folder.appendingPathComponent("Clipboard \(date.string(from:Date()))-\(UUID().uuidString.prefix(6)).\(ext)")}
         // Keep an encoded original so animation, metadata and compression survive the paste.
         for (type,ext) in [("com.compuserve.gif","gif"),("public.jpeg","jpg"),("public.heic","heic")] {
             guard let data=pasteboard.data(forType:.init(type)),let source=CGImageSourceCreateWithData(data as CFData,nil),CGImageSourceGetType(source) as String?==type,
