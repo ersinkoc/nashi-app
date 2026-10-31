@@ -10,15 +10,18 @@
 "%@ exports" = "Exports %@";
 "%@ files" = "%@ fichiers";
 "%@ files, ready to go." = "%@ fichiers, prêts à partir.";
+"%@ found" = "%@ trouvés";
 "%@ input" = "Entrée %@";
 "%@ is enabled" = "%@ est activé";
 "%@ is not installed." = "%@ n’est pas installé.";
 "%@ is structural or read-only metadata." = "%@ est une métadonnée structurelle ou en lecture seule.";
 "%@ items" = "%@ éléments";
 "%@ photos" = "%@ photos";
+"%@ ready to paste." = "%@ prêts à coller.";
 "%@ selected" = "%@ sélectionnés";
 "%@ selected · Drag to carry files" = "%@ sélectionnés · Faites glisser pour emporter les fichiers";
 "%@ split points" = "%@ points de coupure";
+"%@ timeline" = "Chronologie %@";
 "%@ video items are not included. Only photos will be saved." = "%@ éléments vidéo ne sont pas inclus. Seules les photos seront enregistrées.";
 "%@ ways to change it" = "%@ façons de le transformer";
 "%@ · %@ smaller" = "%@ · %@ plus léger";
@@ -36,15 +39,18 @@
 "%lld exports" = "Exports %lld";
 "%lld files" = "%lld fichiers";
 "%lld files, ready to go." = "%lld fichiers, prêts à partir.";
+"%lld found" = "%lld trouvés";
 "%lld input" = "Entrée %lld";
 "%lld is enabled" = "%lld est activé";
 "%lld is not installed." = "%lld n’est pas installé.";
 "%lld is structural or read-only metadata." = "%lld est une métadonnée structurelle ou en lecture seule.";
 "%lld items" = "%lld éléments";
 "%lld photos" = "%lld photos";
+"%lld ready to paste." = "%lld prêts à coller.";
 "%lld selected" = "%lld sélectionnés";
 "%lld selected · Drag to carry files" = "%lld sélectionnés · Faites glisser pour emporter les fichiers";
 "%lld split points" = "%lld points de coupure";
+"%lld timeline" = "Chronologie %lld";
 "%lld video items are not included. Only photos will be saved." = "%lld éléments vidéo ne sont pas inclus. Seules les photos seront enregistrées.";
 "%lld ways to change it" = "%lld façons de le transformer";
 "%lld · %@ smaller" = "%lld · %@ plus léger";
@@ -54,21 +60,27 @@
 "%lld, page %@" = "%lld, page %@";
 "%lld, page %lld" = "%lld, page %lld";
 "0 AREAS SELECTED" = "0 ZONE SÉLECTIONNÉE";
+"0 FOUND" = "0 TROUVÉ";
 "0 SELECTED" = "0 SÉLECTIONNÉ";
 "0 SPLIT POINTS" = "0 POINT DE COUPURE";
 "0 areas selected" = "0 zone sélectionnée";
+"0 found" = "0 trouvé";
 "0 selected" = "0 sélectionné";
 "0 split points" = "0 point de coupure";
 "1 AREA SELECTED" = "1 ZONE SÉLECTIONNÉE";
+"1 FOUND" = "1 TROUVÉ";
 "1 ITEM" = "1 ÉLÉMENT";
 "1 PHOTO" = "1 PHOTO";
+"1 READY TO PASTE." = "1 PRÊT À COLLER.";
 "1 SELECTED" = "1 SÉLECTIONNÉ";
 "1 SPLIT POINT" = "1 POINT DE COUPURE";
 "1 VIDEO ITEMS ARE NOT INCLUDED. ONLY PHOTOS WILL BE SAVED." = "1 ÉLÉMENT VIDÉO N’EST PAS INCLUS. SEULES LES PHOTOS SERONT ENREGISTRÉES.";
 "1 WAY TO CHANGE IT" = "1 FAÇON DE LE TRANSFORMER";
 "1 area selected" = "1 zone sélectionnée";
+"1 found" = "1 trouvé";
 "1 item" = "1 élément";
 "1 photo" = "1 photo";
+"1 ready to paste." = "1 prêt à coller.";
 "1 selected" = "1 sélectionné";
 "1 split point" = "1 point de coupure";
 "1 video items are not included. Only photos will be saved." = "1 élément vidéo n’est pas inclus. Seules les photos seront enregistrées.";
@@ -157,6 +169,8 @@
 "ADD SELECTED RANGE" = "AJOUTER LA PLAGE SÉLECTIONNÉE";
 "ADD SPLIT" = "AJOUTER UNE COUPURE";
 "ADD TO AN EXISTING FLOAT" = "AJOUTER À UN FLOAT EXISTANT";
+"ADD TO FLOAT" = "AJOUTER AU FLOAT";
+"ADDED TO FLOAT." = "AJOUTÉ AU FLOAT.";
 "ADDING PAGES…" = "AJOUT DES PAGES…";
 "ADDITIONAL OPTIONS" = "OPTIONS SUPPLÉMENTAIRES";
 "AIRDROP IS UNAVAILABLE ON THIS MAC." = "AIRDROP N’EST PAS DISPONIBLE SUR CE MAC.";
@@ -230,7 +244,9 @@
 "Add files" = "Ajouter des fichiers";
 "Add or change files" = "Modifier la sélection";
 "Add selected range" = "Ajouter la plage sélectionnée";
+"Add to Float" = "Ajouter au Float";
 "Add to an existing Float" = "Ajouter à un Float existant";
+"Added to Float." = "Ajouté au Float.";
 "Adding pages…" = "Ajout des pages…";
 "Additional options" = "Options supplémentaires";
 "AirDrop is unavailable on this Mac." = "AirDrop n’est pas disponible sur ce Mac.";
@@ -391,6 +407,7 @@
 "CHOOSE A VALID START AND END WITHIN THE FILE’S DURATION." = "CHOISISSEZ UN DÉBUT ET UNE FIN VALIDES, DANS LA DURÉE DU FICHIER.";
 "CHOOSE A VALID TIME RANGE." = "CHOISISSEZ UNE PLAGE DE TEMPS VALIDE.";
 "CHOOSE AN EXISTING MEDIA FILE." = "CHOISISSEZ UN FICHIER MÉDIA EXISTANT.";
+"CHOOSE AN IMAGE OR PDF." = "CHOISISSEZ UNE IMAGE OU UN PDF.";
 "CHOOSE AN IMAGE." = "CHOISISSEZ UNE IMAGE.";
 "CHOOSE AN INPUT FORMAT TO SEE ITS AVAILABLE OUTPUTS." = "CHOISISSEZ UN FORMAT D’ENTRÉE POUR VOIR LES SORTIES DISPONIBLES.";
 "CHOOSE AN INSTAGRAM PHOTO POST LINK." = "CHOISISSEZ UN LIEN DE PUBLICATION DE PHOTOS INSTAGRAM.";
@@ -494,9 +511,12 @@
 "COPY PATH" = "COPIER LE CHEMIN";
 "CORNER RADIUS" = "RAYON DES COINS";
 "CORNERS" = "COINS";
+"COULD NOT COPY THE QR CODE." = "IMPOSSIBLE DE COPIER LE CODE QR.";
+"COULD NOT COPY THE QR CODES." = "IMPOSSIBLE DE COPIER LES CODES QR.";
 "COULD NOT COPY THE SELECTED FILE PATHS." = "IMPOSSIBLE DE COPIER LES CHEMINS DES FICHIERS SÉLECTIONNÉS.";
 "COULD NOT COPY THE SELECTED FILES." = "IMPOSSIBLE DE COPIER LES FICHIERS SÉLECTIONNÉS.";
 "COULD NOT ORIENT IMAGE." = "IMPOSSIBLE D’ORIENTER L’IMAGE.";
+"COULD NOT READ THIS PDF." = "IMPOSSIBLE DE LIRE CE PDF.";
 "COULD NOT RENDER THE REDACTION." = "IMPOSSIBLE D’APPLIQUER LE CAVIARDAGE.";
 "COULDN’T CHECK FOR UPDATES" = "IMPOSSIBLE DE RECHERCHER LES MISES À JOUR";
 "COULDN’T FINISH" = "IMPOSSIBLE DE TERMINER";
@@ -586,6 +606,7 @@
 "Choose a valid time range." = "Choisissez une plage de temps valide.";
 "Choose an Instagram photo post link." = "Choisissez un lien de publication de photos Instagram.";
 "Choose an existing media file." = "Choisissez un fichier média existant.";
+"Choose an image or PDF." = "Choisissez une image ou un PDF.";
 "Choose an image." = "Choisissez une image.";
 "Choose an input format to see its available outputs." = "Choisissez un format d’entrée pour voir les sorties disponibles.";
 "Choose annotation image…" = "Choisir l’image d’annotation…";
@@ -698,11 +719,16 @@
 "Copy path" = "Copier le chemin";
 "Corner radius" = "Rayon des coins";
 "Corners" = "Coins";
+"Could not copy the QR code." = "Impossible de copier le code QR.";
+"Could not copy the QR codes." = "Impossible de copier les codes QR.";
 "Could not copy the selected file paths." = "Impossible de copier les chemins des fichiers sélectionnés.";
 "Could not copy the selected files." = "Impossible de copier les fichiers sélectionnés.";
 "Could not open %@." = "Impossible d’ouvrir %@.";
 "Could not open %lld." = "Impossible d’ouvrir %lld.";
 "Could not orient image." = "Impossible d’orienter l’image.";
+"Could not read this PDF." = "Impossible de lire ce PDF.";
+"Could not render PDF page %@." = "Impossible de rendre la page %@ du PDF.";
+"Could not render PDF page %lld." = "Impossible de rendre la page %lld du PDF.";
 "Could not render the redaction." = "Impossible d’appliquer le caviardage.";
 "Couldn’t check for updates" = "Impossible de rechercher les mises à jour";
 "Couldn’t finish" = "Impossible de terminer";
@@ -785,6 +811,7 @@
 "DRAG ACROSS THE PREVIEW TO SELECT THE AREA TO KEEP." = "FAITES GLISSER SUR L’APERÇU POUR SÉLECTIONNER LA ZONE À CONSERVER.";
 "DRAG AN AREA FIRST." = "FAITES D’ABORD GLISSER UNE ZONE.";
 "DRAG AN EXISTING ANNOTATION TO MOVE IT; DRAG ITS HANDLES TO RESIZE. TURN OFF SELECT / MOVE TO DRAW." = "FAITES GLISSER UNE ANNOTATION EXISTANTE POUR LA DÉPLACER ; FAITES GLISSER SES POIGNÉES POUR LA REDIMENSIONNER. DÉSACTIVEZ SÉLECTIONNER / DÉPLACER POUR DESSINER.";
+"DRAG EITHER EDGE TO RESIZE THE RANGE, OR DRAG ITS MIDDLE TO MOVE IT." = "FAITES GLISSER UN BORD POUR REDIMENSIONNER LA PLAGE, OU SON MILIEU POUR LA DÉPLACER.";
 "DRAG INSIDE TO MOVE. DRAG NEAR A CORNER TO RESIZE. DRAG OUTSIDE TO START A NEW SELECTION." = "FAITES GLISSER À L’INTÉRIEUR POUR DÉPLACER. FAITES GLISSER PRÈS D’UN COIN POUR REDIMENSIONNER. FAITES GLISSER À L’EXTÉRIEUR POUR DÉMARRER UNE NOUVELLE SÉLECTION.";
 "DRAG ON THE PREVIEW TO ADD AN AREA. EACH AREA IS SAVED INTO THE NEW COPY." = "FAITES GLISSER SUR L’APERÇU POUR AJOUTER UNE ZONE. CHAQUE ZONE EST ENREGISTRÉE DANS LA NOUVELLE COPIE.";
 "DRAG SHORTCUTS" = "RACCOURCIS DE GLISSER-DÉPOSER";
@@ -870,6 +897,7 @@
 "Drag across the preview to select the area to keep." = "Faites glisser sur l’aperçu pour sélectionner la zone à conserver.";
 "Drag an area first." = "Faites d’abord glisser une zone.";
 "Drag an existing annotation to move it; drag its handles to resize. Turn off Select / Move to draw." = "Faites glisser une annotation existante pour la déplacer ; faites glisser ses poignées pour la redimensionner. Désactivez Sélectionner / Déplacer pour dessiner.";
+"Drag either edge to resize the range, or drag its middle to move it." = "Faites glisser un bord pour redimensionner la plage, ou son milieu pour la déplacer.";
 "Drag inside to move. Drag near a corner to resize. Drag outside to start a new selection." = "Faites glisser à l’intérieur pour déplacer. Faites glisser près d’un coin pour redimensionner. Faites glisser à l’extérieur pour démarrer une nouvelle sélection.";
 "Drag on the preview to add an area. Each area is saved into the new copy." = "Faites glisser sur l’aperçu pour ajouter une zone. Chaque zone est enregistrée dans la nouvelle copie.";
 "Drag shortcuts" = "Raccourcis de glisser-déposer";
@@ -972,6 +1000,7 @@
 "FILE TOOLS WHEEL" = "ROUE DES OUTILS DE FICHIER";
 "FILES" = "FICHIERS";
 "FILES ARE PROCESSED LOCALLY ON YOUR MAC." = "LES FICHIERS SONT TRAITÉS LOCALEMENT SUR VOTRE MAC.";
+"FILES COPIED." = "FICHIERS COPIÉS.";
 "FILES COPIED. PASTE THEM WHEREVER YOU NEED." = "FICHIERS COPIÉS. COLLEZ-LES OÙ VOUS VOULEZ.";
 "FILES IN FLOAT" = "FICHIERS DANS FLOAT";
 "FILES MISSING" = "FICHIERS MANQUANTS";
@@ -1042,6 +1071,7 @@
 "File tools wheel" = "Roue des outils de fichier";
 "Files" = "Fichiers";
 "Files are processed locally on your Mac." = "Les fichiers sont traités localement sur votre Mac.";
+"Files copied." = "Fichiers copiés.";
 "Files copied. Paste them wherever you need." = "Fichiers copiés. Collez-les où vous voulez.";
 "Files in Float" = "Fichiers dans Float";
 "Files missing" = "Fichiers manquants";
@@ -1443,8 +1473,10 @@
 "NOTHING HERE YET. PASTE SOMETHING OR MAKE YOUR FIRST FRESH COPY." = "RIEN ICI POUR L’INSTANT. COLLEZ QUELQUE CHOSE OU CRÉEZ VOTRE PREMIÈRE COPIE.";
 "NUMBER" = "NUMÉRO";
 "NUMBER OF CLIPS" = "NOMBRE DE CLIPS";
+"Nashi %@ wheel" = "Roue %@ Nashi";
 "Nashi %@ · Build %@" = "Nashi %@ · Build %@";
 "Nashi %@ · Build %lld" = "Nashi %@ · Build %lld";
+"Nashi %lld wheel" = "Roue %lld Nashi";
 "Nashi %lld · Build %@" = "Nashi %lld · Build %@";
 "Nashi %lld · Build %lld" = "Nashi %lld · Build %lld";
 "Nashi Settings" = "Réglages de Nashi";
@@ -1567,6 +1599,8 @@
 "Open link" = "Ouvrir le lien";
 "Open permission settings…" = "Ouvrir les réglages d’autorisation…";
 "Open wheel" = "Ouvrir la roue";
+"Opened in %@." = "Ouvert dans %@.";
+"Opened in %lld." = "Ouvert dans %lld.";
 "Optional. You can change this in Settings." = "Facultatif. Vous pouvez le modifier dans les Réglages.";
 "Organize PDF" = "Organiser un PDF";
 "Original" = "Original";
@@ -1737,6 +1771,10 @@
 "Protected media cannot be downloaded." = "Les médias protégés ne peuvent pas être téléchargés.";
 "Public repository · No token needed" = "Dépôt public · Aucun jeton nécessaire";
 "Public updates work without a token." = "Les mises à jour publiques fonctionnent sans jeton.";
+"QR CODE COPIED." = "CODE QR COPIÉ.";
+"QR CODES COPIED." = "CODES QR COPIÉS.";
+"QR code copied." = "Code QR copié.";
+"QR codes copied." = "Codes QR copiés.";
 "QUALITY" = "QUALITÉ";
 "QUALITY (%)" = "QUALITÉ (%)";
 "QUICK LOOK" = "COUP D’ŒIL";
@@ -1759,6 +1797,7 @@
 "READY ON YOUR PC" = "PRÊT SUR VOTRE PC";
 "READY TO CHECK FOR UPDATES" = "PRÊT À RECHERCHER LES MISES À JOUR";
 "READY TO MAKE A FRESH COPY. NO EXTRA SETTINGS NEEDED." = "PRÊT À CRÉER UNE NOUVELLE COPIE. AUCUN RÉGLAGE SUPPLÉMENTAIRE NÉCESSAIRE.";
+"READY TO PASTE." = "PRÊT À COLLER.";
 "READY WHEN YOU ARE" = "PRÊT QUAND VOUS L’ÊTES";
 "READY WHEN YOU LOG IN" = "PRÊT DÈS VOTRE CONNEXION";
 "READY." = "PRÊT.";
@@ -1824,6 +1863,7 @@
 "Ready on your PC" = "Prêt sur votre PC";
 "Ready to check for updates" = "Prêt à rechercher les mises à jour";
 "Ready to make a fresh copy. No extra settings needed." = "Prêt à créer une nouvelle copie. Aucun réglage supplémentaire nécessaire.";
+"Ready to paste." = "Prêt à coller.";
 "Ready when you log in" = "Prêt dès votre connexion";
 "Ready." = "Prêt.";
 "Ready. You can go back to your files." = "Prêt. Vous pouvez retourner à vos fichiers.";
@@ -1923,6 +1963,7 @@
 "SAVING DOCUMENT…" = "ENREGISTREMENT DU DOCUMENT…";
 "SAVING IMAGES…" = "ENREGISTREMENT DES IMAGES…";
 "SCAN AGAIN" = "ANALYSER À NOUVEAU";
+"SCAN COMPLETE." = "ANALYSE TERMINÉE.";
 "SEARCH FORMATS" = "RECHERCHER DES FORMATS";
 "SEARCH METADATA" = "RECHERCHER DANS LES MÉTADONNÉES";
 "SECONDS" = "SECONDES";
@@ -1966,6 +2007,7 @@
 "SHADOW RADIUS" = "RAYON DE L’OMBRE";
 "SHADOWS" = "OMBRES";
 "SHARE" = "PARTAGER";
+"SHARED WITH AIRDROP." = "PARTAGÉ VIA AIRDROP.";
 "SHARE…" = "PARTAGER…";
 "SHARPEN" = "ACCENTUER";
 "SHARPNESS" = "NETTETÉ";
@@ -2075,6 +2117,7 @@
 "Saving document…" = "Enregistrement du document…";
 "Saving images…" = "Enregistrement des images…";
 "Scan again" = "Analyser à nouveau";
+"Scan complete." = "Analyse terminée.";
 "Search formats" = "Rechercher des formats";
 "Search metadata" = "Rechercher dans les métadonnées";
 "Seconds" = "Secondes";
@@ -2120,6 +2163,7 @@
 "Shadow radius" = "Rayon de l’ombre";
 "Shadows" = "Ombres";
 "Share" = "Partager";
+"Shared with AirDrop." = "Partagé via AirDrop.";
 "Share…" = "Partager…";
 "Sharpen" = "Accentuer";
 "Sharpness" = "Netteté";
@@ -2194,6 +2238,7 @@
 "TEXTURE" = "TEXTURE";
 "THAT PDF SIZE CANNOT BE REACHED WHILE KEEPING SELECTABLE TEXT, LINKS AND ANNOTATIONS. CHOOSE A LARGER TARGET." = "CETTE TAILLE DE PDF EST IMPOSSIBLE À ATTEINDRE EN CONSERVANT LE TEXTE SÉLECTIONNABLE, LES LIENS ET LES ANNOTATIONS. CHOISISSEZ UNE CIBLE PLUS GRANDE.";
 "THAT PDF SIZE CANNOT BE REACHED WHILE KEEPING SELECTABLE TEXT, LINKS, AND ANNOTATIONS. CHOOSE A LARGER TARGET." = "CETTE TAILLE DE PDF EST IMPOSSIBLE À ATTEINDRE EN CONSERVANT LE TEXTE SÉLECTIONNABLE, LES LIENS ET LES ANNOTATIONS. CHOISISSEZ UNE CIBLE PLUS GRANDE.";
+"THE ARCHIVE CONTAINS AN UNNAMED ENTRY." = "L’ARCHIVE CONTIENT UNE ENTRÉE SANS NOM.";
 "THE ARCHIVE CONTAINS AN UNSAFE PATH." = "L’ARCHIVE CONTIENT UN CHEMIN NON SÛR.";
 "THE ARCHIVE ENTRY LEAVES ITS DESTINATION." = "L’ENTRÉE DE L’ARCHIVE SORT DE SA DESTINATION.";
 "THE CLIPPING EXCEEDS 200 MB." = "LE FRAGMENT DÉPASSE 200 MO.";
@@ -2207,6 +2252,7 @@
 "THE IMAGE DOWNLOAD ENDED EARLY." = "LE TÉLÉCHARGEMENT DE L’IMAGE S’EST TERMINÉ PRÉMATURÉMENT.";
 "THE IMAGE ORDER MUST INCLUDE EVERY IMAGE ONCE." = "L’ORDRE DES IMAGES DOIT INCLURE CHAQUE IMAGE UNE FOIS.";
 "THE MEDIA SERVER REDIRECTED TO AN INSECURE URL." = "LE SERVEUR MULTIMÉDIA A REDIRIGÉ VERS UNE URL NON SÉCURISÉE.";
+"THE OPERATION WAS CANCELLED." = "L’OPÉRATION A ÉTÉ ANNULÉE.";
 "THE PDF CONTAINS NO PAGES." = "LE PDF NE CONTIENT AUCUNE PAGE.";
 "THE PDF PAGE IS TOO LARGE TO RENDER AT THIS RESOLUTION." = "LA PAGE PDF EST TROP GRANDE POUR ÊTRE RENDUE À CETTE RÉSOLUTION.";
 "THE PROCESSING TOOL COULD NOT START." = "L’OUTIL DE TRAITEMENT N’A PAS PU DÉMARRER.";
@@ -2228,6 +2274,7 @@
 "THIS FILE HAS NO VIDEO STREAM." = "CE FICHIER N’A PAS DE FLUX VIDÉO.";
 "THIS FORMAT CAN BE IMPORTED. CHOOSE AN OUTPUT FORMAT IN THE SIDEBAR TO CONFIGURE ITS DEFAULTS." = "CE FORMAT PEUT ÊTRE IMPORTÉ. CHOISISSEZ UN FORMAT DE SORTIE DANS LA BARRE LATÉRALE POUR CONFIGURER SES RÉGLAGES PAR DÉFAUT.";
 "THIS FORMAT USES ITS ORIGINAL DOCUMENT STRUCTURE. NO EXPORT DEFAULTS ARE NEEDED." = "CE FORMAT UTILISE LA STRUCTURE D’ORIGINE DU DOCUMENT. AUCUN RÉGLAGE D’EXPORT PAR DÉFAUT N’EST NÉCESSAIRE.";
+"THIS IMAGE COULD NOT BE DECODED." = "IMPOSSIBLE DE DÉCODER CETTE IMAGE.";
 "THIS IMAGE EXCEEDS 100 MP." = "CETTE IMAGE DÉPASSE 100 MPX.";
 "THIS IMAGE EXCEEDS 200 MB." = "CETTE IMAGE DÉPASSE 200 MO.";
 "THIS IMAGE IS TOO LARGE (100 MP LIMIT)." = "CETTE IMAGE EST TROP GRANDE (LIMITE DE 100 MPX).";
@@ -2239,6 +2286,7 @@
 "THIS PDF HAS FORM FIELDS OR ATTACHMENTS THAT METADATA CLEANUP CANNOT KEEP. NO COPY WAS EXPORTED." = "CE PDF CONTIENT DES CHAMPS DE FORMULAIRE OU DES PIÈCES JOINTES QUE LE NETTOYAGE DES MÉTADONNÉES NE PEUT PAS CONSERVER. AUCUNE COPIE N’A ÉTÉ EXPORTÉE.";
 "THIS PDF IS PASSWORD PROTECTED. ENTER ITS PASSWORD." = "CE PDF EST PROTÉGÉ PAR UN MOT DE PASSE. SAISISSEZ SON MOT DE PASSE.";
 "THIS PDF PAGE COULD NOT BE READ." = "CETTE PAGE PDF N’A PAS PU ÊTRE LUE.";
+"THIS PDF REQUIRES A VALID PASSWORD." = "CE PDF NÉCESSITE UN MOT DE PASSE VALIDE.";
 "THIS POST CONTAINS VIDEOS. USE ITS REEL LINK TO DOWNLOAD VIDEO." = "CETTE PUBLICATION CONTIENT DES VIDÉOS. UTILISEZ SON LIEN REEL POUR TÉLÉCHARGER LA VIDÉO.";
 "THIS REPOSITORY IS PRIVATE" = "CE DÉPÔT EST PRIVÉ";
 "THIS RTFD ATTACHMENT SYNTAX COULD NOT BE PRESERVED." = "CETTE SYNTAXE DE PIÈCE JOINTE RTFD N’A PAS PU ÊTRE PRÉSERVÉE.";
@@ -2295,6 +2343,9 @@
 "The PDF page is too large to render at this resolution." = "La page PDF est trop grande pour être rendue à cette résolution.";
 "The UTF-16 text in %@ is damaged." = "Le texte UTF-16 de %@ est endommagé.";
 "The UTF-16 text in %lld is damaged." = "Le texte UTF-16 de %lld est endommagé.";
+"The UTF-32 text in %@ is damaged." = "Le texte UTF-32 de %@ est endommagé.";
+"The UTF-32 text in %lld is damaged." = "Le texte UTF-32 de %lld est endommagé.";
+"The archive contains an unnamed entry." = "L’archive contient une entrée sans nom.";
 "The archive contains an unsafe path." = "L’archive contient un chemin non sûr.";
 "The archive entry leaves its destination." = "L’entrée de l’archive sort de sa destination.";
 "The clipping exceeds 200 MB." = "Le fragment dépasse 200 Mo.";
@@ -2318,6 +2369,7 @@
 "The metadata field %@ was not written. No output was saved." = "Le champ de métadonnées %@ n’a pas été écrit. Aucun fichier n’a été enregistré.";
 "The metadata field %lld could not be removed." = "Le champ de métadonnées %lld n’a pas pu être supprimé.";
 "The metadata field %lld was not written. No output was saved." = "Le champ de métadonnées %lld n’a pas été écrit. Aucun fichier n’a été enregistré.";
+"The operation was cancelled." = "L’opération a été annulée.";
 "The processing tool could not start." = "L’outil de traitement n’a pas pu démarrer.";
 "The requested PDF size could not be reached." = "La taille de PDF demandée n’a pas pu être atteinte.";
 "The requested PDF size could not be reached. Choose a larger target." = "La taille de PDF demandée n’a pas pu être atteinte. Choisissez une cible plus grande.";
@@ -2337,6 +2389,7 @@
 "This PDF has form fields or attachments that metadata cleanup cannot keep. No copy was exported." = "Ce PDF contient des champs de formulaire ou des pièces jointes que le nettoyage des métadonnées ne peut pas conserver. Aucune copie n’a été exportée.";
 "This PDF is password protected. Enter its password." = "Ce PDF est protégé par un mot de passe. Saisissez son mot de passe.";
 "This PDF page could not be read." = "Cette page PDF n’a pas pu être lue.";
+"This PDF requires a valid password." = "Ce PDF nécessite un mot de passe valide.";
 "This RTFD attachment syntax could not be preserved." = "Cette syntaxe de pièce jointe RTFD n’a pas pu être préservée.";
 "This Windows codec cannot play directly. Set up media tools to create a local preview." = "Ce codec Windows ne peut pas être lu directement. Configurez les outils multimédias pour créer un aperçu local.";
 "This conversion is not available for %@." = "Cette conversion n’est pas disponible pour %@.";
@@ -2348,6 +2401,7 @@
 "This file has no video stream." = "Ce fichier n’a pas de flux vidéo.";
 "This format can be imported. Choose an output format in the sidebar to configure its defaults." = "Ce format peut être importé. Choisissez un format de sortie dans la barre latérale pour configurer ses réglages par défaut.";
 "This format uses its original document structure. No export defaults are needed." = "Ce format utilise la structure d’origine du document. Aucun réglage d’export par défaut n’est nécessaire.";
+"This image could not be decoded." = "Impossible de décoder cette image.";
 "This image exceeds 100 MP." = "Cette image dépasse 100 Mpx.";
 "This image exceeds 200 MB." = "Cette image dépasse 200 Mo.";
 "This image is too large (100 MP limit)." = "Cette image est trop grande (limite de 100 Mpx).";

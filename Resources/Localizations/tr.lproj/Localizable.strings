@@ -10,15 +10,18 @@
 "%@ exports" = "%@ çıktıları";
 "%@ files" = "%@ dosya";
 "%@ files, ready to go." = "%@ dosya hazır.";
+"%@ found" = "%@ bulundu";
 "%@ input" = "%@ girdisi";
 "%@ is enabled" = "%@ izni açık";
 "%@ is not installed." = "%@ kurulu değil.";
 "%@ is structural or read-only metadata." = "%@ yapısal ya da salt okunur bir meta veri.";
 "%@ items" = "%@ öğe";
 "%@ photos" = "%@ fotoğraf";
+"%@ ready to paste." = "%@ kod yapıştırmaya hazır.";
 "%@ selected" = "%@ seçili";
 "%@ selected · Drag to carry files" = "%@ seçili · Dosyaları taşımak için sürükle";
 "%@ split points" = "%@ bölme noktası";
+"%@ timeline" = "%@ zaman çizelgesi";
 "%@ video items are not included. Only photos will be saved." = "%@ video öğesi dahil edilmedi. Yalnızca fotoğraflar kaydedilecek.";
 "%@ ways to change it" = "%@ farklı biçime çevir";
 "%@ · %@ smaller" = "%@ · %@ daha küçük";
@@ -36,15 +39,18 @@
 "%lld exports" = "%lld çıktıları";
 "%lld files" = "%lld dosya";
 "%lld files, ready to go." = "%lld dosya hazır.";
+"%lld found" = "%lld bulundu";
 "%lld input" = "%lld girdisi";
 "%lld is enabled" = "%lld izni açık";
 "%lld is not installed." = "%lld kurulu değil.";
 "%lld is structural or read-only metadata." = "%lld yapısal ya da salt okunur bir meta veri.";
 "%lld items" = "%lld öğe";
 "%lld photos" = "%lld fotoğraf";
+"%lld ready to paste." = "%lld kod yapıştırmaya hazır.";
 "%lld selected" = "%lld seçili";
 "%lld selected · Drag to carry files" = "%lld seçili · Dosyaları taşımak için sürükle";
 "%lld split points" = "%lld bölme noktası";
+"%lld timeline" = "%lld zaman çizelgesi";
 "%lld video items are not included. Only photos will be saved." = "%lld video öğesi dahil edilmedi. Yalnızca fotoğraflar kaydedilecek.";
 "%lld ways to change it" = "%lld farklı biçime çevir";
 "%lld · %@ smaller" = "%lld · %@ daha küçük";
@@ -54,21 +60,27 @@
 "%lld, page %@" = "%lld, sayfa %@";
 "%lld, page %lld" = "%lld, sayfa %lld";
 "0 AREAS SELECTED" = "0 ALAN SEÇİLİ";
+"0 FOUND" = "0 BULUNDU";
 "0 SELECTED" = "0 SEÇİLİ";
 "0 SPLIT POINTS" = "0 BÖLME NOKTASI";
 "0 areas selected" = "0 alan seçili";
+"0 found" = "0 bulundu";
 "0 selected" = "0 seçili";
 "0 split points" = "0 bölme noktası";
 "1 AREA SELECTED" = "1 ALAN SEÇİLİ";
+"1 FOUND" = "1 BULUNDU";
 "1 ITEM" = "1 ÖĞE";
 "1 PHOTO" = "1 FOTOĞRAF";
+"1 READY TO PASTE." = "1 KOD YAPIŞTIRMAYA HAZIR.";
 "1 SELECTED" = "1 SEÇİLİ";
 "1 SPLIT POINT" = "1 BÖLME NOKTASI";
 "1 VIDEO ITEMS ARE NOT INCLUDED. ONLY PHOTOS WILL BE SAVED." = "1 VİDEO ÖĞESİ DAHİL EDİLMEDİ. YALNIZCA FOTOĞRAFLAR KAYDEDİLECEK.";
 "1 WAY TO CHANGE IT" = "1 FARKLI BİÇİME ÇEVİR";
 "1 area selected" = "1 alan seçili";
+"1 found" = "1 bulundu";
 "1 item" = "1 öğe";
 "1 photo" = "1 fotoğraf";
+"1 ready to paste." = "1 kod yapıştırmaya hazır.";
 "1 selected" = "1 seçili";
 "1 split point" = "1 bölme noktası";
 "1 video items are not included. Only photos will be saved." = "1 video öğesi dahil edilmedi. Yalnızca fotoğraflar kaydedilecek.";
@@ -157,6 +169,8 @@
 "ADD SELECTED RANGE" = "SEÇİLİ ARALIĞI EKLE";
 "ADD SPLIT" = "BÖLME NOKTASI EKLE";
 "ADD TO AN EXISTING FLOAT" = "MEVCUT YÜZEN PENCEREYE EKLE";
+"ADD TO FLOAT" = "YÜZEN PENCEREYE EKLE";
+"ADDED TO FLOAT." = "YÜZEN PENCEREYE EKLENDİ.";
 "ADDING PAGES…" = "SAYFALAR EKLENİYOR…";
 "ADDITIONAL OPTIONS" = "DİĞER SEÇENEKLER";
 "AIRDROP IS UNAVAILABLE ON THIS MAC." = "AİRDROP BU MAC'TE KULLANILAMIYOR.";
@@ -230,7 +244,9 @@
 "Add files" = "Dosya ekle";
 "Add or change files" = "Dosya ekle veya değiştir";
 "Add selected range" = "Seçili aralığı ekle";
+"Add to Float" = "Yüzen pencereye ekle";
 "Add to an existing Float" = "Mevcut yüzen pencereye ekle";
+"Added to Float." = "Yüzen pencereye eklendi.";
 "Adding pages…" = "Sayfalar ekleniyor…";
 "Additional options" = "Diğer seçenekler";
 "AirDrop is unavailable on this Mac." = "AirDrop bu Mac'te kullanılamıyor.";
@@ -391,6 +407,7 @@
 "CHOOSE A VALID START AND END WITHIN THE FILE’S DURATION." = "DOSYANIN SÜRESİ İÇİNDE GEÇERLİ BİR BAŞLANGIÇ VE BİTİŞ SEÇ.";
 "CHOOSE A VALID TIME RANGE." = "GEÇERLİ BİR ZAMAN ARALIĞI SEÇ.";
 "CHOOSE AN EXISTING MEDIA FILE." = "VAR OLAN BİR MEDYA DOSYASI SEÇ.";
+"CHOOSE AN IMAGE OR PDF." = "BİR GÖRSEL VEYA PDF SEÇ.";
 "CHOOSE AN IMAGE." = "BİR GÖRSEL SEÇ.";
 "CHOOSE AN INPUT FORMAT TO SEE ITS AVAILABLE OUTPUTS." = "KULLANILABİLİR ÇIKTILARINI GÖRMEK İÇİN BİR GİRDİ BİÇİMİ SEÇ.";
 "CHOOSE AN INSTAGRAM PHOTO POST LINK." = "BİR INSTAGRAM FOTOĞRAF GÖNDERİSİ BAĞLANTISI SEÇ.";
@@ -494,9 +511,12 @@
 "COPY PATH" = "YOLU KOPYALA";
 "CORNER RADIUS" = "KÖŞE YUVARLAKLIĞI";
 "CORNERS" = "KÖŞELER";
+"COULD NOT COPY THE QR CODE." = "QR KODU KOPYALANAMADI.";
+"COULD NOT COPY THE QR CODES." = "QR KODLARI KOPYALANAMADI.";
 "COULD NOT COPY THE SELECTED FILE PATHS." = "SEÇİLİ DOSYA YOLLARI KOPYALANAMADI.";
 "COULD NOT COPY THE SELECTED FILES." = "SEÇİLİ DOSYALAR KOPYALANAMADI.";
 "COULD NOT ORIENT IMAGE." = "GÖRSELİN YÖNÜ DÜZELTİLEMEDİ.";
+"COULD NOT READ THIS PDF." = "BU PDF OKUNAMADI.";
 "COULD NOT RENDER THE REDACTION." = "SANSÜR UYGULANAMADI.";
 "COULDN’T CHECK FOR UPDATES" = "GÜNCELLEMELER DENETLENEMEDİ";
 "COULDN’T FINISH" = "İŞLEM TAMAMLANAMADI";
@@ -586,6 +606,7 @@
 "Choose a valid time range." = "Geçerli bir zaman aralığı seç.";
 "Choose an Instagram photo post link." = "Bir Instagram fotoğraf gönderisi bağlantısı seç.";
 "Choose an existing media file." = "Var olan bir medya dosyası seç.";
+"Choose an image or PDF." = "Bir görsel veya PDF seç.";
 "Choose an image." = "Bir görsel seç.";
 "Choose an input format to see its available outputs." = "Kullanılabilir çıktılarını görmek için bir girdi biçimi seç.";
 "Choose annotation image…" = "İşaret görseli seç…";
@@ -698,11 +719,16 @@
 "Copy path" = "Yolu kopyala";
 "Corner radius" = "Köşe yuvarlaklığı";
 "Corners" = "Köşeler";
+"Could not copy the QR code." = "QR kodu kopyalanamadı.";
+"Could not copy the QR codes." = "QR kodları kopyalanamadı.";
 "Could not copy the selected file paths." = "Seçili dosya yolları kopyalanamadı.";
 "Could not copy the selected files." = "Seçili dosyalar kopyalanamadı.";
 "Could not open %@." = "%@ açılamadı.";
 "Could not open %lld." = "%lld açılamadı.";
 "Could not orient image." = "Görselin yönü düzeltilemedi.";
+"Could not read this PDF." = "Bu PDF okunamadı.";
+"Could not render PDF page %@." = "PDF'nin %@. sayfası işlenemedi.";
+"Could not render PDF page %lld." = "PDF'nin %lld. sayfası işlenemedi.";
 "Could not render the redaction." = "Sansür uygulanamadı.";
 "Couldn’t check for updates" = "Güncellemeler denetlenemedi";
 "Couldn’t finish" = "İşlem tamamlanamadı";
@@ -785,6 +811,7 @@
 "DRAG ACROSS THE PREVIEW TO SELECT THE AREA TO KEEP." = "KORUNACAK ALANI SEÇMEK İÇİN ÖNİZLEMEDE SÜRÜKLE.";
 "DRAG AN AREA FIRST." = "ÖNCE BİR ALAN SÜRÜKLE.";
 "DRAG AN EXISTING ANNOTATION TO MOVE IT; DRAG ITS HANDLES TO RESIZE. TURN OFF SELECT / MOVE TO DRAW." = "BİR İŞARETİ TAŞIMAK İÇİN İÇİNİ, BOYUTLANDIRMAK İÇİN TUTAMAĞINI SÜRÜKLE. ÇİZMEK İÇİN SEÇ / TAŞI'YI KAPAT.";
+"DRAG EITHER EDGE TO RESIZE THE RANGE, OR DRAG ITS MIDDLE TO MOVE IT." = "ARALIĞI BOYUTLANDIRMAK İÇİN KENARLARINDAN BİRİNİ, TAŞIMAK İÇİN ORTASINI SÜRÜKLE.";
 "DRAG INSIDE TO MOVE. DRAG NEAR A CORNER TO RESIZE. DRAG OUTSIDE TO START A NEW SELECTION." = "TAŞIMAK İÇİN ALANIN İÇİNİ, BOYUTLANDIRMAK İÇİN KÖŞEYİ SÜRÜKLE. YENİ SEÇİM İÇİN ALANIN DIŞINDA SÜRÜKLE.";
 "DRAG ON THE PREVIEW TO ADD AN AREA. EACH AREA IS SAVED INTO THE NEW COPY." = "ALAN EKLEMEK İÇİN ÖNİZLEMEDE SÜRÜKLE. HER ALAN YENİ KOPYAYA İŞLENİR.";
 "DRAG SHORTCUTS" = "SÜRÜKLEME KISAYOLLARI";
@@ -870,6 +897,7 @@
 "Drag across the preview to select the area to keep." = "Korunacak alanı seçmek için önizlemede sürükle.";
 "Drag an area first." = "Önce bir alan sürükle.";
 "Drag an existing annotation to move it; drag its handles to resize. Turn off Select / Move to draw." = "Bir işareti taşımak için içini, boyutlandırmak için tutamağını sürükle. Çizmek için Seç / Taşı'yı kapat.";
+"Drag either edge to resize the range, or drag its middle to move it." = "Aralığı boyutlandırmak için kenarlarından birini, taşımak için ortasını sürükle.";
 "Drag inside to move. Drag near a corner to resize. Drag outside to start a new selection." = "Taşımak için alanın içini, boyutlandırmak için köşeyi sürükle. Yeni seçim için alanın dışında sürükle.";
 "Drag on the preview to add an area. Each area is saved into the new copy." = "Alan eklemek için önizlemede sürükle. Her alan yeni kopyaya işlenir.";
 "Drag shortcuts" = "Sürükleme kısayolları";
@@ -972,6 +1000,7 @@
 "FILE TOOLS WHEEL" = "DOSYA ARAÇLARI ÇARKI";
 "FILES" = "DOSYALAR";
 "FILES ARE PROCESSED LOCALLY ON YOUR MAC." = "DOSYALAR MAC'İNDE İŞLENİR.";
+"FILES COPIED." = "DOSYALAR KOPYALANDI.";
 "FILES COPIED. PASTE THEM WHEREVER YOU NEED." = "DOSYALAR KOPYALANDI. İSTEDİĞİN YERE YAPIŞTIR.";
 "FILES IN FLOAT" = "FLOAT’TAKİ DOSYALAR";
 "FILES MISSING" = "DOSYALAR BULUNAMIYOR";
@@ -1042,6 +1071,7 @@
 "File tools wheel" = "Dosya araçları çarkı";
 "Files" = "Dosyalar";
 "Files are processed locally on your Mac." = "Dosyalar Mac'inde işlenir.";
+"Files copied." = "Dosyalar kopyalandı.";
 "Files copied. Paste them wherever you need." = "Dosyalar kopyalandı. İstediğin yere yapıştır.";
 "Files in Float" = "Float’taki dosyalar";
 "Files missing" = "Dosyalar bulunamıyor";
@@ -1443,8 +1473,10 @@
 "NOTHING HERE YET. PASTE SOMETHING OR MAKE YOUR FIRST FRESH COPY." = "BURADA HENÜZ BİR ŞEY YOK. BİR DOSYA YAPIŞTIR VEYA İLK KOPYANI OLUŞTUR.";
 "NUMBER" = "NUMARA";
 "NUMBER OF CLIPS" = "KLİP SAYISI";
+"Nashi %@ wheel" = "Nashi %@ çarkı";
 "Nashi %@ · Build %@" = "Nashi %@ · Derleme %@";
 "Nashi %@ · Build %lld" = "Nashi %@ · Derleme %lld";
+"Nashi %lld wheel" = "Nashi %lld çarkı";
 "Nashi %lld · Build %@" = "Nashi %lld · Derleme %@";
 "Nashi %lld · Build %lld" = "Nashi %lld · Derleme %lld";
 "Nashi Settings" = "Nashi Ayarları";
@@ -1567,6 +1599,8 @@
 "Open link" = "Bağlantıyı aç";
 "Open permission settings…" = "İzin ayarlarını aç…";
 "Open wheel" = "Çarkı aç";
+"Opened in %@." = "%@ ile açıldı.";
+"Opened in %lld." = "%lld ile açıldı.";
 "Optional. You can change this in Settings." = "İsteğe bağlı. Ayarlardan değiştirebilirsin.";
 "Organize PDF" = "PDF'yi Düzenle";
 "Original" = "Orijinal";
@@ -1737,6 +1771,10 @@
 "Protected media cannot be downloaded." = "Korumalı medya indirilemez.";
 "Public repository · No token needed" = "Herkese açık depo · Token gerekmez";
 "Public updates work without a token." = "Herkese açık güncellemeler için token gerekmez.";
+"QR CODE COPIED." = "QR KODU KOPYALANDI.";
+"QR CODES COPIED." = "QR KODLARI KOPYALANDI.";
+"QR code copied." = "QR kodu kopyalandı.";
+"QR codes copied." = "QR kodları kopyalandı.";
 "QUALITY" = "KALİTE";
 "QUALITY (%)" = "KALİTE (%)";
 "QUICK LOOK" = "HIZLI BAKIŞ";
@@ -1759,6 +1797,7 @@
 "READY ON YOUR PC" = "BİLGİSAYARINDA HAZIR";
 "READY TO CHECK FOR UPDATES" = "GÜNCELLEMELERİ DENETLEMEYE HAZIR";
 "READY TO MAKE A FRESH COPY. NO EXTRA SETTINGS NEEDED." = "YENİ KOPYA OLUŞTURMAYA HAZIR. EK AYAR GEREKMEZ.";
+"READY TO PASTE." = "YAPIŞTIRMAYA HAZIR.";
 "READY WHEN YOU ARE" = "SIRA SENDE";
 "READY WHEN YOU LOG IN" = "OTURUM AÇTIĞINDA HAZIR";
 "READY." = "HAZIR.";
@@ -1824,6 +1863,7 @@
 "Ready on your PC" = "Bilgisayarında hazır";
 "Ready to check for updates" = "Güncellemeleri denetlemeye hazır";
 "Ready to make a fresh copy. No extra settings needed." = "Yeni kopya oluşturmaya hazır. Ek ayar gerekmez.";
+"Ready to paste." = "Yapıştırmaya hazır.";
 "Ready when you log in" = "Oturum açtığında hazır";
 "Ready." = "Hazır.";
 "Ready. You can go back to your files." = "Hazır. Dosyalarına dönebilirsin.";
@@ -1923,6 +1963,7 @@
 "SAVING DOCUMENT…" = "BELGE KAYDEDİLİYOR…";
 "SAVING IMAGES…" = "GÖRSELLER KAYDEDİLİYOR…";
 "SCAN AGAIN" = "YENİDEN TARA";
+"SCAN COMPLETE." = "TARAMA TAMAMLANDI.";
 "SEARCH FORMATS" = "BİÇİMLERDE ARA";
 "SEARCH METADATA" = "META VERİLERDE ARA";
 "SECONDS" = "SANİYE";
@@ -1966,6 +2007,7 @@
 "SHADOW RADIUS" = "GÖLGE YARIÇAPI";
 "SHADOWS" = "GÖLGELER";
 "SHARE" = "PAYLAŞ";
+"SHARED WITH AIRDROP." = "AİRDROP İLE PAYLAŞILDI.";
 "SHARE…" = "PAYLAŞ…";
 "SHARPEN" = "KESKİNLEŞTİRME";
 "SHARPNESS" = "KESKİNLİK";
@@ -2075,6 +2117,7 @@
 "Saving document…" = "Belge kaydediliyor…";
 "Saving images…" = "Görseller kaydediliyor…";
 "Scan again" = "Yeniden tara";
+"Scan complete." = "Tarama tamamlandı.";
 "Search formats" = "Biçimlerde ara";
 "Search metadata" = "Meta verilerde ara";
 "Seconds" = "Saniye";
@@ -2120,6 +2163,7 @@
 "Shadow radius" = "Gölge yarıçapı";
 "Shadows" = "Gölgeler";
 "Share" = "Paylaş";
+"Shared with AirDrop." = "AirDrop ile paylaşıldı.";
 "Share…" = "Paylaş…";
 "Sharpen" = "Keskinleştirme";
 "Sharpness" = "Keskinlik";
@@ -2194,6 +2238,7 @@
 "TEXTURE" = "DOKU";
 "THAT PDF SIZE CANNOT BE REACHED WHILE KEEPING SELECTABLE TEXT, LINKS AND ANNOTATIONS. CHOOSE A LARGER TARGET." = "SEÇİLEBİLİR METİN, BAĞLANTILAR VE NOTLAR KORUNARAK BU PDF BOYUTUNA İNİLEMİYOR. DAHA BÜYÜK BİR HEDEF SEÇ.";
 "THAT PDF SIZE CANNOT BE REACHED WHILE KEEPING SELECTABLE TEXT, LINKS, AND ANNOTATIONS. CHOOSE A LARGER TARGET." = "SEÇİLEBİLİR METİN, BAĞLANTILAR VE NOTLAR KORUNARAK BU PDF BOYUTUNA İNİLEMİYOR. DAHA BÜYÜK BİR HEDEF SEÇ.";
+"THE ARCHIVE CONTAINS AN UNNAMED ENTRY." = "ARŞİVDE ADI OLMAYAN BİR ÖĞE VAR.";
 "THE ARCHIVE CONTAINS AN UNSAFE PATH." = "ARŞİVDE GÜVENLİ OLMAYAN BİR YOL VAR.";
 "THE ARCHIVE ENTRY LEAVES ITS DESTINATION." = "ARŞİVDEKİ BİR ÖĞE HEDEF KLASÖRÜN DIŞINA ÇIKIYOR.";
 "THE CLIPPING EXCEEDS 200 MB." = "METİN KIRPINTISI 200 MB'I AŞIYOR.";
@@ -2207,6 +2252,7 @@
 "THE IMAGE DOWNLOAD ENDED EARLY." = "GÖRSEL İNDİRMESİ ERKEN SONA ERDİ.";
 "THE IMAGE ORDER MUST INCLUDE EVERY IMAGE ONCE." = "GÖRSEL SIRASINDA HER GÖRSEL BİR KEZ YER ALMALI.";
 "THE MEDIA SERVER REDIRECTED TO AN INSECURE URL." = "MEDYA SUNUCUSU GÜVENLİ OLMAYAN BİR ADRESE YÖNLENDİRDİ.";
+"THE OPERATION WAS CANCELLED." = "İŞLEM İPTAL EDİLDİ.";
 "THE PDF CONTAINS NO PAGES." = "PDF'DE SAYFA YOK.";
 "THE PDF PAGE IS TOO LARGE TO RENDER AT THIS RESOLUTION." = "PDF SAYFASI BU ÇÖZÜNÜRLÜKTE İŞLENEMEYECEK KADAR BÜYÜK.";
 "THE PROCESSING TOOL COULD NOT START." = "İŞLEME ARACI BAŞLATILAMADI.";
@@ -2228,6 +2274,7 @@
 "THIS FILE HAS NO VIDEO STREAM." = "BU DOSYADA GÖRÜNTÜ YOK.";
 "THIS FORMAT CAN BE IMPORTED. CHOOSE AN OUTPUT FORMAT IN THE SIDEBAR TO CONFIGURE ITS DEFAULTS." = "BU BİÇİM İÇE AKTARILABİLİR. VARSAYILANLARI AYARLAMAK İÇİN KENAR ÇUBUĞUNDAN BİR ÇIKTI BİÇİMİ SEÇ.";
 "THIS FORMAT USES ITS ORIGINAL DOCUMENT STRUCTURE. NO EXPORT DEFAULTS ARE NEEDED." = "BU BİÇİM ORİJİNAL BELGE YAPISINI KULLANIR. DIŞA AKTARMA TERCİHİ GEREKMEZ.";
+"THIS IMAGE COULD NOT BE DECODED." = "BU GÖRSELİN KODU ÇÖZÜLEMEDİ.";
 "THIS IMAGE EXCEEDS 100 MP." = "BU GÖRSEL 100 MP'Yİ AŞIYOR.";
 "THIS IMAGE EXCEEDS 200 MB." = "BU GÖRSEL 200 MB'I AŞIYOR.";
 "THIS IMAGE IS TOO LARGE (100 MP LIMIT)." = "BU GÖRSEL ÇOK BÜYÜK (SINIR 100 MP).";
@@ -2239,6 +2286,7 @@
 "THIS PDF HAS FORM FIELDS OR ATTACHMENTS THAT METADATA CLEANUP CANNOT KEEP. NO COPY WAS EXPORTED." = "BU PDF'DE META VERİ TEMİZLİĞİ SIRASINDA KORUNAMAYAN FORM ALANLARI YA DA EKLER VAR. KOPYA DIŞA AKTARILMADI.";
 "THIS PDF IS PASSWORD PROTECTED. ENTER ITS PASSWORD." = "BU PDF PAROLAYLA KORUNUYOR. PAROLASINI GİR.";
 "THIS PDF PAGE COULD NOT BE READ." = "BU PDF SAYFASI OKUNAMADI.";
+"THIS PDF REQUIRES A VALID PASSWORD." = "BU PDF İÇİN GEÇERLİ BİR PAROLA GEREKİYOR.";
 "THIS POST CONTAINS VIDEOS. USE ITS REEL LINK TO DOWNLOAD VIDEO." = "BU GÖNDERİDE VİDEO VAR. VİDEOYU İNDİRMEK İÇİN REEL BAĞLANTISINI KULLAN.";
 "THIS REPOSITORY IS PRIVATE" = "BU DEPO GİZLİ";
 "THIS RTFD ATTACHMENT SYNTAX COULD NOT BE PRESERVED." = "BU RTFD EKİNİN YAPISI KORUNAMADI.";
@@ -2295,6 +2343,9 @@
 "The PDF page is too large to render at this resolution." = "PDF sayfası bu çözünürlükte işlenemeyecek kadar büyük.";
 "The UTF-16 text in %@ is damaged." = "%@ içindeki UTF-16 metin bozuk.";
 "The UTF-16 text in %lld is damaged." = "%lld içindeki UTF-16 metin bozuk.";
+"The UTF-32 text in %@ is damaged." = "%@ içindeki UTF-32 metin bozuk.";
+"The UTF-32 text in %lld is damaged." = "%lld içindeki UTF-32 metin bozuk.";
+"The archive contains an unnamed entry." = "Arşivde adı olmayan bir öğe var.";
 "The archive contains an unsafe path." = "Arşivde güvenli olmayan bir yol var.";
 "The archive entry leaves its destination." = "Arşivdeki bir öğe hedef klasörün dışına çıkıyor.";
 "The clipping exceeds 200 MB." = "Metin kırpıntısı 200 MB'ı aşıyor.";
@@ -2318,6 +2369,7 @@
 "The metadata field %@ was not written. No output was saved." = "%@ meta veri alanı yazılamadı. Çıktı kaydedilmedi.";
 "The metadata field %lld could not be removed." = "%lld meta veri alanı kaldırılamadı.";
 "The metadata field %lld was not written. No output was saved." = "%lld meta veri alanı yazılamadı. Çıktı kaydedilmedi.";
+"The operation was cancelled." = "İşlem iptal edildi.";
 "The processing tool could not start." = "İşleme aracı başlatılamadı.";
 "The requested PDF size could not be reached." = "İstenen PDF boyutuna inilemedi.";
 "The requested PDF size could not be reached. Choose a larger target." = "İstenen PDF boyutuna inilemedi. Daha büyük bir hedef seç.";
@@ -2337,6 +2389,7 @@
 "This PDF has form fields or attachments that metadata cleanup cannot keep. No copy was exported." = "Bu PDF'de meta veri temizliği sırasında korunamayan form alanları ya da ekler var. Kopya dışa aktarılmadı.";
 "This PDF is password protected. Enter its password." = "Bu PDF parolayla korunuyor. Parolasını gir.";
 "This PDF page could not be read." = "Bu PDF sayfası okunamadı.";
+"This PDF requires a valid password." = "Bu PDF için geçerli bir parola gerekiyor.";
 "This RTFD attachment syntax could not be preserved." = "Bu RTFD ekinin yapısı korunamadı.";
 "This Windows codec cannot play directly. Set up media tools to create a local preview." = "Bu Windows codec'i doğrudan oynatılamıyor. Yerel önizleme oluşturmak için medya araçlarını kur.";
 "This conversion is not available for %@." = "%@ için bu dönüştürme kullanılamıyor.";
@@ -2348,6 +2401,7 @@
 "This file has no video stream." = "Bu dosyada görüntü yok.";
 "This format can be imported. Choose an output format in the sidebar to configure its defaults." = "Bu biçim içe aktarılabilir. Varsayılanları ayarlamak için kenar çubuğundan bir çıktı biçimi seç.";
 "This format uses its original document structure. No export defaults are needed." = "Bu biçim orijinal belge yapısını kullanır. Dışa aktarma tercihi gerekmez.";
+"This image could not be decoded." = "Bu görselin kodu çözülemedi.";
 "This image exceeds 100 MP." = "Bu görsel 100 MP'yi aşıyor.";
 "This image exceeds 200 MB." = "Bu görsel 200 MB'ı aşıyor.";
 "This image is too large (100 MP limit)." = "Bu görsel çok büyük (sınır 100 MP).";
