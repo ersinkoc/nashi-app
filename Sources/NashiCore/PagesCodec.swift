@@ -23,7 +23,8 @@ enum PagesCodec {
 
     static func model(_ input: URL, token: CancellationToken) throws -> [String: Any] {
         try token.check()
-        guard let size = try input.resourceValues(forKeys: [.fileSizeKey]).fileSize, size <= 200_000_000 else { throw NashiError.invalidInput("This Pages file is too large or is not a regular document file.") }
+        // A symlink's own size is a few bytes; the cap applies to the Pages file it points to.
+        guard let size = try input.resolvingSymlinksInPath().resourceValues(forKeys: [.fileSizeKey]).fileSize, size <= 200_000_000 else { throw NashiError.invalidInput("This Pages file is too large or is not a regular document file.") }
         let data = try Data(contentsOf: input)
         guard data.count > 16, data.starts(with: [0x50, 0x4b]) else { throw NashiError.invalidInput("This is not a modern Pages document.") }
         let engine = try Runtime(token: token)
@@ -236,6 +237,7 @@ private enum PagesDOCXReader {
                             else if child.local == "instrText", !fields.isEmpty { fields[fields.count-1].instruction += text(child) }
                             else if child.local == "t" { var run: [String:Any] = ["text":text(child),"character":formatting];if let link = link ?? fields.last(where: { $0.link != nil })?.link {run["link"]=link};runs.append(run) }
                             else if child.local == "tab" { runs.append(["text":"\t","character":formatting]) }
+                            else if child.local == "noBreakHyphen" { runs.append(["text":"\u{2011}","character":formatting]) }
                             else if child.local == "br", child.attr("type") == "page" { runs.append(["type":"pageBreak"]) }
                             else if child.local == "br" || child.local == "cr" { runs.append(["text":"\n","character":formatting]) }
                             else if ["drawing","pict"].contains(child.local), let image = try image(child) { runs.append(image) }
@@ -434,6 +436,7 @@ private enum PagesDOCXReader {
             switch item.local {
             case "t": output += text(item)
             case "tab": output += "\t"
+            case "noBreakHyphen": output += "\u{2011}"
             case "br", "cr": output += "\n"
             case "pPr", "rPr": return
             default:
