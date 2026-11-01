@@ -32,16 +32,29 @@ public static class ProcessRunner
         using var cancellation = token.Register(() => { try { if (!process.HasExited) process.Kill(entireProcessTree: true); } catch (InvalidOperationException) { } });
         var stdout = DrainAsync(process.StandardOutput, outputLine);
         var stderr = DrainAsync(process.StandardError, null);
+        Exception? stdinException = null;
         if (standardInput is not null)
         {
-            await process.StandardInput.WriteAsync(standardInput.AsMemory(), token).ConfigureAwait(false);
-            await process.StandardInput.FlushAsync(token).ConfigureAwait(false);
+            try
+            {
+                await process.StandardInput.WriteAsync(standardInput.AsMemory(), token).ConfigureAwait(false);
+                await process.StandardInput.FlushAsync(token).ConfigureAwait(false);
+            }
+            catch (OperationCanceledException)
+            {
+                throw;
+            }
+            catch (IOException ex)
+            {
+                stdinException = ex;
+            }
         }
-        process.StandardInput.Close();
+        try { process.StandardInput.Close(); } catch { }
         await process.WaitForExitAsync(CancellationToken.None).ConfigureAwait(false);
         var results = await Task.WhenAll(stdout, stderr).ConfigureAwait(false);
         token.ThrowIfCancellationRequested();
         if (process.ExitCode != 0) throw new IOException(string.IsNullOrWhiteSpace(results[1]) ? "The processing tool failed." : ErrorTail(results[1]));
+        if (stdinException is not null) throw stdinException;
         return new(results[0], results[1]);
     }
 
