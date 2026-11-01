@@ -308,7 +308,35 @@ if(Environment.GetEnvironmentVariable("NASHI_VERIFY_DOWNLOAD_TOOLS")=="1"&&Envir
         var tagged=await metadata.WriteAsync([photo],directory,false,new Dictionary<string,string>{{"EXIF:Artist","Nashi fixture"}});
         Check((await metadata.ReadAsync(tagged[0])).GetValueOrDefault("EXIF:Artist")=="Nashi fixture","ExifTool did not write and read back a tag");
         Check(!(await metadata.ReadAsync(photo)).ContainsKey("EXIF:Artist"),"Metadata editing changed the original");
-        Console.WriteLine(JsonSerializer.Serialize(new{passed=checks,scope="Verified ExifTool download, tag write and read back"}));
+
+        // Regression check: Non-ASCII TMP/TEMP, non-ASCII and Turkish file paths, multiline with bare CR, and leading space
+        var prevTmp = Environment.GetEnvironmentVariable("TMP");
+        var prevTemp = Environment.GetEnvironmentVariable("TEMP");
+        var nonAsciiTemp = Path.Combine(directory, "Geçici Dizin ğüşiöç");
+        Directory.CreateDirectory(nonAsciiTemp);
+        Environment.SetEnvironmentVariable("TMP", nonAsciiTemp);
+        Environment.SetEnvironmentVariable("TEMP", nonAsciiTemp);
+        try
+        {
+            var unicodePhoto=Path.Combine(directory,"Vesikalık fotoğraf ğüşiöç ' $().jpg");File.Copy(photo,unicodePhoto);
+            var multilineComment="Satır 1\r\nSatır 2\nSatır 3\rSatır 4 & 'özel' ğüşiöç";
+            var leadingSpaceArtist=" Örnek Sanatçı";
+            var unicodeTagged=await metadata.WriteAsync([unicodePhoto],directory,false,new Dictionary<string,string>
+            {
+                {"EXIF:Artist",leadingSpaceArtist},
+                {"EXIF:UserComment",multilineComment}
+            });
+            var readBack=await metadata.ReadAsync(unicodeTagged[0]);
+            Check(readBack.GetValueOrDefault("EXIF:Artist")==leadingSpaceArtist,"ExifTool did not preserve leading space or non-ASCII tag and path");
+            Check(readBack.GetValueOrDefault("EXIF:UserComment")==multilineComment,"ExifTool multiline comment mismatch");
+        }
+        finally
+        {
+            Environment.SetEnvironmentVariable("TMP", prevTmp);
+            Environment.SetEnvironmentVariable("TEMP", prevTemp);
+        }
+
+        Console.WriteLine(JsonSerializer.Serialize(new{passed=checks,scope="Verified ExifTool download, non-ASCII path, multiline and leading space tag write/read back"}));
     }
     finally{Directory.Delete(directory,true);}
 }
