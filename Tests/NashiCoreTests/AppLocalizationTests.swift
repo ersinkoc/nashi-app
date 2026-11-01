@@ -155,4 +155,17 @@ final class AppLocalizationTests:XCTestCase {
             XCTAssertEqual(AppLocalization.text(source,language:"tr"),source)
         }
     }
+    /// UpdateConnectionView shows its save/remove confirmation through LText, so each sentence needs a catalog entry.
+    func testUpdateConnectionConfirmationsAreTranslated() {
+        let expected=[
+            "Connection saved. Future checks use it automatically.":("Bağlantı kaydedildi. Sonraki kontroller bunu otomatik olarak kullanacak.","Connexion enregistrée. Les prochaines vérifications l’utiliseront automatiquement."),
+            "Connection saved. This build still needs its release signing configuration.":("Bağlantı kaydedildi. Bu derlemenin hâlâ sürüm imzalama yapılandırmasına ihtiyacı var.","Connexion enregistrée. Cette version a encore besoin de sa configuration de signature des mises à jour."),
+            "Connection removed and its saved token deleted.":("Bağlantı kaldırıldı ve kayıtlı tokenı silindi.","Connexion supprimée et son jeton enregistré effacé."),
+        ]
+        for (source,(tr,fr)) in expected {
+            XCTAssertEqual(AppLocalization.text(source,language:"tr"),tr)
+            XCTAssertEqual(AppLocalization.text(source,language:"fr"),fr)
+            XCTAssertEqual(AppLocalization.text(source,language:"en"),source)
+        }
+    }
 }

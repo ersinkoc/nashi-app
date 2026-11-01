@@ -504,6 +504,9 @@
 "COMPRESSION STRENGTH" = "COMPRESSION STRENGTH";
 "CONNECT A PRIVATE OR PUBLIC UPDATES REPOSITORY." = "CONNECT A PRIVATE OR PUBLIC UPDATES REPOSITORY.";
 "CONNECT YOUR GITHUB RELEASES ONCE. NASHI HANDLES THE NEXT UPDATE CHECKS." = "CONNECT YOUR GITHUB RELEASES ONCE. NASHI HANDLES THE NEXT UPDATE CHECKS.";
+"CONNECTION REMOVED AND ITS SAVED TOKEN DELETED." = "CONNECTION REMOVED AND ITS SAVED TOKEN DELETED.";
+"CONNECTION SAVED. FUTURE CHECKS USE IT AUTOMATICALLY." = "CONNECTION SAVED. FUTURE CHECKS USE IT AUTOMATICALLY.";
+"CONNECTION SAVED. THIS BUILD STILL NEEDS ITS RELEASE SIGNING CONFIGURATION." = "CONNECTION SAVED. THIS BUILD STILL NEEDS ITS RELEASE SIGNING CONFIGURATION.";
 "CONNECT…" = "CONNECT…";
 "CONTINUE" = "CONTINUE";
 "CONTINUE TO NASHI" = "CONTINUE TO NASHI";
@@ -719,6 +722,9 @@
 "Connect your GitHub releases once. Nashi handles the next update checks." = "Connect your GitHub releases once. Nashi handles the next update checks.";
 "Connected to %@" = "Connected to %@";
 "Connected to %lld" = "Connected to %lld";
+"Connection removed and its saved token deleted." = "Connection removed and its saved token deleted.";
+"Connection saved. Future checks use it automatically." = "Connection saved. Future checks use it automatically.";
+"Connection saved. This build still needs its release signing configuration." = "Connection saved. This build still needs its release signing configuration.";
 "Connect…" = "Connect…";
 "Continue" = "Continue";
 "Continue to Nashi" = "Continue to Nashi";
@@ -1194,6 +1200,7 @@
 "GIF width" = "GIF width";
 "GITHUB RELEASE CONNECTION" = "GITHUB RELEASE CONNECTION";
 "GITHUB REPOSITORY" = "GITHUB REPOSITORY";
+"GITHUB TOKEN" = "GITHUB TOKEN";
 "GIVE IT A LITTLE BREATHING ROOM." = "GIVE IT A LITTLE BREATHING ROOM.";
 "GLASS" = "GLASS";
 "GRADIENT" = "GRADIENT";
@@ -1208,6 +1215,7 @@
 "Get started" = "Get started";
 "GitHub release connection" = "GitHub release connection";
 "GitHub repository" = "GitHub repository";
+"GitHub token" = "GitHub token";
 "Give it a little breathing room." = "Give it a little breathing room.";
 "Glass" = "Glass";
 "Gradient" = "Gradient";
