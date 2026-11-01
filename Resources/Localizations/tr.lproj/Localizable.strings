@@ -1708,6 +1708,7 @@
 "PASTE ONE COMPLETE HTTP:// OR HTTPS:// MEDIA LINK." = "BİR HTTP:// VEYA HTTPS:// MEDYA BAĞLANTISININ TAMAMINI YAPIŞTIR.";
 "PASTE ONE COMPLETE PUBLIC MEDIA LINK." = "HERKESE AÇIK BİR MEDYA BAĞLANTISININ TAMAMINI YAPIŞTIR.";
 "PASTE YOUR GITHUB TOKEN" = "GITHUB TOKENINI YAPIŞTIR";
+"PASTED FILES" = "YAPIŞTIRILAN DOSYALAR";
 "PASTED IMAGE" = "YAPIŞTIRILAN GÖRSEL";
 "PASTED TEXT" = "YAPIŞTIRILAN METİN";
 "PAUSE" = "DURAKLAT";
@@ -1795,6 +1796,7 @@
 "Paste one complete http:// or https:// media link." = "Bir http:// veya https:// medya bağlantısının tamamını yapıştır.";
 "Paste one complete public media link." = "Herkese açık bir medya bağlantısının tamamını yapıştır.";
 "Paste your GitHub token" = "GitHub tokenını yapıştır";
+"Pasted files" = "Yapıştırılan dosyalar";
 "Pasted image" = "Yapıştırılan görsel";
 "Pasted text" = "Yapıştırılan metin";
 "Pause" = "Duraklat";
@@ -2750,6 +2752,7 @@
 "Visualization dimensions must be between 16 and 8,192 pixels." = "Görselleştirme boyutları 16 ile 8.192 piksel arasında olmalı.";
 "WAIT FOR THE PROCESSED PREVIEW TO FINISH BEFORE RESETTING." = "SIFIRLAMADAN ÖNCE İŞLENMİŞ ÖNİZLEMENİN BİTMESİNİ BEKLE.";
 "WAVEFORM" = "DALGA BİÇİMİ";
+"WEB MEDIA" = "WEB MEDYASI";
 "WELCOME TO NASHI" = "NASHI'YE HOŞ GELDİN";
 "WELCOME…" = "HOŞ GELDİN…";
 "WHEEL FINISH" = "ÇARK GÖRÜNÜMÜ";
@@ -2765,6 +2768,7 @@
 "WORKING…" = "İŞLENİYOR…";
 "Wait for the processed preview to finish before resetting." = "Sıfırlamadan önce işlenmiş önizlemenin bitmesini bekle.";
 "Waveform" = "Dalga biçimi";
+"Web media" = "Web medyası";
 "Welcome to Nashi" = "Nashi'ye Hoş Geldin";
 "Welcome…" = "Hoş Geldin…";
 "Wheel finish" = "Çark görünümü";

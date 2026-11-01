@@ -1708,6 +1708,7 @@
 "PASTE ONE COMPLETE HTTP:// OR HTTPS:// MEDIA LINK." = "COLLEZ UN LIEN MÉDIA HTTP:// OU HTTPS:// COMPLET.";
 "PASTE ONE COMPLETE PUBLIC MEDIA LINK." = "COLLEZ UN LIEN MÉDIA PUBLIC COMPLET.";
 "PASTE YOUR GITHUB TOKEN" = "COLLEZ VOTRE JETON GITHUB";
+"PASTED FILES" = "FICHIERS COLLÉS";
 "PASTED IMAGE" = "IMAGE COLLÉE";
 "PASTED TEXT" = "TEXTE COLLÉ";
 "PAUSE" = "PAUSE";
@@ -1795,6 +1796,7 @@
 "Paste one complete http:// or https:// media link." = "Collez un lien média http:// ou https:// complet.";
 "Paste one complete public media link." = "Collez un lien média public complet.";
 "Paste your GitHub token" = "Collez votre jeton GitHub";
+"Pasted files" = "Fichiers collés";
 "Pasted image" = "Image collée";
 "Pasted text" = "Texte collé";
 "Pause" = "Pause";
@@ -2750,6 +2752,7 @@
 "Visualization dimensions must be between 16 and 8,192 pixels." = "Les dimensions de la visualisation doivent être comprises entre 16 et 8 192 pixels.";
 "WAIT FOR THE PROCESSED PREVIEW TO FINISH BEFORE RESETTING." = "ATTENDEZ LA FIN DE L’APERÇU TRAITÉ AVANT DE RÉINITIALISER.";
 "WAVEFORM" = "FORME D’ONDE";
+"WEB MEDIA" = "MÉDIA WEB";
 "WELCOME TO NASHI" = "BIENVENUE DANS NASHI";
 "WELCOME…" = "BIENVENUE…";
 "WHEEL FINISH" = "FINITION DE LA ROUE";
@@ -2765,6 +2768,7 @@
 "WORKING…" = "TRAITEMENT EN COURS…";
 "Wait for the processed preview to finish before resetting." = "Attendez la fin de l’aperçu traité avant de réinitialiser.";
 "Waveform" = "Forme d’onde";
+"Web media" = "Média web";
 "Welcome to Nashi" = "Bienvenue dans Nashi";
 "Welcome…" = "Bienvenue…";
 "Wheel finish" = "Finition de la roue";
