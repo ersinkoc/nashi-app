@@ -30,14 +30,14 @@ public static class ProcessRunner
         if (!process.Start()) throw new IOException("The processing tool could not start.");
         JobObjectTracker.Track(process);
         using var cancellation = token.Register(() => { try { if (!process.HasExited) process.Kill(entireProcessTree: true); } catch (InvalidOperationException) { } });
+        var stdout = DrainAsync(process.StandardOutput, outputLine);
+        var stderr = DrainAsync(process.StandardError, null);
         if (standardInput is not null)
         {
             await process.StandardInput.WriteAsync(standardInput.AsMemory(), token).ConfigureAwait(false);
             await process.StandardInput.FlushAsync(token).ConfigureAwait(false);
         }
         process.StandardInput.Close();
-        var stdout = DrainAsync(process.StandardOutput, outputLine);
-        var stderr = DrainAsync(process.StandardError, null);
         await process.WaitForExitAsync(CancellationToken.None).ConfigureAwait(false);
         var results = await Task.WhenAll(stdout, stderr).ConfigureAwait(false);
         token.ThrowIfCancellationRequested();
