@@ -111,4 +111,27 @@ final class CommandLineTests:XCTestCase {
         let usage=try String(contentsOf:err,encoding:.utf8)
         for word in ["convert FORMAT","tool TOOL_ID","inspect FILE","catalog","dependencies","--options JSON","--json"] { XCTAssertTrue(usage.contains(word),word) }
     }
+    func testResultsThatCannotBeWrittenToStandardOutputFailTheRun() throws {
+        let root=try OutputFiles.temporaryDirectory();defer{try? FileManager.default.removeItem(at:root)}
+        let err=root.appendingPathComponent("err")
+        func run(_ arguments:[String],stdoutWritable:Bool)->Int32 {
+            fflush(stdout);fflush(stderr)
+            let savedOut=dup(1),savedErr=dup(2)
+            // A read-only descriptor makes every write fail, like a full disk.
+            let o=stdoutWritable ? open("/dev/null",O_WRONLY):open("/dev/null",O_RDONLY),e=open(err.path,O_CREAT|O_WRONLY|O_TRUNC,0o600)
+            dup2(o,1);dup2(e,2);close(o);close(e)
+            let code=NashiCommandLine.run(arguments:arguments)
+            fflush(stdout);fflush(stderr);clearerr(stdout)
+            dup2(savedOut,1);dup2(savedErr,2);close(savedOut);close(savedErr)
+            return code
+        }
+        XCTAssertEqual(run(["nashi-cli","catalog"],stdoutWritable:true),0)
+        XCTAssertEqual(run(["nashi-cli","catalog"],stdoutWritable:false),1)
+        XCTAssertTrue(try String(contentsOf:err,encoding:.utf8).contains("standard output"))
+        let input=root.appendingPathComponent("blank.png")
+        let context=try XCTUnwrap(CGContext(data:nil,width:8,height:8,bitsPerComponent:8,bytesPerRow:32,space:CGColorSpace(name:CGColorSpace.sRGB)!,bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue))
+        try ImageEngine.write(XCTUnwrap(context.makeImage()),to:input)
+        XCTAssertEqual(run(["nashi-cli","inspect",input.path],stdoutWritable:true),0)
+        XCTAssertEqual(run(["nashi-cli","inspect",input.path],stdoutWritable:false),1)
+    }
 }
