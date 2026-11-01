@@ -229,8 +229,9 @@ public enum PDFEngine {
             guard let page=source.page(at:index)?.copy() as? PDFPage else { throw NashiError.failed("A PDF page could not be copied.") }
             for annotation in page.annotations {
                 if clearAnnotationMetadata {
-                    // Widget /T is its field name, not an annotation author.
-                    if annotation.type != "Widget" { annotation.userName=nil }
+                    // Widget /T is its field name, not an annotation author. Setting userName to nil
+                    // leaves /T on Caret, Squiggly, Polygon, PolyLine and Sound annotations.
+                    if annotation.type != "Widget" { annotation.removeValue(forAnnotationKey:.textLabel) }
                     annotation.modificationDate=nil
                     annotation.removeValue(forAnnotationKey:PDFAnnotationKey(rawValue:"/CreationDate"))
                 }
