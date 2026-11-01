@@ -54,13 +54,17 @@ public sealed class MetadataService(string root,string? perlSearchPath=null)
             var args=new List<string>{"-overwrite_original","-P","-charset","filename=UTF8"};if(removeAll){args.Add("-all=");if(FeatureCatalog.IsImage(input)||FeatureCatalog.Extension(input)=="gif")args.AddRange(["-tagsfromfile","@","-Orientation","-ICC_Profile"]);}if(removals is not null)args.AddRange(removals.Select(k=>"-"+k+"="));
             if(updates is not null)
             {
-                var hasMultiline = updates.Values.Any(v => v.Contains('\n') || v.Contains('\r'));
-                if (hasMultiline)
+                var needsE = updates.Values.Any(v => v.Contains('\n') || v.Contains('\r') || v.StartsWith(' '));
+                if (needsE)
                 {
                     args.Add("-E");
                     foreach (var (k, v) in updates)
                     {
                         var val = v.Replace("&", "&amp;").Replace("\r", "&#13;").Replace("\n", "&#10;");
+                        if (val.StartsWith(' '))
+                        {
+                            val = "&#32;" + val[1..];
+                        }
                         args.Add("-" + k + "=" + val);
                     }
                 }
@@ -83,19 +87,7 @@ public sealed class MetadataService(string root,string? perlSearchPath=null)
             return await ProcessRunner.RunAsync(exe, args, token);
         }
 
-        var argFile = Path.Combine(Path.GetTempPath(), "exiftool-args-" + Guid.NewGuid().ToString("N") + ".txt");
-        try
-        {
-            var content = string.Join("\n", args);
-            await File.WriteAllTextAsync(argFile, content, new System.Text.UTF8Encoding(false), token);
-            return await ProcessRunner.RunAsync(exe, ["-charset", "filename=UTF8", "-@", argFile], token);
-        }
-        finally
-        {
-            if (File.Exists(argFile))
-            {
-                try { File.Delete(argFile); } catch { }
-            }
-        }
+        var input = string.Join("\n", args);
+        return await ProcessRunner.RunAsync(exe, ["-charset", "filename=UTF8", "-@", "-"], token, standardInput: input);
     }
 }
