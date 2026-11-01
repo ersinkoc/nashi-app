@@ -167,11 +167,13 @@
 "ADD FILES TO AN EXISTING FLOAT" = "ADD FILES TO AN EXISTING FLOAT";
 "ADD FILES…" = "ADD FILES…";
 "ADD FRAME" = "ADD FRAME";
+"ADD FRAME AT PLAYHEAD (M)" = "ADD FRAME AT PLAYHEAD (M)";
 "ADD METADATA FIELD" = "ADD METADATA FIELD";
 "ADD OR CHANGE FILES" = "ADD OR CHANGE FILES";
 "ADD REDACTION" = "ADD REDACTION";
 "ADD SELECTED RANGE" = "ADD SELECTED RANGE";
 "ADD SPLIT" = "ADD SPLIT";
+"ADD SPLIT AT PLAYHEAD (M)" = "ADD SPLIT AT PLAYHEAD (M)";
 "ADD TO AN EXISTING FLOAT" = "ADD TO AN EXISTING FLOAT";
 "ADD TO FLOAT" = "ADD TO FLOAT";
 "ADDED TO FLOAT." = "ADDED TO FLOAT.";
@@ -252,8 +254,10 @@
 "Add Split" = "Add Split";
 "Add a bleep or silence range." = "Add a bleep or silence range.";
 "Add files" = "Add files";
+"Add frame at playhead (M)" = "Add frame at playhead (M)";
 "Add or change files" = "Add or change files";
 "Add selected range" = "Add selected range";
+"Add split at playhead (M)" = "Add split at playhead (M)";
 "Add to Float" = "Add to Float";
 "Add to an existing Float" = "Add to an existing Float";
 "Added to Float." = "Added to Float.";
@@ -806,6 +810,7 @@
 "DISCONNECT & FORGET TOKEN" = "DISCONNECT & FORGET TOKEN";
 "DISMISS" = "DISMISS";
 "DISMISS ERROR" = "DISMISS ERROR";
+"DISMISS PREVIEW ERROR" = "DISMISS PREVIEW ERROR";
 "DOCUMENT XML IS TOO LARGE." = "DOCUMENT XML IS TOO LARGE.";
 "DOCUMENTS" = "DOCUMENTS";
 "DONE" = "DONE";
@@ -885,6 +890,7 @@
 "Disconnect & Forget Token" = "Disconnect & Forget Token";
 "Dismiss" = "Dismiss";
 "Dismiss error" = "Dismiss error";
+"Dismiss preview error" = "Dismiss preview error";
 "Document XML is too large." = "Document XML is too large.";
 "Documents" = "Documents";
 "Done" = "Done";
@@ -1729,8 +1735,10 @@
 "PIXELATE" = "PIXELATE";
 "PLAY" = "PLAY";
 "PLAY / PAUSE" = "PLAY / PAUSE";
+"PLAY / PAUSE (SPACE)" = "PLAY / PAUSE (SPACE)";
 "PLAY RESULT" = "PLAY RESULT";
 "PLAY SELECTED RANGE" = "PLAY SELECTED RANGE";
+"PLAY SELECTED RANGE (⇧SPACE)" = "PLAY SELECTED RANGE (⇧SPACE)";
 "PLAYBACK / DOCUMENT ORDER" = "PLAYBACK / DOCUMENT ORDER";
 "PLAYBACK SPEED" = "PLAYBACK SPEED";
 "PORTRAIT" = "PORTRAIT";
@@ -1801,10 +1809,12 @@
 "Pin" = "Pin";
 "Pixelate" = "Pixelate";
 "Play" = "Play";
+"Play / Pause (Space)" = "Play / Pause (Space)";
 "Play / pause" = "Play / pause";
 "Play Result" = "Play Result";
 "Play Selected Range" = "Play Selected Range";
 "Play selected range" = "Play selected range";
+"Play selected range (⇧Space)" = "Play selected range (⇧Space)";
 "Playback / document order" = "Playback / document order";
 "Playback speed" = "Playback speed";
 "Portrait" = "Portrait";
@@ -2009,6 +2019,8 @@
 "SAVE" = "SAVE";
 "SAVE 1 FRAME" = "SAVE 1 FRAME";
 "SAVE A COPY" = "SAVE A COPY";
+"SAVE A CROPPED COPY (RETURN OR ⌘S)" = "SAVE A CROPPED COPY (RETURN OR ⌘S)";
+"SAVE A FRESH COPY (⌘S)" = "SAVE A FRESH COPY (⌘S)";
 "SAVE ANNOTATED COPY" = "SAVE ANNOTATED COPY";
 "SAVE AS" = "SAVE AS";
 "SAVE AUDIO COPY" = "SAVE AUDIO COPY";
@@ -2160,6 +2172,8 @@
 "Save Connection" = "Save Connection";
 "Save Downloads Here" = "Save Downloads Here";
 "Save a copy" = "Save a copy";
+"Save a cropped copy (Return or ⌘S)" = "Save a cropped copy (Return or ⌘S)";
+"Save a fresh copy (⌘S)" = "Save a fresh copy (⌘S)";
 "Save annotated copy" = "Save annotated copy";
 "Save as" = "Save as";
 "Save audio copy" = "Save audio copy";
