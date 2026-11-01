@@ -50,6 +50,21 @@ final class PDFEngineTests:XCTestCase {
         XCTAssertEqual(pdf.pageCount,3);XCTAssertEqual(pdf.page(at:0)?.rotation,90);XCTAssertEqual(pdf.page(at:2)?.rotation,180)
         XCTAssertTrue(pdf.page(at:0)!.string!.contains("Page Two"));XCTAssertEqual(try Data(contentsOf:source),before)
     }
+    func testPageEditsOfAPasswordProtectedPDFKeepTitleAndAuthor() throws {
+        let document=PDFDocument();for _ in 0..<2 { document.insert(PDFPage(),at:document.pageCount) }
+        document.documentAttributes=[PDFDocumentAttribute.titleAttribute:"Board minutes",PDFDocumentAttribute.authorAttribute:"Ayla"]
+        let source=root.appendingPathComponent("Locked.pdf")
+        XCTAssertTrue(document.write(to:source,withOptions:[.ownerPasswordOption:"synthetic-owner",.userPasswordOption:"synthetic-password"]))
+        var options=OperationOptions();options.password="synthetic-password";options.pageRanges="2"
+        for (tool,inputs) in [(ToolKind.splitPDF,[source]),(.organizePDF,[source]),(.mergePDF,[source,source])] {
+            options.outputDirectory=root.appendingPathComponent(UUID().uuidString,isDirectory:true)
+            try FileManager.default.createDirectory(at:options.outputDirectory!,withIntermediateDirectories:true)
+            let output=try XCTUnwrap(PDFEngine.tool(tool,inputs:inputs,options:options,token:.init()).first)
+            let attributes=try PDFEngine.open(output,password:"synthetic-password").documentAttributes ?? [:]
+            XCTAssertEqual(attributes[PDFDocumentAttribute.titleAttribute] as? String,"Board minutes","\(tool)")
+            XCTAssertEqual(attributes[PDFDocumentAttribute.authorAttribute] as? String,"Ayla","\(tool)")
+        }
+    }
     func testUniformWidthScalesPagesProportionallyWithoutRasterizingText() throws {
         let input=try fixture();var options=OperationOptions();options.pdfUniformWidth=true
         let output=try PDFEngine.tool(.organizePDF,inputs:[input],options:options,token:.init())[0],pdf=try PDFEngine.open(output)
