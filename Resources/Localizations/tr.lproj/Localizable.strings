@@ -508,6 +508,9 @@
 "COMPRESSION STRENGTH" = "SIKIŞTIRMA GÜCÜ";
 "CONNECT A PRIVATE OR PUBLIC UPDATES REPOSITORY." = "GİZLİ VEYA HERKESE AÇIK BİR GÜNCELLEME DEPOSU BAĞLA.";
 "CONNECT YOUR GITHUB RELEASES ONCE. NASHI HANDLES THE NEXT UPDATE CHECKS." = "GITHUB SÜRÜMLERİNİ BİR KEZ BAĞLA. SONRAKİ GÜNCELLEME DENETİMLERİNİ NASHI ÜSTLENİR.";
+"CONNECTION REMOVED AND ITS SAVED TOKEN DELETED." = "BAĞLANTI KALDIRILDI VE KAYITLI TOKENI SİLİNDİ.";
+"CONNECTION SAVED. FUTURE CHECKS USE IT AUTOMATICALLY." = "BAĞLANTI KAYDEDİLDİ. SONRAKİ KONTROLLER BUNU OTOMATİK OLARAK KULLANACAK.";
+"CONNECTION SAVED. THIS BUILD STILL NEEDS ITS RELEASE SIGNING CONFIGURATION." = "BAĞLANTI KAYDEDİLDİ. BU DERLEMENİN HÂLÂ SÜRÜM İMZALAMA YAPILANDIRMASINA İHTİYACI VAR.";
 "CONNECT…" = "BAĞLAN…";
 "CONTINUE" = "DEVAM ET";
 "CONTINUE TO NASHI" = "NASHI’YE DEVAM ET";
@@ -723,6 +726,9 @@
 "Connect your GitHub releases once. Nashi handles the next update checks." = "GitHub sürümlerini bir kez bağla. Sonraki güncelleme denetimlerini Nashi üstlenir.";
 "Connected to %@" = "%@ deposuna bağlı";
 "Connected to %lld" = "%lld deposuna bağlı";
+"Connection removed and its saved token deleted." = "Bağlantı kaldırıldı ve kayıtlı tokenı silindi.";
+"Connection saved. Future checks use it automatically." = "Bağlantı kaydedildi. Sonraki kontroller bunu otomatik olarak kullanacak.";
+"Connection saved. This build still needs its release signing configuration." = "Bağlantı kaydedildi. Bu derlemenin hâlâ sürüm imzalama yapılandırmasına ihtiyacı var.";
 "Connect…" = "Bağlan…";
 "Continue" = "Devam et";
 "Continue to Nashi" = "Nashi’ye devam et";
@@ -1203,6 +1209,7 @@
 "GIF width" = "GIF genişliği";
 "GITHUB RELEASE CONNECTION" = "GITHUB SÜRÜM BAĞLANTISI";
 "GITHUB REPOSITORY" = "GITHUB DEPOSU";
+"GITHUB TOKEN" = "GITHUB TOKENI";
 "GIVE IT A LITTLE BREATHING ROOM." = "BİRAZ NEFES ALACAK ALAN AÇ.";
 "GLASS" = "CAM";
 "GRADIENT" = "GEÇİŞ";
@@ -1217,6 +1224,7 @@
 "Get started" = "Başla";
 "GitHub release connection" = "GitHub sürüm bağlantısı";
 "GitHub repository" = "GitHub deposu";
+"GitHub token" = "GitHub tokenı";
 "Give it a little breathing room." = "Biraz nefes alacak alan aç.";
 "Glass" = "Cam";
 "Gradient" = "Geçiş";
