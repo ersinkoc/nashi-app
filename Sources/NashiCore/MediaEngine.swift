@@ -294,7 +294,8 @@ public enum MediaEngine {
         let infos = try inputs.map { try inspect($0, token: token) }
         try infos.forEach(requireVideo)
         guard let first = infos.first?.video else { throw NashiError.invalidInput("The first clip has no video.") }
-        let width = max(2, (first.width ?? 1280) / 2 * 2), height = max(2, (first.height ?? 720) / 2 * 2)
+        // Clips are squared below, so an anamorphic first clip sets the canvas at its displayed width.
+        let width = max(2, Int(min(16384, Double(first.width ?? 1280) * first.sampleAspectRatio) / 2) * 2), height = max(2, (first.height ?? 720) / 2 * 2)
         let fps = 30.0
         let audio = infos.contains { $0.hasAudio }
         let temp = try OutputFiles.temporaryDirectory()
