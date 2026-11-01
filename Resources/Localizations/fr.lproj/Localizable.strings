@@ -204,6 +204,7 @@
 "ANNOTATE PHOTO" = "ANNOTER LA PHOTO";
 "ANNOTATE PHOTO · NASHI" = "ANNOTER LA PHOTO · NASHI";
 "ANNOTATE · NASHI" = "ANNOTER · NASHI";
+"ANNOTATION CANVAS" = "CANEVAS D’ANNOTATION";
 "ANNOTATION TEXT" = "TEXTE DE L’ANNOTATION";
 "ANOTHER TASK IS RUNNING. YOUR LINK IS READY WHEN IT FINISHES." = "UNE AUTRE TÂCHE EST EN COURS. VOTRE LIEN SERA PRÊT DÈS QU’ELLE SERA TERMINÉE.";
 "APPEARANCE" = "APPARENCE";
@@ -291,6 +292,7 @@
 "Annotate Photo" = "Annoter la photo";
 "Annotate Photo · Nashi" = "Annoter la photo · Nashi";
 "Annotate · Nashi" = "Annoter · Nashi";
+"Annotation canvas" = "Canevas d’annotation";
 "Annotation text" = "Texte de l’annotation";
 "Another task is running. Your link is ready when it finishes." = "Une autre tâche est en cours. Votre lien sera prêt dès qu’elle sera terminée.";
 "Appearance" = "Apparence";
@@ -554,6 +556,7 @@
 "CROP IMAGE" = "RECADRER L’IMAGE";
 "CROP IMAGE · NASHI" = "RECADRER L’IMAGE · NASHI";
 "CROP ORIGINS MUST BE NONNEGATIVE AND DIMENSIONS AT LEAST 1 × 1 PIXEL." = "L’ORIGINE DU RECADRAGE NE PEUT PAS ÊTRE NÉGATIVE ET SES DIMENSIONS DOIVENT ÊTRE D’AU MOINS 1 × 1 PIXEL.";
+"CROP SELECTION CANVAS" = "CANEVAS DE SÉLECTION DU RECADRAGE";
 "CROP VIDEO" = "RECADRER LA VIDÉO";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  CHOISIR DES FICHIERS\nCTRL+V  COLLER DES FICHIERS, DU TEXTE, UNE IMAGE OU UN LIEN\nCTRL+ESPACE / ENTRÉE  OUVRIR LES OUTILS\nCTRL+1 / CTRL+2  ACCUEIL / BIBLIOTHÈQUE\nCTRL+F  RECHERCHER DANS LA BIBLIOTHÈQUE\nCTRL+MAJ+D  UTILISER UN LIEN DE TÉLÉCHARGEMENT COPIÉ\nCTRL+U  RECHERCHER LES MISES À JOUR\n\nROUE : FLÈCHES / TAB POUR CHOISIR, ENTRÉE POUR OUVRIR, ÉCHAP POUR FERMER\nMÉDIAS : ESPACE LECTURE/PAUSE, ←/→ 1 SECONDE, MAJ+←/→ 1/30 S, I/O DÉFINIR LA PLAGE\nRECADRAGE : GLISSER, MAJ VERROUILLE LES PROPORTIONS, ENTRÉE ENREGISTRE\nMODIFICATION DE TEXTE : LE COLLAGE ET LES FLÈCHES FONCTIONNENT NORMALEMENT.";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS AND CONVERSIONS\nDELETE  REMOVE SELECTED FILES FROM NASHI\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  CHOISIR DES FICHIERS\nCTRL+V  COLLER DES FICHIERS, DU TEXTE, UNE IMAGE OU UN LIEN\nCTRL+ESPACE / ENTRÉE  OUVRIR LES OUTILS ET LES CONVERSIONS\nSUPPR  RETIRER LES FICHIERS SÉLECTIONNÉS DE NASHI\nCTRL+1 / CTRL+2  ACCUEIL / BIBLIOTHÈQUE\nCTRL+F  RECHERCHER DANS LA BIBLIOTHÈQUE\nCTRL+MAJ+D  UTILISER UN LIEN DE TÉLÉCHARGEMENT COPIÉ\nCTRL+U  RECHERCHER LES MISES À JOUR\n\nROUE : FLÈCHES / TAB POUR CHOISIR, ENTRÉE POUR OUVRIR, ÉCHAP POUR FERMER\nMÉDIAS : ESPACE LECTURE/PAUSE, ←/→ 1 SECONDE, MAJ+←/→ 1/30 S, I/O DÉFINIR LA PLAGE\nRECADRAGE : GLISSER, MAJ VERROUILLE LES PROPORTIONS, ENTRÉE ENREGISTRE\nMODIFICATION DE TEXTE : LE COLLAGE ET LES FLÈCHES FONCTIONNENT NORMALEMENT.";
@@ -779,6 +782,7 @@
 "Crop area" = "Zone de recadrage";
 "Crop coordinates must be finite." = "Les coordonnées de recadrage doivent être des nombres finis.";
 "Crop origins must be nonnegative and dimensions at least 1 × 1 pixel." = "L’origine du recadrage ne peut pas être négative et ses dimensions doivent être d’au moins 1 × 1 pixel.";
+"Crop selection canvas" = "Canevas de sélection du recadrage";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Choisir des fichiers\nCtrl+V  Coller des fichiers, du texte, une image ou un lien\nCtrl+Espace / Entrée  Ouvrir les outils\nCtrl+1 / Ctrl+2  Accueil / Bibliothèque\nCtrl+F  Rechercher dans la bibliothèque\nCtrl+Maj+D  Utiliser un lien de téléchargement copié\nCtrl+U  Rechercher les mises à jour\n\nRoue : flèches / Tab pour choisir, Entrée pour ouvrir, Échap pour fermer\nMédias : Espace lecture/pause, ←/→ 1 seconde, Maj+←/→ 1/30 s, I/O définir la plage\nRecadrage : glisser, Maj verrouille les proportions, Entrée enregistre\nModification de texte : le collage et les flèches fonctionnent normalement.";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools and conversions\nDelete  Remove selected files from Nashi\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Choisir des fichiers\nCtrl+V  Coller des fichiers, du texte, une image ou un lien\nCtrl+Espace / Entrée  Ouvrir les outils et les conversions\nSuppr  Retirer les fichiers sélectionnés de Nashi\nCtrl+1 / Ctrl+2  Accueil / Bibliothèque\nCtrl+F  Rechercher dans la bibliothèque\nCtrl+Maj+D  Utiliser un lien de téléchargement copié\nCtrl+U  Rechercher les mises à jour\n\nRoue : flèches / Tab pour choisir, Entrée pour ouvrir, Échap pour fermer\nMédias : Espace lecture/pause, ←/→ 1 seconde, Maj+←/→ 1/30 s, I/O définir la plage\nRecadrage : glisser, Maj verrouille les proportions, Entrée enregistre\nModification de texte : le collage et les flèches fonctionnent normalement.";
 "Ctrl+Shift+D  Use a copied link  ·  Public, downloadable media" = "Ctrl+Maj+D  Utiliser un lien copié  ·  Médias publics téléchargeables";
@@ -851,6 +855,7 @@
 "DRAG THE STACK TO CARRY ALL FILES. DRAG THE PAPERCLIP TO MOVE FLOAT." = "FAITES GLISSER LA PILE POUR EMPORTER TOUS LES FICHIERS. FAITES GLISSER LE TROMBONE POUR DÉPLACER FLOAT.";
 "DRAG TO DRAW WITH THE SELECTED TOOL. USE SELECT / MOVE TO EDIT AN EXISTING ANNOTATION." = "FAITES GLISSER POUR DESSINER AVEC L’OUTIL SÉLECTIONNÉ. UTILISEZ SÉLECTIONNER / DÉPLACER POUR MODIFIER UNE ANNOTATION EXISTANTE.";
 "DRAG TO DRAW. ONE ACTIVE TOOL PER STROKE." = "FAITES GLISSER POUR DESSINER. UN SEUL OUTIL ACTIF PAR TRAIT.";
+"DRAG TO SELECT. DRAG INSIDE TO MOVE. HOLD SHIFT TO LOCK ASPECT RATIO. RETURN SAVES A CROPPED COPY." = "FAITES GLISSER POUR SÉLECTIONNER. FAITES GLISSER À L’INTÉRIEUR POUR DÉPLACER. MAINTENEZ MAJ POUR VERROUILLER LES PROPORTIONS. RETOUR ENREGISTRE UNE COPIE RECADRÉE.";
 "DRAW A REGION TO REDACT." = "DESSINEZ UNE ZONE À CAVIARDER.";
 "DRAW AT LEAST ONE AREA TO REDACT." = "DESSINEZ AU MOINS UNE ZONE À CAVIARDER.";
 "DRAWING TOOL" = "OUTIL DE DESSIN";
@@ -940,6 +945,7 @@
 "Drag the stack to carry all files. Drag the paperclip to move Float." = "Faites glisser la pile pour emporter tous les fichiers. Faites glisser le trombone pour déplacer Float.";
 "Drag to draw with the selected tool. Use Select / Move to edit an existing annotation." = "Faites glisser pour dessiner avec l’outil sélectionné. Utilisez Sélectionner / Déplacer pour modifier une annotation existante.";
 "Drag to draw. One active tool per stroke." = "Faites glisser pour dessiner. Un seul outil actif par trait.";
+"Drag to select. Drag inside to move. Hold Shift to lock aspect ratio. Return saves a cropped copy." = "Faites glisser pour sélectionner. Faites glisser à l’intérieur pour déplacer. Maintenez Maj pour verrouiller les proportions. Retour enregistre une copie recadrée.";
 "Draw a region to redact." = "Dessinez une zone à caviarder.";
 "Draw at least one area to redact." = "Dessinez au moins une zone à caviarder.";
 "Drawing tool" = "Outil de dessin";
@@ -1225,6 +1231,7 @@
 "ICONS" = "ICÔNES";
 "IMAGE" = "IMAGE";
 "IMAGE COMPRESSION" = "COMPRESSION D’IMAGE";
+"IMAGE EDITING CANVAS" = "CANEVAS DE MODIFICATION DE L’IMAGE";
 "IMAGE EXCEEDS 200 MB." = "L’IMAGE DÉPASSE 200 MO.";
 "IMAGE FIT" = "AJUSTEMENT DE L’IMAGE";
 "IMAGE SCALE" = "ÉCHELLE DE L’IMAGE";
@@ -1254,6 +1261,7 @@
 "Image" = "Image";
 "Image Compression" = "Compression d’image";
 "Image compression" = "Compression de l’image";
+"Image editing canvas" = "Canevas de modification de l’image";
 "Image exceeds 200 MB." = "L’image dépasse 200 Mo.";
 "Image fit" = "Ajustement de l’image";
 "Image scale" = "Échelle de l’image";
@@ -1500,6 +1508,7 @@
 "NICE FILES.\nNO FUSS." = "DE BEAUX FICHIERS.\nSANS PRISE DE TÊTE.";
 "NICELY DONE." = "BIEN JOUÉ.";
 "NICELY DONE. 1 FILE IS READY." = "BIEN JOUÉ. 1 FICHIER EST PRÊT.";
+"NO CROP SELECTED" = "AUCUNE ZONE DE RECADRAGE SÉLECTIONNÉE";
 "NO DOWNLOADABLE MEDIA WAS FOUND. USE THE VIDEO'S SHARE LINK, OR COPY IMAGE ADDRESS FOR A PHOTO." = "AUCUN MÉDIA TÉLÉCHARGEABLE N’A ÉTÉ TROUVÉ. UTILISEZ LE LIEN DE PARTAGE DE LA VIDÉO, OU COPIER L’ADRESSE DE L’IMAGE POUR UNE PHOTO.";
 "NO DOWNLOADABLE PUBLIC MEDIA WAS FOUND. LOGIN-REQUIRED AND PROTECTED MEDIA ARE NOT SUPPORTED." = "AUCUN MÉDIA PUBLIC TÉLÉCHARGEABLE N’A ÉTÉ TROUVÉ. LES MÉDIAS PROTÉGÉS OU NÉCESSITANT UNE CONNEXION NE SONT PAS PRIS EN CHARGE.";
 "NO FOLDERS ALLOWED YET." = "AUCUN DOSSIER AUTORISÉ POUR L’INSTANT.";
@@ -1559,6 +1568,7 @@
 "Nicely done. 1 file is ready." = "Bien joué. 1 fichier est prêt.";
 "No QR codes found. Try a larger or sharper image." = "Aucun code QR trouvé. Essayez une image plus grande ou plus nette.";
 "No QR codes this time." = "Aucun code QR cette fois.";
+"No crop selected" = "Aucune zone de recadrage sélectionnée";
 "No downloadable media was found. Use the video's share link, or Copy Image Address for a photo." = "Aucun média téléchargeable n’a été trouvé. Utilisez le lien de partage de la vidéo, ou Copier l’adresse de l’image pour une photo.";
 "No downloadable public media was found. Login-required and protected media are not supported." = "Aucun média public téléchargeable n’a été trouvé. Les médias protégés ou nécessitant une connexion ne sont pas pris en charge.";
 "No file tools\n%@ Convert\n%@ Actions" = "Aucun outil de fichier\n%@ Convertir\n%@ Actions";
@@ -2754,6 +2764,22 @@
 "Windows could not add Nashi to the system tray." = "Windows n’a pas pu ajouter Nashi à la zone de notification.";
 "Windows could not create a tray icon." = "Windows n’a pas pu créer d’icône dans la zone de notification.";
 "Working…" = "Traitement en cours…";
+"X %@, Y %@, width %@, height %@" = "X %@, Y %@, largeur %@, hauteur %@";
+"X %@, Y %@, width %@, height %lld" = "X %@, Y %@, largeur %@, hauteur %lld";
+"X %@, Y %@, width %lld, height %@" = "X %@, Y %@, largeur %lld, hauteur %@";
+"X %@, Y %@, width %lld, height %lld" = "X %@, Y %@, largeur %lld, hauteur %lld";
+"X %@, Y %lld, width %@, height %@" = "X %@, Y %lld, largeur %@, hauteur %@";
+"X %@, Y %lld, width %@, height %lld" = "X %@, Y %lld, largeur %@, hauteur %lld";
+"X %@, Y %lld, width %lld, height %@" = "X %@, Y %lld, largeur %lld, hauteur %@";
+"X %@, Y %lld, width %lld, height %lld" = "X %@, Y %lld, largeur %lld, hauteur %lld";
+"X %lld, Y %@, width %@, height %@" = "X %lld, Y %@, largeur %@, hauteur %@";
+"X %lld, Y %@, width %@, height %lld" = "X %lld, Y %@, largeur %@, hauteur %lld";
+"X %lld, Y %@, width %lld, height %@" = "X %lld, Y %@, largeur %lld, hauteur %@";
+"X %lld, Y %@, width %lld, height %lld" = "X %lld, Y %@, largeur %lld, hauteur %lld";
+"X %lld, Y %lld, width %@, height %@" = "X %lld, Y %lld, largeur %@, hauteur %@";
+"X %lld, Y %lld, width %@, height %lld" = "X %lld, Y %lld, largeur %@, hauteur %lld";
+"X %lld, Y %lld, width %lld, height %@" = "X %lld, Y %lld, largeur %lld, hauteur %@";
+"X %lld, Y %lld, width %lld, height %lld" = "X %lld, Y %lld, largeur %lld, hauteur %lld";
 "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW." = "VOUS POUVEZ AUSSI CHOISIR DES FICHIERS DEPUIS LA FENÊTRE PRINCIPALE.";
 "YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "VOUS CHOISISSEZ QUAND TÉLÉCHARGER ET INSTALLER.";
 "YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION." = "VOUS DISPOSEZ DE LA DERNIÈRE VERSION PUBLIÉE POUR WINDOWS.";

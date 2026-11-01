@@ -28,6 +28,7 @@ struct ImageEditPreview:View {
     @State private var stroke:[ImagePoint]=[]
     @State private var dragRect:EditRect?
     @State private var selectedAnnotation:Int?
+    @AppStorage("appLanguage") private var language="en"
     typealias Handle=CropSelectionGeometry.Handle
     enum DragTarget { case crop(Handle?),annotation(Int,Handle?),redaction(Int,Handle?),new,ignored }
     var body:some View {
@@ -70,7 +71,7 @@ struct ImageEditPreview:View {
                     target=nil;startingRect=nil;stroke=[];dragRect=nil
                     if cropEnabled { onCropInteraction?(false) }
                 }).accessibilityLabel(cropEnabled ? "Crop selection canvas":annotationStyle != nil ? "Annotation canvas":"Image editing canvas")
-                    .accessibilityValue(cropEnabled ? crop.map{ "X \(Int($0.x)), Y \(Int($0.y)), width \(Int($0.width)), height \(Int($0.height))" } ?? "No crop selected":annotationCanvasValue)
+                    .accessibilityValue(cropEnabled ? AppLocalization.text(crop.map{ "X \(Int($0.x)), Y \(Int($0.y)), width \(Int($0.width)), height \(Int($0.height))" } ?? "No crop selected",language:language):annotationCanvasValue)
                     .help(cropEnabled ? "Drag to select. Drag inside to move. Hold Shift to lock aspect ratio. Return saves a cropped copy.":"")
             }.clipped()
         }
