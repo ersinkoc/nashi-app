@@ -35,13 +35,13 @@ public sealed class MetadataService(string root,string? perlSearchPath=null)
     }
     public async Task<IReadOnlyDictionary<string,string>> ReadAsync(string input,CancellationToken token=default)
     {
-        var result=await ProcessRunner.RunAsync(Executable??throw new InvalidOperationException("Set up metadata tools once."),["-json","-G","-s","-charset","filename=UTF8","--",Path.GetFullPath(input)],token);using var json=JsonDocument.Parse(result.Output);return json.RootElement[0].EnumerateObject().ToDictionary(p=>p.Name,p=>p.Value.ToString());
+        var result=await RunExifToolAsync(["-json","-G","-s","-charset","filename=UTF8","--",Path.GetFullPath(input)],token);using var json=JsonDocument.Parse(result.Output);return json.RootElement[0].EnumerateObject().ToDictionary(p=>p.Name,p=>p.Value.ToString());
     }
     public async Task CopyImageTagsAsync(string source,string output,CancellationToken token)
     {
         // Pixels are already oriented and converted to sRGB. Do not reattach a
         // stale orientation, source ICC profile, preview or image dimensions.
-        await ProcessRunner.RunAsync(Executable??throw new InvalidOperationException("Metadata tools are not ready."),["-overwrite_original","-charset","filename=UTF8","-tagsFromFile",Path.GetFullPath(source),"-all:all","--ICC_Profile","--Orientation","--ThumbnailImage","--PreviewImage","--JpgFromRaw","--ImageWidth","--ImageHeight","--ExifImageWidth","--ExifImageHeight","-Orientation=1","-ColorSpace=sRGB","--",Path.GetFullPath(output)],token);
+        await RunExifToolAsync(["-overwrite_original","-charset","filename=UTF8","-tagsFromFile",Path.GetFullPath(source),"-all:all","--ICC_Profile","--Orientation","--ThumbnailImage","--PreviewImage","--JpgFromRaw","--ImageWidth","--ImageHeight","--ExifImageWidth","--ExifImageHeight","-Orientation=1","-ColorSpace=sRGB","--",Path.GetFullPath(output)],token);
     }
     public async Task<IReadOnlyList<string>> WriteAsync(IReadOnlyList<string> inputs,string destination,bool removeAll,IReadOnlyDictionary<string,string>? updates=null,IReadOnlyList<string>? removals=null,IProgress<OperationProgress>? progress=null,CancellationToken token=default)
     {
@@ -51,9 +51,51 @@ public sealed class MetadataService(string root,string? perlSearchPath=null)
         {
             token.ThrowIfCancellationRequested();var output=SafePaths.Unique(tx.StagingDirectory,Path.GetFileNameWithoutExtension(input)+" Metadata"+Path.GetExtension(input));
             if(FeatureCatalog.Extension(input)=="pdf"&&removeAll){var fresh=DocumentEngine.Pdf("removeMetadata",[input],tx.StagingDirectory,token:token)[0];File.Move(fresh,output);}else File.Copy(input,output);
-            var args=new List<string>{"-overwrite_original","-P","-charset","filename=UTF8"};if(removeAll){args.Add("-all=");if(FeatureCatalog.IsImage(input)||FeatureCatalog.Extension(input)=="gif")args.AddRange(["-tagsfromfile","@","-Orientation","-ICC_Profile"]);}if(removals is not null)args.AddRange(removals.Select(k=>"-"+k+"="));if(updates is not null)args.AddRange(updates.Select(p=>"-"+p.Key+"="+p.Value));args.AddRange(["--",output]);
-            await ProcessRunner.RunAsync(Executable??throw new InvalidOperationException("Set up metadata tools once."),args,token);outputs.Add(output);progress?.Report(new(outputs.Count/(double)inputs.Count*.98,"Saving metadata…"));
+            var args=new List<string>{"-overwrite_original","-P","-charset","filename=UTF8"};if(removeAll){args.Add("-all=");if(FeatureCatalog.IsImage(input)||FeatureCatalog.Extension(input)=="gif")args.AddRange(["-tagsfromfile","@","-Orientation","-ICC_Profile"]);}if(removals is not null)args.AddRange(removals.Select(k=>"-"+k+"="));
+            if(updates is not null)
+            {
+                var hasMultiline = updates.Values.Any(v => v.Contains('\n') || v.Contains('\r'));
+                if (hasMultiline)
+                {
+                    args.Add("-E");
+                    foreach (var (k, v) in updates)
+                    {
+                        var val = v.Replace("&", "&amp;").Replace("\r", "&#13;").Replace("\n", "&#10;");
+                        args.Add("-" + k + "=" + val);
+                    }
+                }
+                else
+                {
+                    args.AddRange(updates.Select(p => "-" + p.Key + "=" + p.Value));
+                }
+            }
+            args.AddRange(["--",output]);
+            await RunExifToolAsync(args,token);outputs.Add(output);progress?.Report(new(outputs.Count/(double)inputs.Count*.98,"Saving metadata…"));
         }
         return tx.Publish(outputs,token);
+    }
+
+    private async Task<ProcessResult> RunExifToolAsync(IReadOnlyList<string> args, CancellationToken token)
+    {
+        var exe = Executable ?? throw new InvalidOperationException("Set up metadata tools once.");
+        if (!OperatingSystem.IsWindows())
+        {
+            return await ProcessRunner.RunAsync(exe, args, token);
+        }
+
+        var argFile = Path.Combine(Path.GetTempPath(), "exiftool-args-" + Guid.NewGuid().ToString("N") + ".txt");
+        try
+        {
+            var content = string.Join("\n", args);
+            await File.WriteAllTextAsync(argFile, content, new System.Text.UTF8Encoding(false), token);
+            return await ProcessRunner.RunAsync(exe, ["-charset", "filename=UTF8", "-@", argFile], token);
+        }
+        finally
+        {
+            if (File.Exists(argFile))
+            {
+                try { File.Delete(argFile); } catch { }
+            }
+        }
     }
 }
