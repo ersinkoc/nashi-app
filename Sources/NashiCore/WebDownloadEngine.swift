@@ -53,7 +53,14 @@ public enum WebDownloadEngine {
                                 filename:cover.url.lastPathComponent,byteCount:Int64(cover.byteCount),imageWidth:cover.width,imageHeight:cover.height)
         }
         var request=URLRequest(url:url);request.httpMethod="HEAD";request.timeoutInterval=15
-        if let (_,response)=try? await session.data(for:request),let http=response as? HTTPURLResponse,(200...299).contains(http.statusCode),
+        var head=try? await session.data(for:request).1
+        // Signed storage links (S3, R2, GCS) are only valid for GET, and some servers refuse HEAD.
+        // Read only the headers of a GET then; the body is not downloaded here.
+        if let http=head as? HTTPURLResponse,!(200...299).contains(http.statusCode) {
+            request.httpMethod="GET"
+            if let (bytes,response)=try? await session.bytes(for:request) { bytes.task.cancel();head=response }
+        }
+        if let response=head,let http=response as? HTTPURLResponse,(200...299).contains(http.statusCode),
            let kind=directKind(mime:response.mimeType,extension:url.pathExtension) {
             try token.check();try Task.checkCancellation()
             return WebMediaInfo(url:url,title:cleanFilename(response.suggestedFilename ?? url.lastPathComponent,mime:response.mimeType),kind:kind,site:url.host ?? "Web",duration:nil,heights:[],direct:true,filename:response.suggestedFilename,byteCount:response.expectedContentLength>0 ? response.expectedContentLength:nil)
