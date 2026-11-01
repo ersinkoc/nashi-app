@@ -64,6 +64,12 @@ do {
         for (key,value) in supplied.sorted(by:{$0.key<$1.key}) where !(value is NSNull) {
             guard let known=decoded[key] else { return prefix+key }
             if let value=value as? [String:Any],let known=known as? [String:Any],let nested=unknownKey(value,in:known,prefix:prefix+key+".") { return nested }
+            // Objects in arrays (annotations, redactions, points) are decoded the same way.
+            if let value=value as? [Any],let known=known as? [Any] {
+                for (i,(item,decoded)) in zip(value,known).enumerated() {
+                    if let item=item as? [String:Any],let decoded=decoded as? [String:Any],let nested=unknownKey(item,in:decoded,prefix:prefix+key+"[\(i)].") { return nested }
+                }
+            }
         }
         return nil
     }
