@@ -6,6 +6,7 @@
 "%@  Tools" = "%@  Tools";
 "%@ QR code found." = "%@ QR code found.";
 "%@ QR codes found." = "%@ QR codes found.";
+"%@ annotations" = "%@ annotations";
 "%@ areas selected" = "%@ areas selected";
 "%@ exports" = "%@ exports";
 "%@ files" = "%@ files";
@@ -34,6 +35,7 @@
 "%lld  Tools" = "%lld  Tools";
 "%lld QR code found." = "%lld QR code found.";
 "%lld QR codes found." = "%lld QR codes found.";
+"%lld annotations" = "%lld annotations";
 "%lld areas selected" = "%lld areas selected";
 "%lld exports" = "%lld exports";
 "%lld files" = "%lld files";
@@ -57,14 +59,17 @@
 "%lld · Original stays safe" = "%lld · Original stays safe";
 "%lld, page %@" = "%lld, page %@";
 "%lld, page %lld" = "%lld, page %lld";
+"0 ANNOTATIONS" = "0 ANNOTATIONS";
 "0 AREAS SELECTED" = "0 AREAS SELECTED";
 "0 FOUND" = "0 FOUND";
 "0 SELECTED" = "0 SELECTED";
 "0 SPLIT POINTS" = "0 SPLIT POINTS";
+"0 annotations" = "0 annotations";
 "0 areas selected" = "0 areas selected";
 "0 found" = "0 found";
 "0 selected" = "0 selected";
 "0 split points" = "0 split points";
+"1 ANNOTATION" = "1 ANNOTATION";
 "1 AREA SELECTED" = "1 AREA SELECTED";
 "1 FOUND" = "1 FOUND";
 "1 ITEM" = "1 ITEM";
@@ -74,6 +79,7 @@
 "1 SPLIT POINT" = "1 SPLIT POINT";
 "1 VIDEO ITEMS ARE NOT INCLUDED. ONLY PHOTOS WILL BE SAVED." = "1 VIDEO ITEMS ARE NOT INCLUDED. ONLY PHOTOS WILL BE SAVED.";
 "1 WAY TO CHANGE IT" = "1 WAY TO CHANGE IT";
+"1 annotation" = "1 annotation";
 "1 area selected" = "1 area selected";
 "1 found" = "1 found";
 "1 item" = "1 item";
@@ -1234,6 +1240,7 @@
 "HEIGHT" = "HEIGHT";
 "HELLO" = "HELLO";
 "HIGHER QUALITY" = "HIGHER QUALITY";
+"HIGHLIGHT" = "HIGHLIGHT";
 "HIGHLIGHTS" = "HIGHLIGHTS";
 "HOLD A KEY WHILE DRAGGING IN FINDER" = "HOLD A KEY WHILE DRAGGING IN FINDER";
 "HOME" = "HOME";
@@ -1241,6 +1248,7 @@
 "Height" = "Height";
 "Hello" = "Hello";
 "Higher Quality" = "Higher Quality";
+"Highlight" = "Highlight";
 "Highlights" = "Highlights";
 "Hold a key while dragging in Finder" = "Hold a key while dragging in Finder";
 "Home" = "Home";
@@ -2858,6 +2866,8 @@
 "macOS Reduce Motion is on. Nashi keeps motion off." = "macOS Reduce Motion is on. Nashi keeps motion off.";
 "macOS could not open the generated media preview." = "macOS could not open the generated media preview.";
 "owner/repository or GitHub URL" = "owner/repository or GitHub URL";
+"selected %@" = "selected %@";
+"selected %lld" = "selected %lld";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ALT+←/→ FILES · ESC CLOSES" = "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ALT+←/→ FILES · ESC CLOSES";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ⌥←/→ FILES · ESC CLOSES" = "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ⌥←/→ FILES · ESC CLOSES";
 "←/→ files · Media: Space play/pause, ←/→ 1s, Alt+←/→ files · Esc closes" = "←/→ files · Media: Space play/pause, ←/→ 1s, Alt+←/→ files · Esc closes";
