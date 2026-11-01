@@ -254,7 +254,9 @@ public enum MediaEngine {
         let interval = try timeRange(options.start, options.end, duration: info.duration)
         let ext = audio ? audioExtension(input) : videoExtension(input)
         let out = try outputURL(input, ext: ext, suffix: suffix, options: options)
-        var arguments = ["-i", input.path, "-ss", decimal(interval.0), "-t", decimal(interval.1 - interval.0)]
+        let range = ["-ss", decimal(interval.0), "-t", decimal(interval.1 - interval.0)]
+        // Output -ss/-t cut after -af, so silence removal would scan the whole file; read only the selection instead.
+        var arguments = audio && options.trimSilence ? range + ["-i", input.path] : ["-i", input.path] + range
         if audio {
             arguments += ["-map", "0:a:0", "-vn"]
             if options.trimSilence { arguments += ["-af", "silenceremove=start_periods=1:start_duration=0.02:start_threshold=\(decimal(options.silenceThresholdDb))dB,areverse,silenceremove=start_periods=1:start_duration=0.02:start_threshold=\(decimal(options.silenceThresholdDb))dB,areverse"] }
