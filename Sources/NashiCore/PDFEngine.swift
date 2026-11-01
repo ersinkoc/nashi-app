@@ -114,12 +114,13 @@ public enum PDFEngine {
                     var settings:[PDFDocumentWriteOption:Any]=[:]
                     if #available(macOS 13.4,*) { settings=[.saveImagesAsJPEGOption:true,.optimizeImagesForScreenOption:true] }
                     guard pdf.write(to:output,withOptions:settings) else { throw NashiError.failed("Could not compress PDF.") }
+                    // The original may already meet the target even when PDFKit's rewrite is larger.
+                    try OutputFiles.retainSmallerOriginal(input,output:output,target:target)
                     let bytes=Int64(try output.resourceValues(forKeys:[.fileSizeKey]).fileSize ?? 0)
                     if let target,bytes>target {
                         try? FileManager.default.removeItem(at:output)
                         throw NashiError.failed("That PDF size cannot be reached while keeping selectable text, links, and annotations. Choose a larger target.")
                     }
-                    try OutputFiles.retainSmallerOriginal(input,output:output,target:target)
                     outputs.append(output);continue
                 }
                 var dpi=144.0,quality=options.quality
@@ -147,6 +148,8 @@ public enum PDFEngine {
                     let bytes=(try FileManager.default.attributesOfItem(atPath:output.path)[.size] as? NSNumber)?.int64Value ?? 0
                     if target == nil || bytes<=target! { complete=true;break };dpi=max(36,dpi*0.8);quality=max(0.05,quality*0.75)
                 }
+                // The original may already meet a target that no rasterized pass reached.
+                if !complete,let target,original>0,original<=target { try FileManager.default.removeItem(at:output);try FileManager.default.copyItem(at:input.resolvingSymlinksInPath(),to:output);complete=true }
                 guard complete else { try? FileManager.default.removeItem(at:output);throw NashiError.failed("The requested PDF size could not be reached.") }
                 try OutputFiles.retainSmallerOriginal(input,output:output,target:target);outputs.append(output)
             default: throw NashiError.unsupported("Unsupported PDF tool.")

@@ -84,6 +84,27 @@ final class PDFEngineTests:XCTestCase {
         XCTAssertThrowsError(try PDFEngine.tool(.compress,inputs:[input],options:options,token:.init()))
         let token=CancellationToken();token.cancel();XCTAssertThrowsError(try PDFEngine.render(input,to:"jpg",options:.init(),token:token))
     }
+    func testCompressionTargetTheOriginalAlreadyMeetsKeepsTheOriginal() throws {
+        // PDFKit's rewrite of a small text PDF, and a raster pass of a small vector drawing,
+        // are larger than the source. A target the source already meets must still succeed.
+        for content in ["BT /F1 18 Tf 40 300 Td (Quarterly report) Tj ET\n","0 0 1 rg 20 20 360 360 re f\n"] {
+            let objects=["<< /Type /Catalog /Pages 2 0 R >>","<< /Type /Pages /Kids [3 0 R] /Count 1 >>","<< /Type /Page /Parent 2 0 R /MediaBox [0 0 400 400] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>","<< /Length \(content.utf8.count) >>\nstream\n\(content)\nendstream","<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>"]
+            var data=Data("%PDF-1.7\n".utf8),offsets=[Int]()
+            for (index,object) in objects.enumerated() { offsets.append(data.count);data.append(Data("\(index+1) 0 obj\n\(object)\nendobj\n".utf8)) }
+            let xref=data.count;data.append(Data("xref\n0 \(objects.count+1)\n0000000000 65535 f \n".utf8))
+            for offset in offsets { data.append(Data(String(format:"%010d 00000 n \n",offset).utf8)) }
+            data.append(Data("trailer\n<< /Size \(objects.count+1) /Root 1 0 R >>\nstartxref\n\(xref)\n%%EOF\n".utf8))
+            let input=root.appendingPathComponent(UUID().uuidString+".pdf");try data.write(to:input)
+            var options=OperationOptions();options.targetBytes=Int64(data.count);options.outputDirectory=root.appendingPathComponent(UUID().uuidString,isDirectory:true)
+            try FileManager.default.createDirectory(at:options.outputDirectory!,withIntermediateDirectories:true)
+            let output=try XCTUnwrap(PDFEngine.tool(.compress,inputs:[input],options:options,token:.init()).first)
+            XCTAssertEqual(try Data(contentsOf:output),data)
+            options.targetBytes=Int64(data.count-1);options.outputDirectory=root.appendingPathComponent(UUID().uuidString,isDirectory:true)
+            try FileManager.default.createDirectory(at:options.outputDirectory!,withIntermediateDirectories:true)
+            XCTAssertThrowsError(try PDFEngine.tool(.compress,inputs:[input],options:options,token:.init()))
+            XCTAssertEqual(try FileManager.default.contentsOfDirectory(atPath:options.outputDirectory!.path),[])
+        }
+    }
     func testDefaultCompressionDoesNotEnlargeSmallImagesOrRasterizeSmallVectorPDFs() throws {
         let image=root.appendingPathComponent("Small.png")
         let context=try XCTUnwrap(CGContext(data:nil,width:8,height:8,bitsPerComponent:8,bytesPerRow:32,space:CGColorSpaceCreateDeviceRGB(),bitmapInfo:CGImageAlphaInfo.premultipliedLast.rawValue))
