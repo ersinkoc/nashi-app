@@ -827,6 +827,7 @@
 "DOWNLOAD LINK…" = "BAĞLANTIDAN İNDİR…";
 "DOWNLOAD MEDIA TOOLS" = "MEDYA ARAÇLARINI İNDİR";
 "DOWNLOAD MISSING TOOLS" = "EKSİK ARAÇLARI İNDİR";
+"DOWNLOAD MP3" = "MP3 İNDİR";
 "DOWNLOAD OFFICE TOOLS" = "OFFICE ARAÇLARINI İNDİR";
 "DOWNLOAD PHOTOS" = "FOTOĞRAFLARI İNDİR";
 "DOWNLOAD PHOTOS…" = "FOTOĞRAFLARI İNDİR…";
@@ -896,6 +897,7 @@
 "Download Images" = "Görselleri İndir";
 "Download LibreOffice 26.8.1 (~360 MB) from The Document Foundation? Its SHA-256 is checked, then the package is extracted into Nashi’s user tools folder. No administrator password or Office subscription is needed. LibreOffice retains its upstream licenses." = "LibreOffice 26.8.1 (~360 MB) The Document Foundation'dan indirilsin mi? SHA-256 özeti kontrol edilir, ardından paket Nashi'nin araç klasörüne açılır. Yönetici parolası veya Office aboneliği gerekmez. LibreOffice kendi lisanslarını korur.";
 "Download Link…" = "Bağlantıdan İndir…";
+"Download MP3" = "MP3 indir";
 "Download Thumbnail" = "Küçük Resmi İndir";
 "Download Video" = "Videoyu İndir";
 "Download a link" = "Bağlantıdan indir";
@@ -905,6 +907,7 @@
 "Download ended early." = "İndirme erken sona erdi.";
 "Download exceeded its limit." = "İndirme izin verilen sınırı aştı.";
 "Download from the web" = "Web'den indir";
+"Download image" = "Görseli indir";
 "Download image…" = "Görseli indir…";
 "Download is larger than the supported limit." = "İndirilecek dosya desteklenen sınırdan büyük.";
 "Download media tools" = "Medya araçlarını indir";
@@ -1412,6 +1415,7 @@
 "MAXIMUM VIDEO HEIGHT (0 = ORIGINAL)" = "EN FAZLA VİDEO YÜKSEKLİĞİ (0 = ORİJİNAL)";
 "MAXIMUM WIDTH" = "EN FAZLA GENİŞLİK";
 "MEASURING AUDIO LOUDNESS…" = "SES DÜZEYİ ÖLÇÜLÜYOR…";
+"MEDIA LINK" = "MEDYA BAĞLANTISI";
 "MEDIA RANGE TIMELINE" = "MEDYA ARALIĞI ZAMAN ÇİZELGESİ";
 "MEDIA SETUP" = "MEDYA KURULUMU";
 "MEDIA TOOLS" = "MEDYA ARAÇLARI";
@@ -1458,6 +1462,7 @@
 "Maximum video height (0 = original)" = "En fazla video yüksekliği (0 = orijinal)";
 "Maximum width" = "En fazla genişlik";
 "Measuring audio loudness…" = "Ses düzeyi ölçülüyor…";
+"Media link" = "Medya bağlantısı";
 "Media range timeline" = "Medya aralığı zaman çizelgesi";
 "Media setup" = "Medya kurulumu";
 "Media tools" = "Medya araçları";
