@@ -134,6 +134,19 @@ final class AppLocalizationTests:XCTestCase {
             XCTAssertEqual(AppLocalization.text(source,language:"tr"),source)
         }
     }
+    /// Annotate Image: the Highlight tool name (ToolEditor's tool picker) and the parts of the canvas's VoiceOver value
+    /// (ImageEditPreview.annotationCanvasValue), which is a String and is looked up part by part.
+    func testAnnotationToolAndCanvasValueAreTranslated() {
+        XCTAssertEqual(AppLocalization.text("Highlight",language:"tr"),"Vurgu")
+        XCTAssertEqual(AppLocalization.text("Highlight",language:"fr"),"Surlignage")
+        XCTAssertEqual(AppLocalization.text("0 annotations",language:"fr"),"0 annotation")
+        XCTAssertEqual(AppLocalization.text("1 annotation",language:"fr"),"1 annotation")
+        XCTAssertEqual(AppLocalization.text("3 annotations",language:"fr"),"3 annotations")
+        XCTAssertEqual(AppLocalization.text("3 annotations",language:"tr"),"3 işaretleme")
+        XCTAssertEqual(AppLocalization.text("selected 2",language:"tr"),"2. işaretleme seçili")
+        XCTAssertEqual(AppLocalization.text("selected 2",language:"fr"),"annotation 2 sélectionnée")
+        XCTAssertEqual(AppLocalization.text("3 annotations",language:"en"),"3 annotations")
+    }
     /// A batch reports "File <i> of <n> · <status>". Both the prefix and the status are translated; a status without a
     /// translation stays as it is.
     func testBatchStatusTranslatesPrefixAndStatus() throws {

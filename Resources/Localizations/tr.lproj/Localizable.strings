@@ -6,6 +6,7 @@
 "%@  Tools" = "%@  Araçlar";
 "%@ QR code found." = "%@ QR kodu bulundu.";
 "%@ QR codes found." = "%@ QR kodu bulundu.";
+"%@ annotations" = "%@ işaretleme";
 "%@ areas selected" = "%@ alan seçili";
 "%@ exports" = "%@ çıktıları";
 "%@ files" = "%@ dosya";
@@ -34,6 +35,7 @@
 "%lld  Tools" = "%lld  Araçlar";
 "%lld QR code found." = "%lld QR kodu bulundu.";
 "%lld QR codes found." = "%lld QR kodu bulundu.";
+"%lld annotations" = "%lld işaretleme";
 "%lld areas selected" = "%lld alan seçili";
 "%lld exports" = "%lld çıktıları";
 "%lld files" = "%lld dosya";
@@ -57,14 +59,17 @@
 "%lld · Original stays safe" = "%lld · Orijinal dosyan güvende";
 "%lld, page %@" = "%lld, sayfa %@";
 "%lld, page %lld" = "%lld, sayfa %lld";
+"0 ANNOTATIONS" = "0 İŞARETLEME";
 "0 AREAS SELECTED" = "0 ALAN SEÇİLİ";
 "0 FOUND" = "0 BULUNDU";
 "0 SELECTED" = "0 SEÇİLİ";
 "0 SPLIT POINTS" = "0 BÖLME NOKTASI";
+"0 annotations" = "0 işaretleme";
 "0 areas selected" = "0 alan seçili";
 "0 found" = "0 bulundu";
 "0 selected" = "0 seçili";
 "0 split points" = "0 bölme noktası";
+"1 ANNOTATION" = "1 İŞARETLEME";
 "1 AREA SELECTED" = "1 ALAN SEÇİLİ";
 "1 FOUND" = "1 BULUNDU";
 "1 ITEM" = "1 ÖĞE";
@@ -74,6 +79,7 @@
 "1 SPLIT POINT" = "1 BÖLME NOKTASI";
 "1 VIDEO ITEMS ARE NOT INCLUDED. ONLY PHOTOS WILL BE SAVED." = "1 VİDEO ÖĞESİ DAHİL EDİLMEDİ. YALNIZCA FOTOĞRAFLAR KAYDEDİLECEK.";
 "1 WAY TO CHANGE IT" = "1 FARKLI BİÇİME ÇEVİR";
+"1 annotation" = "1 işaretleme";
 "1 area selected" = "1 alan seçili";
 "1 found" = "1 bulundu";
 "1 item" = "1 öğe";
@@ -1234,6 +1240,7 @@
 "HEIGHT" = "YÜKSEKLİK";
 "HELLO" = "MERHABA";
 "HIGHER QUALITY" = "DAHA YÜKSEK KALİTE";
+"HIGHLIGHT" = "VURGU";
 "HIGHLIGHTS" = "PARLAK ALANLAR";
 "HOLD A KEY WHILE DRAGGING IN FINDER" = "FINDER'DA SÜRÜKLERKEN BİR KISAYOL TUŞUNA BAS";
 "HOME" = "ANA SAYFA";
@@ -1241,6 +1248,7 @@
 "Height" = "Yükseklik";
 "Hello" = "Merhaba";
 "Higher Quality" = "Daha Yüksek Kalite";
+"Highlight" = "Vurgu";
 "Highlights" = "Parlak alanlar";
 "Hold a key while dragging in Finder" = "Finder'da sürüklerken bir kısayol tuşuna bas";
 "Home" = "Ana Sayfa";
@@ -2858,6 +2866,8 @@
 "macOS Reduce Motion is on. Nashi keeps motion off." = "macOS Hareketi Azalt açık. Nashi animasyonları kapalı tutar.";
 "macOS could not open the generated media preview." = "macOS oluşturulan medya önizlemesini açamadı.";
 "owner/repository or GitHub URL" = "kullanıcı/depo veya GitHub adresi";
+"selected %@" = "%@. işaretleme seçili";
+"selected %lld" = "%lld. işaretleme seçili";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ALT+←/→ FILES · ESC CLOSES" = "←/→ DOSYALAR · MEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SN, ALT+←/→ DOSYALAR · ESC KAPATIR";
 "←/→ FILES · MEDIA: SPACE PLAY/PAUSE, ←/→ 1S, ⌥←/→ FILES · ESC CLOSES" = "←/→ DOSYALAR · MEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SN, ⌥←/→ DOSYALAR · ESC KAPATIR";
 "←/→ files · Media: Space play/pause, ←/→ 1s, Alt+←/→ files · Esc closes" = "←/→ dosyalar · Medya: Space oynat/duraklat, ←/→ 1 sn, Alt+←/→ dosyalar · Esc kapatır";

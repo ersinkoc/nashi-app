@@ -82,7 +82,8 @@ struct ImageEditPreview:View {
     var annotationCanvasValue:String {
         guard let annotationStyle else { return "" }
         let mode=selectAnnotations ? "Select / Move":annotationStyle.kind.rawValue.capitalized
-        return "\(mode), \(annotations.count) annotations" + (selectedAnnotation.map{ ", selected \($0+1)" } ?? "")
+        let count=annotations.count==1 ? "1 annotation":"\(annotations.count) annotations"
+        return ([mode,count]+(selectedAnnotation.map{ ["selected \($0+1)"] } ?? [])).map{ AppLocalization.text($0,language:language) }.joined(separator:", ")
     }
     func cancelDrag() { target=nil;startingRect=nil;startingPoints=[];stroke=[];dragRect=nil }
     func updateDrag(_ value:DragGesture.Value,origin:CGPoint,ratio:CGFloat) {
