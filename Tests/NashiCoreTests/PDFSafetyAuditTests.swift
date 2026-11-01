@@ -94,6 +94,33 @@ final class PDFSafetyAuditTests:XCTestCase {
         }
     }
 
+    func testMetadataCleanupRefusesPaperclipAttachmentsInsteadOfDroppingTheFile() throws {
+        func stream(_ body:String,_ attributes:String="")->String { "<< /Length \(body.utf8.count) \(attributes) >>\nstream\n\(body)\nendstream" }
+        let objects=[
+            "<< /Type /Catalog /Pages 2 0 R >>","<< /Type /Pages /Kids [3 0 R] /Count 1 >>",
+            "<< /Type /Page /Parent 2 0 R /MediaBox [0 0 300 300] /Contents 4 0 R /Annots [5 0 R] >>",stream("BT ET"),
+            "<< /Type /Annot /Subtype /FileAttachment /Rect [20 20 40 40] /Name /PushPin /FS 6 0 R /Contents (Invoice) >>",
+            "<< /Type /Filespec /F (Invoice.txt) /EF << /F 7 0 R >> >>",stream("Important attachment text","/Type /EmbeddedFile")
+        ]
+        var data=Data("%PDF-1.7\n".utf8),offsets=[Int]()
+        for (index,object) in objects.enumerated() { offsets.append(data.count);data.append(Data("\(index+1) 0 obj\n\(object)\nendobj\n".utf8)) }
+        let xref=data.count
+        data.append(Data("xref\n0 \(objects.count+1)\n0000000000 65535 f \n".utf8))
+        for offset in offsets { data.append(Data(String(format:"%010d 00000 n \n",offset).utf8)) }
+        data.append(Data("trailer\n<< /Size \(objects.count+1) /Root 1 0 R >>\nstartxref\n\(xref)\n%%EOF\n".utf8))
+        let input=root.appendingPathComponent("Paperclip.pdf");try data.write(to:input)
+        for edit in [false,true] {
+            var options=OperationOptions()
+            if edit { options.metadata=["Title":"Edited"] } else { options.metadataRemoveAll=true }
+            let folder=root.appendingPathComponent("paperclip-\(edit)",isDirectory:true);options.outputDirectory=folder
+            XCTAssertThrowsError(try ConversionEngine.run(.init(inputs:[input],operation:.tool(.removeMetadata),options:options))) { error in
+                XCTAssertTrue(error.localizedDescription.contains("embedded files"),error.localizedDescription)
+            }
+            XCTAssertFalse(FileManager.default.fileExists(atPath:folder.path))
+        }
+        XCTAssertEqual(try Data(contentsOf:input),data)
+    }
+
     func testRasterExportUsesDisplayedRotationAndFillsTheWholePage() throws {
         for rotation in [0,90,270] {
             let input=try fixture(rotation:rotation)
