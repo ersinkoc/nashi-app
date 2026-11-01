@@ -143,7 +143,8 @@ public enum MediaEngine {
             try requireVideo(info)
             arguments += ["-map", "0:v:0"]
             if ext == "gif" {
-                let scale = try scalingFilter(options)
+                // GIF has no even-size rule; padding an odd-sized video would add a black edge to every frame.
+                let scale = try scalingFilter(options, padToEven: false)
                 // GIF viewers ignore a pixel aspect, so non-square pixels are resized to their displayed shape.
                 let first = (["fps=\(options.gifFrameRate)"] + (scale.map { [$0] } ?? []) + ["scale=w='min(\(options.gifMaxWidth),iw)':h=-2:force_original_aspect_ratio=decrease:reset_sar=1"]).joined(separator: ",")
                 arguments += ["-filter_complex", "[0:v:0]\(first),split[p0][p1];[p0]palettegen=stats_mode=diff[pal];[p1][pal]paletteuse=dither=sierra2_4a", "-an", "-loop", "0"]
@@ -670,10 +671,10 @@ public enum MediaEngine {
         return arguments
     }
 
-    private static func scalingFilter(_ options: OperationOptions) throws -> String? {
+    private static func scalingFilter(_ options: OperationOptions, padToEven: Bool = true) throws -> String? {
         if let width = options.width, width < 2 || width > 16384 { throw NashiError.invalidInput("Width must be between 2 and 16,384 pixels.") }
         if let height = options.height, height < 2 || height > 16384 { throw NashiError.invalidInput("Height must be between 2 and 16,384 pixels.") }
-        var filter: String
+        var filter: String?
         // setsar=1 drops a non-square pixel aspect; reset_sar sizes from the displayed shape instead.
         if let width = options.width, let height = options.height {
             let w = width / 2 * 2, h = height / 2 * 2
@@ -681,8 +682,8 @@ public enum MediaEngine {
         }
         else if let width = options.width { filter = "scale=\(width / 2 * 2):-2:reset_sar=1,setsar=1" }
         else if let height = options.height { filter = "scale=-2:\(height / 2 * 2):reset_sar=1,setsar=1" }
-        else { filter = "pad=ceil(iw/2)*2:ceil(ih/2)*2" }
-        if options.videoMaxHeight > 0 { filter += ",scale=-2:'trunc(min(\(options.videoMaxHeight),ih)/2)*2':reset_sar=1,setsar=1" }
+        else if padToEven { filter = "pad=ceil(iw/2)*2:ceil(ih/2)*2" }
+        if options.videoMaxHeight > 0 { filter = (filter.map { $0 + "," } ?? "") + "scale=-2:'trunc(min(\(options.videoMaxHeight),ih)/2)*2':reset_sar=1,setsar=1" }
         return filter
     }
 
