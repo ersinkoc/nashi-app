@@ -179,6 +179,8 @@ public enum PDFEngine {
                 result.insert(page,at:result.pageCount)
             }
         }
+        // Keep the title and author, as the object-graph path keeps the first document's Info.
+        result.documentAttributes=documents.first?.documentAttributes
         guard let bytes=result.dataRepresentation() else { throw NashiError.failed("Could not save the unlocked PDF pages.") }
         return bytes
     }
