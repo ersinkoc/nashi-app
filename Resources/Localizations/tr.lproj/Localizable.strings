@@ -204,6 +204,7 @@
 "ANNOTATE PHOTO" = "FOTOĞRAFI İŞARETLE";
 "ANNOTATE PHOTO · NASHI" = "FOTOĞRAFI İŞARETLE · NASHI";
 "ANNOTATE · NASHI" = "İŞARETLE · NASHI";
+"ANNOTATION CANVAS" = "İŞARETLEME TUVALİ";
 "ANNOTATION TEXT" = "İŞARET METNİ";
 "ANOTHER TASK IS RUNNING. YOUR LINK IS READY WHEN IT FINISHES." = "BAŞKA BİR İŞLEM SÜRÜYOR. İŞLEM BİTTİĞİNDE BAĞLANTIN HAZIR OLACAK.";
 "APPEARANCE" = "GÖRÜNÜM";
@@ -290,6 +291,7 @@
 "Annotate Photo" = "Fotoğrafı İşaretle";
 "Annotate Photo · Nashi" = "Fotoğrafı İşaretle · Nashi";
 "Annotate · Nashi" = "İşaretle · Nashi";
+"Annotation canvas" = "İşaretleme tuvali";
 "Annotation text" = "İşaret metni";
 "Another task is running. Your link is ready when it finishes." = "Başka bir işlem sürüyor. İşlem bittiğinde bağlantın hazır olacak.";
 "Appearance" = "Görünüm";
@@ -552,6 +554,7 @@
 "CROP IMAGE" = "GÖRSELİ KIRP";
 "CROP IMAGE · NASHI" = "GÖRSELİ KIRP · NASHI";
 "CROP ORIGINS MUST BE NONNEGATIVE AND DIMENSIONS AT LEAST 1 × 1 PIXEL." = "KIRPMA BAŞLANGICI NEGATİF OLAMAZ VE BOYUTLAR EN AZ 1 × 1 PİKSEL OLMALI.";
+"CROP SELECTION CANVAS" = "KIRPMA SEÇİMİ TUVALİ";
 "CROP VIDEO" = "VİDEOYU KIRP";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  DOSYA SEÇ\nCTRL+V  DOSYA, METİN, GÖRSEL VEYA BAĞLANTI YAPIŞTIR\nCTRL+SPACE / ENTER  ARAÇLARI AÇ\nCTRL+1 / CTRL+2  ANA SAYFA / KİTAPLIK\nCTRL+F  KİTAPLIKTA ARA\nCTRL+SHIFT+D  KOPYALANAN İNDİRME BAĞLANTISINI KULLAN\nCTRL+U  GÜNCELLEMELERİ DENETLE\n\nÇARK: SEÇMEK İÇİN OKLAR / TAB, AÇMAK İÇİN ENTER, KAPATMAK İÇİN ESC\nMEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SANİYE, SHIFT+←/→ 1/30 SN, I/O ARALIĞI AYARLA\nKIRPMA: SÜRÜKLE, SHIFT ORANI KİLİTLER, ENTER KAYDEDER\nMETİN DÜZENLERKEN: NORMAL YAPIŞTIRMA VE OK TUŞLARI OLDUĞU GİBİ ÇALIŞIR.";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS AND CONVERSIONS\nDELETE  REMOVE SELECTED FILES FROM NASHI\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  DOSYA SEÇ\nCTRL+V  DOSYA, METİN, GÖRSEL VEYA BAĞLANTI YAPIŞTIR\nCTRL+SPACE / ENTER  ARAÇLARI VE DÖNÜŞTÜRMELERİ AÇ\nDELETE  SEÇİLİ DOSYALARI NASHI LİSTESİNDEN KALDIR\nCTRL+1 / CTRL+2  ANA SAYFA / KİTAPLIK\nCTRL+F  KİTAPLIKTA ARA\nCTRL+SHIFT+D  KOPYALANAN İNDİRME BAĞLANTISINI KULLAN\nCTRL+U  GÜNCELLEMELERİ DENETLE\n\nÇARK: SEÇMEK İÇİN OKLAR / TAB, AÇMAK İÇİN ENTER, KAPATMAK İÇİN ESC\nMEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SANİYE, SHIFT+←/→ 1/30 SN, I/O ARALIĞI AYARLA\nKIRPMA: SÜRÜKLE, SHIFT ORANI KİLİTLER, ENTER KAYDEDER\nMETİN DÜZENLERKEN: NORMAL YAPIŞTIRMA VE OK TUŞLARI OLDUĞU GİBİ ÇALIŞIR.";
@@ -777,6 +780,7 @@
 "Crop area" = "Kırpma alanı";
 "Crop coordinates must be finite." = "Kırpma koordinatları sonlu sayılar olmalı.";
 "Crop origins must be nonnegative and dimensions at least 1 × 1 pixel." = "Kırpma başlangıcı negatif olamaz ve boyutlar en az 1 × 1 piksel olmalı.";
+"Crop selection canvas" = "Kırpma seçimi tuvali";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Dosya seç\nCtrl+V  Dosya, metin, görsel veya bağlantı yapıştır\nCtrl+Space / Enter  Araçları aç\nCtrl+1 / Ctrl+2  Ana Sayfa / Kitaplık\nCtrl+F  Kitaplıkta ara\nCtrl+Shift+D  Kopyalanan indirme bağlantısını kullan\nCtrl+U  Güncellemeleri denetle\n\nÇark: seçmek için oklar / Tab, açmak için Enter, kapatmak için Esc\nMedya: Space oynat/duraklat, ←/→ 1 saniye, Shift+←/→ 1/30 sn, I/O aralığı ayarla\nKırpma: sürükle, Shift oranı kilitler, Enter kaydeder\nMetin düzenlerken: normal yapıştırma ve ok tuşları olduğu gibi çalışır.";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools and conversions\nDelete  Remove selected files from Nashi\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Dosya seç\nCtrl+V  Dosya, metin, görsel veya bağlantı yapıştır\nCtrl+Space / Enter  Araçları ve dönüştürmeleri aç\nDelete  Seçili dosyaları Nashi listesinden kaldır\nCtrl+1 / Ctrl+2  Ana Sayfa / Kitaplık\nCtrl+F  Kitaplıkta ara\nCtrl+Shift+D  Kopyalanan indirme bağlantısını kullan\nCtrl+U  Güncellemeleri denetle\n\nÇark: seçmek için oklar / Tab, açmak için Enter, kapatmak için Esc\nMedya: Space oynat/duraklat, ←/→ 1 saniye, Shift+←/→ 1/30 sn, I/O aralığı ayarla\nKırpma: sürükle, Shift oranı kilitler, Enter kaydeder\nMetin düzenlerken: normal yapıştırma ve ok tuşları olduğu gibi çalışır.";
 "Ctrl+Shift+D  Use a copied link  ·  Public, downloadable media" = "Ctrl+Shift+D  Kopyalanan bağlantıyı kullan  ·  Herkese açık, indirilebilir medya";
@@ -848,6 +852,7 @@
 "DRAG THE STACK TO CARRY ALL FILES. DRAG THE PAPERCLIP TO MOVE FLOAT." = "TÜM DOSYALARI TAŞIMAK İÇİN YIĞINI, FLOAT’IN YERİNİ DEĞİŞTİRMEK İÇİN ATACI SÜRÜKLEYİN.";
 "DRAG TO DRAW WITH THE SELECTED TOOL. USE SELECT / MOVE TO EDIT AN EXISTING ANNOTATION." = "SEÇİLİ ARAÇLA ÇİZMEK İÇİN SÜRÜKLE. BİR İŞARETİ DÜZENLEMEK İÇİN SEÇ / TAŞI'YI KULLAN.";
 "DRAG TO DRAW. ONE ACTIVE TOOL PER STROKE." = "ÇİZMEK İÇİN SÜRÜKLE. HER ÇİZİMDE TEK ARAÇ KULLANILIR.";
+"DRAG TO SELECT. DRAG INSIDE TO MOVE. HOLD SHIFT TO LOCK ASPECT RATIO. RETURN SAVES A CROPPED COPY." = "SEÇMEK İÇİN SÜRÜKLE. TAŞIMAK İÇİN ALANIN İÇİNİ SÜRÜKLE. EN BOY ORANINI KİLİTLEMEK İÇİN SHIFT'İ BASILI TUT. ENTER KIRPILMIŞ BİR KOPYA KAYDEDER.";
 "DRAW A REGION TO REDACT." = "SANSÜRLENECEK BİR BÖLGE ÇİZ.";
 "DRAW AT LEAST ONE AREA TO REDACT." = "SANSÜRLEMEK İÇİN EN AZ BİR ALAN ÇİZ.";
 "DRAWING TOOL" = "ÇİZİM ARACI";
@@ -936,6 +941,7 @@
 "Drag the stack to carry all files. Drag the paperclip to move Float." = "Tüm dosyaları taşımak için yığını, Float’ın yerini değiştirmek için atacı sürükleyin.";
 "Drag to draw with the selected tool. Use Select / Move to edit an existing annotation." = "Seçili araçla çizmek için sürükle. Bir işareti düzenlemek için Seç / Taşı'yı kullan.";
 "Drag to draw. One active tool per stroke." = "Çizmek için sürükle. Her çizimde tek araç kullanılır.";
+"Drag to select. Drag inside to move. Hold Shift to lock aspect ratio. Return saves a cropped copy." = "Seçmek için sürükle. Taşımak için alanın içini sürükle. En boy oranını kilitlemek için Shift'i basılı tut. Enter kırpılmış bir kopya kaydeder.";
 "Draw a region to redact." = "Sansürlenecek bir bölge çiz.";
 "Draw at least one area to redact." = "Sansürlemek için en az bir alan çiz.";
 "Drawing tool" = "Çizim aracı";
@@ -1221,6 +1227,7 @@
 "ICONS" = "SİMGELER";
 "IMAGE" = "GÖRSEL";
 "IMAGE COMPRESSION" = "GÖRSEL SIKIŞTIRMA";
+"IMAGE EDITING CANVAS" = "GÖRSEL DÜZENLEME TUVALİ";
 "IMAGE EXCEEDS 200 MB." = "GÖRSEL 200 MB'I AŞIYOR.";
 "IMAGE FIT" = "GÖRSEL YERLEŞİMİ";
 "IMAGE SCALE" = "GÖRSEL ÖLÇEĞİ";
@@ -1250,6 +1257,7 @@
 "Image" = "Görsel";
 "Image Compression" = "Görsel Sıkıştırma";
 "Image compression" = "Görsel sıkıştırma";
+"Image editing canvas" = "Görsel düzenleme tuvali";
 "Image exceeds 200 MB." = "Görsel 200 MB'ı aşıyor.";
 "Image fit" = "Görsel yerleşimi";
 "Image scale" = "Görsel ölçeği";
@@ -1496,6 +1504,7 @@
 "NICE FILES.\nNO FUSS." = "DOSYALAR HAZIR.\nZAHMET YOK.";
 "NICELY DONE." = "HAZIR, ELİNE SAĞLIK!";
 "NICELY DONE. 1 FILE IS READY." = "HAZIR! 1 DOSYAN HAZIR.";
+"NO CROP SELECTED" = "KIRPMA ALANI SEÇİLMEDİ";
 "NO DOWNLOADABLE MEDIA WAS FOUND. USE THE VIDEO'S SHARE LINK, OR COPY IMAGE ADDRESS FOR A PHOTO." = "İNDİRİLEBİLİR MEDYA BULUNAMADI. VİDEONUN PAYLAŞIM BAĞLANTISINI KULLAN; FOTOĞRAF İÇİN GÖRSEL ADRESİNİ KOPYALA.";
 "NO DOWNLOADABLE PUBLIC MEDIA WAS FOUND. LOGIN-REQUIRED AND PROTECTED MEDIA ARE NOT SUPPORTED." = "HERKESE AÇIK İNDİRİLEBİLİR MEDYA BULUNAMADI. GİRİŞ GEREKTİREN VE KORUMALI MEDYALAR DESTEKLENMİYOR.";
 "NO FOLDERS ALLOWED YET." = "HENÜZ İZİN VERİLEN KLASÖR YOK.";
@@ -1553,6 +1562,7 @@
 "Nicely done. 1 file is ready." = "Hazır! 1 dosyan hazır.";
 "No QR codes found. Try a larger or sharper image." = "QR kodu bulunamadı. Daha büyük veya daha net bir görsel dene.";
 "No QR codes this time." = "QR kodu bulunamadı.";
+"No crop selected" = "Kırpma alanı seçilmedi";
 "No downloadable media was found. Use the video's share link, or Copy Image Address for a photo." = "İndirilebilir medya bulunamadı. Videonun paylaşım bağlantısını kullan; fotoğraf için görsel adresini kopyala.";
 "No downloadable public media was found. Login-required and protected media are not supported." = "Herkese açık indirilebilir medya bulunamadı. Giriş gerektiren ve korumalı medyalar desteklenmiyor.";
 "No file tools\n%@ Convert\n%@ Actions" = "Dosya aracı yok\n%@ Dönüştür\n%@ İşlemler";
@@ -2734,6 +2744,22 @@
 "Windows could not add Nashi to the system tray." = "Windows, Nashi'yi sistem tepsisine ekleyemedi.";
 "Windows could not create a tray icon." = "Windows tepsi simgesini oluşturamadı.";
 "Working…" = "İşleniyor…";
+"X %@, Y %@, width %@, height %@" = "X %@, Y %@, genişlik %@, yükseklik %@";
+"X %@, Y %@, width %@, height %lld" = "X %@, Y %@, genişlik %@, yükseklik %lld";
+"X %@, Y %@, width %lld, height %@" = "X %@, Y %@, genişlik %lld, yükseklik %@";
+"X %@, Y %@, width %lld, height %lld" = "X %@, Y %@, genişlik %lld, yükseklik %lld";
+"X %@, Y %lld, width %@, height %@" = "X %@, Y %lld, genişlik %@, yükseklik %@";
+"X %@, Y %lld, width %@, height %lld" = "X %@, Y %lld, genişlik %@, yükseklik %lld";
+"X %@, Y %lld, width %lld, height %@" = "X %@, Y %lld, genişlik %lld, yükseklik %@";
+"X %@, Y %lld, width %lld, height %lld" = "X %@, Y %lld, genişlik %lld, yükseklik %lld";
+"X %lld, Y %@, width %@, height %@" = "X %lld, Y %@, genişlik %@, yükseklik %@";
+"X %lld, Y %@, width %@, height %lld" = "X %lld, Y %@, genişlik %@, yükseklik %lld";
+"X %lld, Y %@, width %lld, height %@" = "X %lld, Y %@, genişlik %lld, yükseklik %@";
+"X %lld, Y %@, width %lld, height %lld" = "X %lld, Y %@, genişlik %lld, yükseklik %lld";
+"X %lld, Y %lld, width %@, height %@" = "X %lld, Y %lld, genişlik %@, yükseklik %@";
+"X %lld, Y %lld, width %@, height %lld" = "X %lld, Y %lld, genişlik %@, yükseklik %lld";
+"X %lld, Y %lld, width %lld, height %@" = "X %lld, Y %lld, genişlik %lld, yükseklik %@";
+"X %lld, Y %lld, width %lld, height %lld" = "X %lld, Y %lld, genişlik %lld, yükseklik %lld";
 "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW." = "ANA PENCEREDEN DE DOSYA SEÇEBİLİRSİN.";
 "YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "NE ZAMAN İNDİRİP KURACAĞINA SEN KARAR VER.";
 "YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION." = "YAYINLANAN EN GÜNCEL WINDOWS SÜRÜMÜNÜ KULLANIYORSUN.";

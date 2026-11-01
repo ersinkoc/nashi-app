@@ -204,6 +204,7 @@
 "ANNOTATE PHOTO" = "ANNOTATE PHOTO";
 "ANNOTATE PHOTO · NASHI" = "ANNOTATE PHOTO · NASHI";
 "ANNOTATE · NASHI" = "ANNOTATE · NASHI";
+"ANNOTATION CANVAS" = "ANNOTATION CANVAS";
 "ANNOTATION TEXT" = "ANNOTATION TEXT";
 "ANOTHER TASK IS RUNNING. YOUR LINK IS READY WHEN IT FINISHES." = "ANOTHER TASK IS RUNNING. YOUR LINK IS READY WHEN IT FINISHES.";
 "APPEARANCE" = "APPEARANCE";
@@ -290,6 +291,7 @@
 "Annotate Photo" = "Annotate Photo";
 "Annotate Photo · Nashi" = "Annotate Photo · Nashi";
 "Annotate · Nashi" = "Annotate · Nashi";
+"Annotation canvas" = "Annotation canvas";
 "Annotation text" = "Annotation text";
 "Another task is running. Your link is ready when it finishes." = "Another task is running. Your link is ready when it finishes.";
 "Appearance" = "Appearance";
@@ -552,6 +554,7 @@
 "CROP IMAGE" = "CROP IMAGE";
 "CROP IMAGE · NASHI" = "CROP IMAGE · NASHI";
 "CROP ORIGINS MUST BE NONNEGATIVE AND DIMENSIONS AT LEAST 1 × 1 PIXEL." = "CROP ORIGINS MUST BE NONNEGATIVE AND DIMENSIONS AT LEAST 1 × 1 PIXEL.";
+"CROP SELECTION CANVAS" = "CROP SELECTION CANVAS";
 "CROP VIDEO" = "CROP VIDEO";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED.";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS AND CONVERSIONS\nDELETE  REMOVE SELECTED FILES FROM NASHI\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS AND CONVERSIONS\nDELETE  REMOVE SELECTED FILES FROM NASHI\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED.";
@@ -777,6 +780,7 @@
 "Crop area" = "Crop area";
 "Crop coordinates must be finite." = "Crop coordinates must be finite.";
 "Crop origins must be nonnegative and dimensions at least 1 × 1 pixel." = "Crop origins must be nonnegative and dimensions at least 1 × 1 pixel.";
+"Crop selection canvas" = "Crop selection canvas";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved.";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools and conversions\nDelete  Remove selected files from Nashi\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools and conversions\nDelete  Remove selected files from Nashi\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved.";
 "Ctrl+Shift+D  Use a copied link  ·  Public, downloadable media" = "Ctrl+Shift+D  Use a copied link  ·  Public, downloadable media";
@@ -848,6 +852,7 @@
 "DRAG THE STACK TO CARRY ALL FILES. DRAG THE PAPERCLIP TO MOVE FLOAT." = "DRAG THE STACK TO CARRY ALL FILES. DRAG THE PAPERCLIP TO MOVE FLOAT.";
 "DRAG TO DRAW WITH THE SELECTED TOOL. USE SELECT / MOVE TO EDIT AN EXISTING ANNOTATION." = "DRAG TO DRAW WITH THE SELECTED TOOL. USE SELECT / MOVE TO EDIT AN EXISTING ANNOTATION.";
 "DRAG TO DRAW. ONE ACTIVE TOOL PER STROKE." = "DRAG TO DRAW. ONE ACTIVE TOOL PER STROKE.";
+"DRAG TO SELECT. DRAG INSIDE TO MOVE. HOLD SHIFT TO LOCK ASPECT RATIO. RETURN SAVES A CROPPED COPY." = "DRAG TO SELECT. DRAG INSIDE TO MOVE. HOLD SHIFT TO LOCK ASPECT RATIO. RETURN SAVES A CROPPED COPY.";
 "DRAW A REGION TO REDACT." = "DRAW A REGION TO REDACT.";
 "DRAW AT LEAST ONE AREA TO REDACT." = "DRAW AT LEAST ONE AREA TO REDACT.";
 "DRAWING TOOL" = "DRAWING TOOL";
@@ -936,6 +941,7 @@
 "Drag the stack to carry all files. Drag the paperclip to move Float." = "Drag the stack to carry all files. Drag the paperclip to move Float.";
 "Drag to draw with the selected tool. Use Select / Move to edit an existing annotation." = "Drag to draw with the selected tool. Use Select / Move to edit an existing annotation.";
 "Drag to draw. One active tool per stroke." = "Drag to draw. One active tool per stroke.";
+"Drag to select. Drag inside to move. Hold Shift to lock aspect ratio. Return saves a cropped copy." = "Drag to select. Drag inside to move. Hold Shift to lock aspect ratio. Return saves a cropped copy.";
 "Draw a region to redact." = "Draw a region to redact.";
 "Draw at least one area to redact." = "Draw at least one area to redact.";
 "Drawing tool" = "Drawing tool";
@@ -1221,6 +1227,7 @@
 "ICONS" = "ICONS";
 "IMAGE" = "IMAGE";
 "IMAGE COMPRESSION" = "IMAGE COMPRESSION";
+"IMAGE EDITING CANVAS" = "IMAGE EDITING CANVAS";
 "IMAGE EXCEEDS 200 MB." = "IMAGE EXCEEDS 200 MB.";
 "IMAGE FIT" = "IMAGE FIT";
 "IMAGE SCALE" = "IMAGE SCALE";
@@ -1250,6 +1257,7 @@
 "Image" = "Image";
 "Image Compression" = "Image Compression";
 "Image compression" = "Image compression";
+"Image editing canvas" = "Image editing canvas";
 "Image exceeds 200 MB." = "Image exceeds 200 MB.";
 "Image fit" = "Image fit";
 "Image scale" = "Image scale";
@@ -1496,6 +1504,7 @@
 "NICE FILES.\nNO FUSS." = "NICE FILES.\nNO FUSS.";
 "NICELY DONE." = "NICELY DONE.";
 "NICELY DONE. 1 FILE IS READY." = "NICELY DONE. 1 FILE IS READY.";
+"NO CROP SELECTED" = "NO CROP SELECTED";
 "NO DOWNLOADABLE MEDIA WAS FOUND. USE THE VIDEO'S SHARE LINK, OR COPY IMAGE ADDRESS FOR A PHOTO." = "NO DOWNLOADABLE MEDIA WAS FOUND. USE THE VIDEO'S SHARE LINK, OR COPY IMAGE ADDRESS FOR A PHOTO.";
 "NO DOWNLOADABLE PUBLIC MEDIA WAS FOUND. LOGIN-REQUIRED AND PROTECTED MEDIA ARE NOT SUPPORTED." = "NO DOWNLOADABLE PUBLIC MEDIA WAS FOUND. LOGIN-REQUIRED AND PROTECTED MEDIA ARE NOT SUPPORTED.";
 "NO FOLDERS ALLOWED YET." = "NO FOLDERS ALLOWED YET.";
@@ -1553,6 +1562,7 @@
 "Nicely done. 1 file is ready." = "Nicely done. 1 file is ready.";
 "No QR codes found. Try a larger or sharper image." = "No QR codes found. Try a larger or sharper image.";
 "No QR codes this time." = "No QR codes this time.";
+"No crop selected" = "No crop selected";
 "No downloadable media was found. Use the video's share link, or Copy Image Address for a photo." = "No downloadable media was found. Use the video's share link, or Copy Image Address for a photo.";
 "No downloadable public media was found. Login-required and protected media are not supported." = "No downloadable public media was found. Login-required and protected media are not supported.";
 "No file tools\n%@ Convert\n%@ Actions" = "No file tools\n%@ Convert\n%@ Actions";
@@ -2734,6 +2744,22 @@
 "Windows could not add Nashi to the system tray." = "Windows could not add Nashi to the system tray.";
 "Windows could not create a tray icon." = "Windows could not create a tray icon.";
 "Working…" = "Working…";
+"X %@, Y %@, width %@, height %@" = "X %@, Y %@, width %@, height %@";
+"X %@, Y %@, width %@, height %lld" = "X %@, Y %@, width %@, height %lld";
+"X %@, Y %@, width %lld, height %@" = "X %@, Y %@, width %lld, height %@";
+"X %@, Y %@, width %lld, height %lld" = "X %@, Y %@, width %lld, height %lld";
+"X %@, Y %lld, width %@, height %@" = "X %@, Y %lld, width %@, height %@";
+"X %@, Y %lld, width %@, height %lld" = "X %@, Y %lld, width %@, height %lld";
+"X %@, Y %lld, width %lld, height %@" = "X %@, Y %lld, width %lld, height %@";
+"X %@, Y %lld, width %lld, height %lld" = "X %@, Y %lld, width %lld, height %lld";
+"X %lld, Y %@, width %@, height %@" = "X %lld, Y %@, width %@, height %@";
+"X %lld, Y %@, width %@, height %lld" = "X %lld, Y %@, width %@, height %lld";
+"X %lld, Y %@, width %lld, height %@" = "X %lld, Y %@, width %lld, height %@";
+"X %lld, Y %@, width %lld, height %lld" = "X %lld, Y %@, width %lld, height %lld";
+"X %lld, Y %lld, width %@, height %@" = "X %lld, Y %lld, width %@, height %@";
+"X %lld, Y %lld, width %@, height %lld" = "X %lld, Y %lld, width %@, height %lld";
+"X %lld, Y %lld, width %lld, height %@" = "X %lld, Y %lld, width %lld, height %@";
+"X %lld, Y %lld, width %lld, height %lld" = "X %lld, Y %lld, width %lld, height %lld";
 "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW." = "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW.";
 "YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL.";
 "YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION." = "YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION.";

@@ -89,6 +89,14 @@ final class AppLocalizationTests:XCTestCase {
         XCTAssertEqual(AppLocalization.text("No formats\n⌘ Tools\n⌃ Actions",language:"tr"),"Biçim yok\n⌘ Araçlar\n⌃ İşlemler")
         XCTAssertEqual(AppLocalization.text("No file tools\n⇧ Convert\n⌃ Actions",language:"fr"),"Aucun outil de fichier\n⇧ Convertir\n⌃ Actions")
     }
+    /// The crop canvas's VoiceOver value (ImageEditPreview.swift) is a String built in English, so it is looked up here.
+    func testCropCanvasVoiceOverValueIsTranslated() {
+        XCTAssertEqual(AppLocalization.text("No crop selected",language:"tr"),"Kırpma alanı seçilmedi")
+        XCTAssertEqual(AppLocalization.text("No crop selected",language:"fr"),"Aucune zone de recadrage sélectionnée")
+        XCTAssertEqual(AppLocalization.text("X 10, Y 20, width 30, height 40",language:"tr"),"X 10, Y 20, genişlik 30, yükseklik 40")
+        XCTAssertEqual(AppLocalization.text("X 0, Y 0, width 1920, height 1080",language:"fr"),"X 0, Y 0, largeur 1920, hauteur 1080")
+        XCTAssertEqual(AppLocalization.text("X 10, Y 20, width 30, height 40",language:"en"),"X 10, Y 20, width 30, height 40")
+    }
     func testFrenchSelectedCountIsSingularForZeroAndOne() {
         // French uses the singular for 0 and 1 ("1 sélectionné"); Turkish never inflects after a number.
         XCTAssertEqual(AppLocalization.text("1 selected",language:"fr"),"1 sélectionné")
