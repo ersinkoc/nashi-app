@@ -553,7 +553,7 @@ public enum ImageEngine {
         if let percent=options.percentage { guard percent.isFinite,percent>0,percent<100 else { throw NashiError.invalidInput("Percentage reduction must be greater than 0 and less than 100.") } }
         let target=options.targetBytes ?? options.percentage.map { Int64(Double(inputSize)*(1-$0/100)) }
         if let target { guard target>0 else { throw NashiError.invalidInput("Choose a positive target file size.") } }
-        let ext=["jpg","jpeg","heic","webp","avif","png"].contains(input.pathExtension.lowercased()) ? input.pathExtension : "jpg"
+        let ext=["jpg","jpeg","heic","heif","webp","avif","png"].contains(input.pathExtension.lowercased()) ? input.pathExtension : "jpg"
         let output=OutputFiles.unique(for:input,extension:ext,suffix:" - Compressed",directory:options.outputDirectory)
         // Attempts are encoded privately; a failed or cancelled pass leaves no partial output.
         let temporary=output.deletingLastPathComponent().appendingPathComponent(".nashi-\(UUID().uuidString)").appendingPathExtension(output.pathExtension)
