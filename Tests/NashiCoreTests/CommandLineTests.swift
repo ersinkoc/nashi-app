@@ -72,6 +72,20 @@ final class CommandLineTests:XCTestCase {
         XCTAssertEqual(NashiCommandLine.run(arguments:["nashi-cli","convert","vtt",input.path,"--options",try json(["outputDirectory":destination.path,"width":NSNull(),"imageAdjustments":["blur":2]])]),0)
         XCTAssertEqual(try FileManager.default.contentsOfDirectory(atPath:destination.path),["clip.vtt"])
     }
+    func testUnknownKeysInsideArrayOptionsFailWithoutWritingOutput() throws {
+        let root=try OutputFiles.temporaryDirectory();defer{try? FileManager.default.removeItem(at:root)}
+        let input=root.appendingPathComponent("clip.srt"),destination=root.appendingPathComponent("Out")
+        try FileManager.default.createDirectory(at:destination,withIntermediateDirectories:true)
+        try Data("1\n00:00:00,125 --> 00:00:01,250\nHi\n".utf8).write(to:input)
+        func json(_ object:[String:Any]) throws -> String { String(decoding:try JSONSerialization.data(withJSONObject:object),as:UTF8.self) }
+        let rect:[String:Any]=["x":1,"y":1,"width":10,"height":10]
+        for options in [["imageAnnotations":[["kind":"rectangle","rect":rect,"colour":"#000000"]]],["videoRedactions":[["rect":rect,"start":0,"ende":2]]],["imageAnnotations":[["kind":"freehand","rect":rect,"points":[["x":1,"y":1,"z":3]]]]]] as [[String:Any]] {
+            XCTAssertEqual(NashiCommandLine.run(arguments:["nashi-cli","convert","vtt",input.path,"--options",try json(options.merging(["outputDirectory":destination.path]){$1})]),1)
+        }
+        XCTAssertEqual(try FileManager.default.contentsOfDirectory(atPath:destination.path),[])
+        XCTAssertEqual(NashiCommandLine.run(arguments:["nashi-cli","convert","vtt",input.path,"--options",try json(["outputDirectory":destination.path,"imageAnnotations":[["kind":"freehand","rect":rect,"color":"#000000","fillColor":NSNull(),"points":[["x":1,"y":1]]]],"videoRedactions":[["rect":rect,"start":0]]])]),0)
+        XCTAssertEqual(try FileManager.default.contentsOfDirectory(atPath:destination.path),["clip.vtt"])
+    }
     func testRelativeOutputDirectoryWithColonIsAPath() throws {
         let root=try OutputFiles.temporaryDirectory();defer{try? FileManager.default.removeItem(at:root)}
         let files=FileManager.default,previous=files.currentDirectoryPath
