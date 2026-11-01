@@ -206,6 +206,7 @@
 "ANNOTATE PHOTO" = "FOTOĞRAFI İŞARETLE";
 "ANNOTATE PHOTO · NASHI" = "FOTOĞRAFI İŞARETLE · NASHI";
 "ANNOTATE · NASHI" = "İŞARETLE · NASHI";
+"ANNOTATION CANVAS" = "İŞARETLEME TUVALİ";
 "ANNOTATION TEXT" = "İŞARET METNİ";
 "ANOTHER TASK IS RUNNING. YOUR LINK IS READY WHEN IT FINISHES." = "BAŞKA BİR İŞLEM SÜRÜYOR. İŞLEM BİTTİĞİNDE BAĞLANTIN HAZIR OLACAK.";
 "APPEARANCE" = "GÖRÜNÜM";
@@ -237,6 +238,7 @@
 "AUDIO · MP3" = "SES · MP3";
 "AUTHORIZE SAVED TOKEN…" = "KAYITLI TOKENA İZİN VER…";
 "AUTO" = "OTOMATİK";
+"AVAILABLE AFTER THE CURRENT TASK FINISHES" = "MEVCUT İŞLEM BİTİNCE KULLANILABİLİR";
 "AVAILABLE FILES SELECTED. SOME FILES HAVE MOVED OR WERE DELETED." = "MEVCUT DOSYALAR SEÇİLDİ. BAZI DOSYALAR TAŞINMIŞ VEYA SİLİNMİŞ.";
 "About" = "Hakkında";
 "Accessibility" = "Erişilebilirlik";
@@ -294,6 +296,7 @@
 "Annotate Photo" = "Fotoğrafı İşaretle";
 "Annotate Photo · Nashi" = "Fotoğrafı İşaretle · Nashi";
 "Annotate · Nashi" = "İşaretle · Nashi";
+"Annotation canvas" = "İşaretleme tuvali";
 "Annotation text" = "İşaret metni";
 "Another task is running. Your link is ready when it finishes." = "Başka bir işlem sürüyor. İşlem bittiğinde bağlantın hazır olacak.";
 "Appearance" = "Görünüm";
@@ -327,6 +330,7 @@
 "Audio · MP3" = "Ses · MP3";
 "Authorize Saved Token…" = "Kayıtlı Tokena İzin Ver…";
 "Auto" = "Otomatik";
+"Available after the current task finishes" = "Mevcut işlem bitince kullanılabilir";
 "Available files selected. Some files have moved or were deleted." = "Mevcut dosyalar seçildi. Bazı dosyalar taşınmış veya silinmiş.";
 "BACK" = "GERİ";
 "BACKGROUND" = "ARKA PLAN";
@@ -556,6 +560,7 @@
 "CROP IMAGE" = "GÖRSELİ KIRP";
 "CROP IMAGE · NASHI" = "GÖRSELİ KIRP · NASHI";
 "CROP ORIGINS MUST BE NONNEGATIVE AND DIMENSIONS AT LEAST 1 × 1 PIXEL." = "KIRPMA BAŞLANGICI NEGATİF OLAMAZ VE BOYUTLAR EN AZ 1 × 1 PİKSEL OLMALI.";
+"CROP SELECTION CANVAS" = "KIRPMA SEÇİMİ TUVALİ";
 "CROP VIDEO" = "VİDEOYU KIRP";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  DOSYA SEÇ\nCTRL+V  DOSYA, METİN, GÖRSEL VEYA BAĞLANTI YAPIŞTIR\nCTRL+SPACE / ENTER  ARAÇLARI AÇ\nCTRL+1 / CTRL+2  ANA SAYFA / KİTAPLIK\nCTRL+F  KİTAPLIKTA ARA\nCTRL+SHIFT+D  KOPYALANAN İNDİRME BAĞLANTISINI KULLAN\nCTRL+U  GÜNCELLEMELERİ DENETLE\n\nÇARK: SEÇMEK İÇİN OKLAR / TAB, AÇMAK İÇİN ENTER, KAPATMAK İÇİN ESC\nMEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SANİYE, SHIFT+←/→ 1/30 SN, I/O ARALIĞI AYARLA\nKIRPMA: SÜRÜKLE, SHIFT ORANI KİLİTLER, ENTER KAYDEDER\nMETİN DÜZENLERKEN: NORMAL YAPIŞTIRMA VE OK TUŞLARI OLDUĞU GİBİ ÇALIŞIR.";
 "CTRL+O  CHOOSE FILES\nCTRL+V  PASTE FILES, TEXT, AN IMAGE OR LINK\nCTRL+SPACE / ENTER  OPEN TOOLS AND CONVERSIONS\nDELETE  REMOVE SELECTED FILES FROM NASHI\nCTRL+1 / CTRL+2  HOME / LIBRARY\nCTRL+F  FIND IN LIBRARY\nCTRL+SHIFT+D  USE A COPIED DOWNLOAD LINK\nCTRL+U  CHECK FOR UPDATES\n\nWHEEL: ARROWS / TAB TO CHOOSE, ENTER TO OPEN, ESC TO CLOSE\nMEDIA: SPACE PLAY/PAUSE, ←/→ 1 SECOND, SHIFT+←/→ 1/30S, I/O SET RANGE\nCROP: DRAG, SHIFT LOCKS RATIO, ENTER SAVES\nEDITING TEXT: NORMAL PASTE AND ARROW KEYS ARE PRESERVED." = "CTRL+O  DOSYA SEÇ\nCTRL+V  DOSYA, METİN, GÖRSEL VEYA BAĞLANTI YAPIŞTIR\nCTRL+SPACE / ENTER  ARAÇLARI VE DÖNÜŞTÜRMELERİ AÇ\nDELETE  SEÇİLİ DOSYALARI NASHI LİSTESİNDEN KALDIR\nCTRL+1 / CTRL+2  ANA SAYFA / KİTAPLIK\nCTRL+F  KİTAPLIKTA ARA\nCTRL+SHIFT+D  KOPYALANAN İNDİRME BAĞLANTISINI KULLAN\nCTRL+U  GÜNCELLEMELERİ DENETLE\n\nÇARK: SEÇMEK İÇİN OKLAR / TAB, AÇMAK İÇİN ENTER, KAPATMAK İÇİN ESC\nMEDYA: SPACE OYNAT/DURAKLAT, ←/→ 1 SANİYE, SHIFT+←/→ 1/30 SN, I/O ARALIĞI AYARLA\nKIRPMA: SÜRÜKLE, SHIFT ORANI KİLİTLER, ENTER KAYDEDER\nMETİN DÜZENLERKEN: NORMAL YAPIŞTIRMA VE OK TUŞLARI OLDUĞU GİBİ ÇALIŞIR.";
@@ -781,6 +786,7 @@
 "Crop area" = "Kırpma alanı";
 "Crop coordinates must be finite." = "Kırpma koordinatları sonlu sayılar olmalı.";
 "Crop origins must be nonnegative and dimensions at least 1 × 1 pixel." = "Kırpma başlangıcı negatif olamaz ve boyutlar en az 1 × 1 piksel olmalı.";
+"Crop selection canvas" = "Kırpma seçimi tuvali";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Dosya seç\nCtrl+V  Dosya, metin, görsel veya bağlantı yapıştır\nCtrl+Space / Enter  Araçları aç\nCtrl+1 / Ctrl+2  Ana Sayfa / Kitaplık\nCtrl+F  Kitaplıkta ara\nCtrl+Shift+D  Kopyalanan indirme bağlantısını kullan\nCtrl+U  Güncellemeleri denetle\n\nÇark: seçmek için oklar / Tab, açmak için Enter, kapatmak için Esc\nMedya: Space oynat/duraklat, ←/→ 1 saniye, Shift+←/→ 1/30 sn, I/O aralığı ayarla\nKırpma: sürükle, Shift oranı kilitler, Enter kaydeder\nMetin düzenlerken: normal yapıştırma ve ok tuşları olduğu gibi çalışır.";
 "Ctrl+O  Choose files\nCtrl+V  Paste files, text, an image or link\nCtrl+Space / Enter  Open tools and conversions\nDelete  Remove selected files from Nashi\nCtrl+1 / Ctrl+2  Home / Library\nCtrl+F  Find in Library\nCtrl+Shift+D  Use a copied download link\nCtrl+U  Check for updates\n\nWheel: arrows / Tab to choose, Enter to open, Esc to close\nMedia: Space play/pause, ←/→ 1 second, Shift+←/→ 1/30s, I/O set range\nCrop: drag, Shift locks ratio, Enter saves\nEditing text: normal paste and arrow keys are preserved." = "Ctrl+O  Dosya seç\nCtrl+V  Dosya, metin, görsel veya bağlantı yapıştır\nCtrl+Space / Enter  Araçları ve dönüştürmeleri aç\nDelete  Seçili dosyaları Nashi listesinden kaldır\nCtrl+1 / Ctrl+2  Ana Sayfa / Kitaplık\nCtrl+F  Kitaplıkta ara\nCtrl+Shift+D  Kopyalanan indirme bağlantısını kullan\nCtrl+U  Güncellemeleri denetle\n\nÇark: seçmek için oklar / Tab, açmak için Enter, kapatmak için Esc\nMedya: Space oynat/duraklat, ←/→ 1 saniye, Shift+←/→ 1/30 sn, I/O aralığı ayarla\nKırpma: sürükle, Shift oranı kilitler, Enter kaydeder\nMetin düzenlerken: normal yapıştırma ve ok tuşları olduğu gibi çalışır.";
 "Ctrl+Shift+D  Use a copied link  ·  Public, downloadable media" = "Ctrl+Shift+D  Kopyalanan bağlantıyı kullan  ·  Herkese açık, indirilebilir medya";
@@ -803,6 +809,7 @@
 "DEVICES" = "AYGITLAR";
 "DISCONNECT & FORGET TOKEN" = "BAĞLANTIYI KES VE TOKENI SİL";
 "DISMISS" = "KAPAT";
+"DISMISS ERROR" = "HATAYI KAPAT";
 "DISMISS PREVIEW ERROR" = "ÖNİZLEME HATASINI KAPAT";
 "DOCUMENT XML IS TOO LARGE." = "BELGE XML'İ ÇOK BÜYÜK.";
 "DOCUMENTS" = "BELGELER";
@@ -853,6 +860,7 @@
 "DRAG THE STACK TO CARRY ALL FILES. DRAG THE PAPERCLIP TO MOVE FLOAT." = "TÜM DOSYALARI TAŞIMAK İÇİN YIĞINI, FLOAT’IN YERİNİ DEĞİŞTİRMEK İÇİN ATACI SÜRÜKLEYİN.";
 "DRAG TO DRAW WITH THE SELECTED TOOL. USE SELECT / MOVE TO EDIT AN EXISTING ANNOTATION." = "SEÇİLİ ARAÇLA ÇİZMEK İÇİN SÜRÜKLE. BİR İŞARETİ DÜZENLEMEK İÇİN SEÇ / TAŞI'YI KULLAN.";
 "DRAG TO DRAW. ONE ACTIVE TOOL PER STROKE." = "ÇİZMEK İÇİN SÜRÜKLE. HER ÇİZİMDE TEK ARAÇ KULLANILIR.";
+"DRAG TO SELECT. DRAG INSIDE TO MOVE. HOLD SHIFT TO LOCK ASPECT RATIO. RETURN SAVES A CROPPED COPY." = "SEÇMEK İÇİN SÜRÜKLE. TAŞIMAK İÇİN ALANIN İÇİNİ SÜRÜKLE. EN BOY ORANINI KİLİTLEMEK İÇİN SHIFT'İ BASILI TUT. ENTER KIRPILMIŞ BİR KOPYA KAYDEDER.";
 "DRAW A REGION TO REDACT." = "SANSÜRLENECEK BİR BÖLGE ÇİZ.";
 "DRAW AT LEAST ONE AREA TO REDACT." = "SANSÜRLEMEK İÇİN EN AZ BİR ALAN ÇİZ.";
 "DRAWING TOOL" = "ÇİZİM ARACI";
@@ -881,6 +889,7 @@
 "Devices" = "Aygıtlar";
 "Disconnect & Forget Token" = "Bağlantıyı Kes ve Tokenı Sil";
 "Dismiss" = "Kapat";
+"Dismiss error" = "Hatayı kapat";
 "Dismiss preview error" = "Önizleme hatasını kapat";
 "Document XML is too large." = "Belge XML'i çok büyük.";
 "Documents" = "Belgeler";
@@ -942,6 +951,7 @@
 "Drag the stack to carry all files. Drag the paperclip to move Float." = "Tüm dosyaları taşımak için yığını, Float’ın yerini değiştirmek için atacı sürükleyin.";
 "Drag to draw with the selected tool. Use Select / Move to edit an existing annotation." = "Seçili araçla çizmek için sürükle. Bir işareti düzenlemek için Seç / Taşı'yı kullan.";
 "Drag to draw. One active tool per stroke." = "Çizmek için sürükle. Her çizimde tek araç kullanılır.";
+"Drag to select. Drag inside to move. Hold Shift to lock aspect ratio. Return saves a cropped copy." = "Seçmek için sürükle. Taşımak için alanın içini sürükle. En boy oranını kilitlemek için Shift'i basılı tut. Enter kırpılmış bir kopya kaydeder.";
 "Draw a region to redact." = "Sansürlenecek bir bölge çiz.";
 "Draw at least one area to redact." = "Sansürlemek için en az bir alan çiz.";
 "Drawing tool" = "Çizim aracı";
@@ -1227,6 +1237,7 @@
 "ICONS" = "SİMGELER";
 "IMAGE" = "GÖRSEL";
 "IMAGE COMPRESSION" = "GÖRSEL SIKIŞTIRMA";
+"IMAGE EDITING CANVAS" = "GÖRSEL DÜZENLEME TUVALİ";
 "IMAGE EXCEEDS 200 MB." = "GÖRSEL 200 MB'I AŞIYOR.";
 "IMAGE FIT" = "GÖRSEL YERLEŞİMİ";
 "IMAGE SCALE" = "GÖRSEL ÖLÇEĞİ";
@@ -1256,6 +1267,7 @@
 "Image" = "Görsel";
 "Image Compression" = "Görsel Sıkıştırma";
 "Image compression" = "Görsel sıkıştırma";
+"Image editing canvas" = "Görsel düzenleme tuvali";
 "Image exceeds 200 MB." = "Görsel 200 MB'ı aşıyor.";
 "Image fit" = "Görsel yerleşimi";
 "Image scale" = "Görsel ölçeği";
@@ -1502,12 +1514,14 @@
 "NICE FILES.\nNO FUSS." = "DOSYALAR HAZIR.\nZAHMET YOK.";
 "NICELY DONE." = "HAZIR, ELİNE SAĞLIK!";
 "NICELY DONE. 1 FILE IS READY." = "HAZIR! 1 DOSYAN HAZIR.";
+"NO CROP SELECTED" = "KIRPMA ALANI SEÇİLMEDİ";
 "NO DOWNLOADABLE MEDIA WAS FOUND. USE THE VIDEO'S SHARE LINK, OR COPY IMAGE ADDRESS FOR A PHOTO." = "İNDİRİLEBİLİR MEDYA BULUNAMADI. VİDEONUN PAYLAŞIM BAĞLANTISINI KULLAN; FOTOĞRAF İÇİN GÖRSEL ADRESİNİ KOPYALA.";
 "NO DOWNLOADABLE PUBLIC MEDIA WAS FOUND. LOGIN-REQUIRED AND PROTECTED MEDIA ARE NOT SUPPORTED." = "HERKESE AÇIK İNDİRİLEBİLİR MEDYA BULUNAMADI. GİRİŞ GEREKTİREN VE KORUMALI MEDYALAR DESTEKLENMİYOR.";
 "NO FOLDERS ALLOWED YET." = "HENÜZ İZİN VERİLEN KLASÖR YOK.";
 "NO MATCHES. TRY A FILE NAME OR TOOL." = "EŞLEŞME BULUNAMADI. DOSYA ADI VEYA ARAÇ ADIYLA ARA.";
 "NO MATCHING REGIONS WERE DETECTED. YOU CAN STILL DRAW AREAS BY HAND." = "EŞLEŞEN BÖLGE BULUNAMADI. ALANLARI YİNE DE ELLE ÇİZEBİLİRSİN.";
 "NO MEDIA OUTPUT WAS PRODUCED." = "MEDYA ÇIKTISI OLUŞMADI.";
+"NO OUTPUT FORMATS" = "ÇIKTI BİÇİMİ YOK";
 "NO OUTPUT WAS PRODUCED." = "ÇIKTI OLUŞMADI.";
 "NO PUBLIC DOWNLOADABLE MEDIA FOUND. SOME SITES REQUIRE SIGN-IN OR DO NOT EXPOSE DOWNLOADABLE MEDIA." = "HERKESE AÇIK, İNDİRİLEBİLİR MEDYA BULUNAMADI. BAZI SİTELER GİRİŞ GEREKTİRİR VEYA MEDYAYI İNDİRMEYE AÇMAZ.";
 "NO QR CODES FOUND. TRY A LARGER OR SHARPER IMAGE." = "QR KODU BULUNAMADI. DAHA BÜYÜK VEYA DAHA NET BİR GÖRSEL DENE.";
@@ -1517,6 +1531,7 @@
 "NO TIMED SUBTITLE CUES WERE FOUND IN THIS FILE." = "BU DOSYADA ZAMANLANMIŞ ALTYAZI SATIRI BULUNAMADI.";
 "NO TIMED SUBTITLE CUES WERE FOUND." = "ZAMANLANMIŞ ALTYAZI SATIRI BULUNAMADI.";
 "NO TOOLS FOR THIS FILE TYPE" = "BU DOSYA TÜRÜ İÇİN ARAÇ YOK";
+"NO TOOLS FOR THIS SELECTION" = "BU SEÇİM İÇİN ARAÇ YOK";
 "NO UNPROTECTED DOWNLOADABLE FORMAT IS AVAILABLE." = "KORUMASIZ, İNDİRİLEBİLİR BİR BİÇİM YOK.";
 "NO UPDATE CHECKS YET" = "HENÜZ GÜNCELLEME DENETLENMEDİ";
 "NO USABLE YOUTUBE THUMBNAIL WAS FOUND." = "KULLANILABİLİR BİR YOUTUBE KÜÇÜK RESMİ BULUNAMADI.";
@@ -1559,6 +1574,7 @@
 "Nicely done. 1 file is ready." = "Hazır! 1 dosyan hazır.";
 "No QR codes found. Try a larger or sharper image." = "QR kodu bulunamadı. Daha büyük veya daha net bir görsel dene.";
 "No QR codes this time." = "QR kodu bulunamadı.";
+"No crop selected" = "Kırpma alanı seçilmedi";
 "No downloadable media was found. Use the video's share link, or Copy Image Address for a photo." = "İndirilebilir medya bulunamadı. Videonun paylaşım bağlantısını kullan; fotoğraf için görsel adresini kopyala.";
 "No downloadable public media was found. Login-required and protected media are not supported." = "Herkese açık indirilebilir medya bulunamadı. Giriş gerektiren ve korumalı medyalar desteklenmiyor.";
 "No file tools\n%@ Convert\n%@ Actions" = "Dosya aracı yok\n%@ Dönüştür\n%@ İşlemler";
@@ -1573,6 +1589,7 @@
 "No matches. Try a file name or tool." = "Eşleşme bulunamadı. Dosya adı veya araç adıyla ara.";
 "No matching regions were detected. You can still draw areas by hand." = "Eşleşen bölge bulunamadı. Alanları yine de elle çizebilirsin.";
 "No media output was produced." = "Medya çıktısı oluşmadı.";
+"No output formats" = "Çıktı biçimi yok";
 "No output was produced." = "Çıktı oluşmadı.";
 "No public downloadable media found. Some sites require sign-in or do not expose downloadable media." = "Herkese açık, indirilebilir medya bulunamadı. Bazı siteler giriş gerektirir veya medyayı indirmeye açmaz.";
 "No readable text was found in this text clipping." = "Bu metin kırpıntısında okunabilir metin bulunamadı.";
@@ -1580,6 +1597,7 @@
 "No timed subtitle cues were found in this file." = "Bu dosyada zamanlanmış altyazı satırı bulunamadı.";
 "No timed subtitle cues were found." = "Zamanlanmış altyazı satırı bulunamadı.";
 "No tools for this file type" = "Bu dosya türü için araç yok";
+"No tools for this selection" = "Bu seçim için araç yok";
 "No unprotected downloadable format is available." = "Korumasız, indirilebilir bir biçim yok.";
 "No update checks yet" = "Henüz güncelleme denetlenmedi";
 "No usable YouTube thumbnail was found." = "Kullanılabilir bir YouTube küçük resmi bulunamadı.";
@@ -1818,6 +1836,8 @@
 "Preserve original pages" = "Orijinal sayfaları koru";
 "Preset" = "Ön ayar";
 "Preview" = "Önizleme";
+"Preview %@" = "%@ öğesini önizle";
+"Preview %lld" = "%lld öğesini önizle";
 "Preview Left" = "Solu Önizle";
 "Preview Processed" = "İşlenmişi Önizle";
 "Preview Right" = "Sağı Önizle";
@@ -1952,6 +1972,10 @@
 "Reflowable text" = "Esnek metin düzeni";
 "Release to place · Esc cancels" = "Yerleştirmek için bırak · Esc iptal eder";
 "Remove" = "Kaldır";
+"Remove %@" = "%@ öğesini kaldır";
+"Remove %@ from selection" = "%@ öğesini seçimden kaldır";
+"Remove %lld" = "%lld öğesini kaldır";
+"Remove %lld from selection" = "%lld öğesini seçimden kaldır";
 "Remove All" = "Tümünü Kaldır";
 "Remove Audio" = "Sesi Kaldır";
 "Remove Background" = "Arka Planı Kaldır";
@@ -2249,6 +2273,8 @@
 "Sharpness" = "Keskinlik";
 "Shift locks the ratio · Return crops\nDrag inside to move; drag a handle to resize." = "Shift oranı kilitler · Enter kırpar\nTaşımak için alanın içini, boyutlandırmak için tutamağı sürükle.";
 "Shift to convert" = "Dönüştürmek için Shift";
+"Show %@ in Finder" = "%@ öğesini Finder'da göster";
+"Show %lld in Finder" = "%lld öğesini Finder'da göster";
 "Show Nashi in Finder" = "Nashi'yi Finder'da Göster";
 "Show Original" = "Orijinali Göster";
 "Show in Explorer" = "Dosya Gezgini'nde Göster";
@@ -2643,6 +2669,7 @@
 "USE ONCE IF MACOS NEEDS PERMISSION FOR YOUR SAVED UPDATE CONNECTION." = "MACOS KAYITLI GÜNCELLEME BAĞLANTISI İÇİN İZİN İSTERSE BİR KEZ KULLAN.";
 "USE ONE INSTAGRAM PHOTO POST WITH UP TO 50 ITEMS." = "EN FAZLA 50 ÖĞE İÇEREN TEK BİR INSTAGRAM FOTOĞRAF GÖNDERİSİ KULLAN.";
 "USE OPEN TO PREVIEW THIS DOCUMENT IN ITS DEFAULT APP." = "BU BELGEYİ VARSAYILAN UYGULAMASINDA ÖNİZLEMEK İÇİN AÇ'I KULLAN.";
+"USE THESE FILES AGAIN" = "BU DOSYALARI YENİDEN KULLAN";
 "Undo" = "Geri Al";
 "Undo Area" = "Alanı Geri Al";
 "Undo area" = "Alanı geri al";
@@ -2677,12 +2704,15 @@
 "Upstream package has no regular %@ executable." = "İndirilen pakette normal bir %@ çalıştırılabilir dosyası yok.";
 "Upstream package has no regular %lld executable." = "İndirilen pakette normal bir %lld çalıştırılabilir dosyası yok.";
 "Upstream versions, licenses and source links" = "Araç sürümleri, lisanslar ve kaynak bağlantıları";
+"Use %@ again" = "%@ öğesini yeniden kullan";
+"Use %lld again" = "%lld öğesini yeniden kullan";
 "Use Open to preview this document in its default app." = "Bu belgeyi varsayılan uygulamasında önizlemek için Aç'ı kullan.";
 "Use a regular writable folder for portable updates." = "Taşınabilir güncellemeler için yazılabilir, normal bir klasör kullan.";
 "Use a static SVG without embedded scripts or HTML." = "Gömülü betik veya HTML içermeyen statik bir SVG kullan.";
 "Use in Nashi" = "Nashi'de kullan";
 "Use once if macOS needs permission for your saved update connection." = "macOS kayıtlı güncelleme bağlantısı için izin isterse bir kez kullan.";
 "Use one Instagram photo post with up to 50 items." = "En fazla 50 öğe içeren tek bir Instagram fotoğraf gönderisi kullan.";
+"Use these files again" = "Bu dosyaları yeniden kullan";
 "VALUE" = "DEĞER";
 "VERIFYING AND PREPARING OFFICE TOOLS…" = "OFİS ARAÇLARI DOĞRULANIYOR VE HAZIRLANIYOR…";
 "VERIFYING UPDATE SIGNATURE…" = "GÜNCELLEME İMZASI DOĞRULANIYOR…";
@@ -2748,6 +2778,22 @@
 "Windows could not add Nashi to the system tray." = "Windows, Nashi'yi sistem tepsisine ekleyemedi.";
 "Windows could not create a tray icon." = "Windows tepsi simgesini oluşturamadı.";
 "Working…" = "İşleniyor…";
+"X %@, Y %@, width %@, height %@" = "X %@, Y %@, genişlik %@, yükseklik %@";
+"X %@, Y %@, width %@, height %lld" = "X %@, Y %@, genişlik %@, yükseklik %lld";
+"X %@, Y %@, width %lld, height %@" = "X %@, Y %@, genişlik %lld, yükseklik %@";
+"X %@, Y %@, width %lld, height %lld" = "X %@, Y %@, genişlik %lld, yükseklik %lld";
+"X %@, Y %lld, width %@, height %@" = "X %@, Y %lld, genişlik %@, yükseklik %@";
+"X %@, Y %lld, width %@, height %lld" = "X %@, Y %lld, genişlik %@, yükseklik %lld";
+"X %@, Y %lld, width %lld, height %@" = "X %@, Y %lld, genişlik %lld, yükseklik %@";
+"X %@, Y %lld, width %lld, height %lld" = "X %@, Y %lld, genişlik %lld, yükseklik %lld";
+"X %lld, Y %@, width %@, height %@" = "X %lld, Y %@, genişlik %@, yükseklik %@";
+"X %lld, Y %@, width %@, height %lld" = "X %lld, Y %@, genişlik %@, yükseklik %lld";
+"X %lld, Y %@, width %lld, height %@" = "X %lld, Y %@, genişlik %lld, yükseklik %@";
+"X %lld, Y %@, width %lld, height %lld" = "X %lld, Y %@, genişlik %lld, yükseklik %lld";
+"X %lld, Y %lld, width %@, height %@" = "X %lld, Y %lld, genişlik %@, yükseklik %@";
+"X %lld, Y %lld, width %@, height %lld" = "X %lld, Y %lld, genişlik %@, yükseklik %lld";
+"X %lld, Y %lld, width %lld, height %@" = "X %lld, Y %lld, genişlik %lld, yükseklik %@";
+"X %lld, Y %lld, width %lld, height %lld" = "X %lld, Y %lld, genişlik %lld, yükseklik %lld";
 "YOU CAN ALSO CHOOSE FILES FROM THE MAIN WINDOW." = "ANA PENCEREDEN DE DOSYA SEÇEBİLİRSİN.";
 "YOU CHOOSE WHEN TO DOWNLOAD AND INSTALL." = "NE ZAMAN İNDİRİP KURACAĞINA SEN KARAR VER.";
 "YOU HAVE THE LATEST PUBLISHED WINDOWS VERSION." = "YAYINLANAN EN GÜNCEL WINDOWS SÜRÜMÜNÜ KULLANIYORSUN.";
@@ -2803,5 +2849,7 @@
 "↑/↓ choose · Space preview · Return use in Nashi" = "↑/↓ seç · Space önizle · Enter Nashi'de kullan";
 "↶ RESET" = "↶ SIFIRLA";
 "↶ Reset" = "↶ Sıfırla";
+"⌘V · PASTE FILES, TEXT, AN IMAGE OR LINK" = "⌘V · DOSYA, METİN, GÖRSEL VEYA BAĞLANTI YAPIŞTIR";
+"⌘V · Paste files, text, an image or link" = "⌘V · Dosya, metin, görsel veya bağlantı yapıştır";
 "✦  READY WHEN YOU ARE" = "✦  SIRA SENDE";
 "✦  START HERE" = "✦  BURADAN BAŞLA";
