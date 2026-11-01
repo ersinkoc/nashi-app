@@ -167,11 +167,13 @@
 "ADD FILES TO AN EXISTING FLOAT" = "MEVCUT YÜZEN PENCEREYE DOSYA EKLE";
 "ADD FILES…" = "DOSYA EKLE…";
 "ADD FRAME" = "KARE EKLE";
+"ADD FRAME AT PLAYHEAD (M)" = "OYNATMA KONUMUNDAKİ KAREYİ EKLE (M)";
 "ADD METADATA FIELD" = "META VERİ ALANI EKLE";
 "ADD OR CHANGE FILES" = "DOSYA EKLE VEYA DEĞİŞTİR";
 "ADD REDACTION" = "SANSÜR ALANI EKLE";
 "ADD SELECTED RANGE" = "SEÇİLİ ARALIĞI EKLE";
 "ADD SPLIT" = "BÖLME NOKTASI EKLE";
+"ADD SPLIT AT PLAYHEAD (M)" = "OYNATMA KONUMUNA BÖLME NOKTASI EKLE (M)";
 "ADD TO AN EXISTING FLOAT" = "MEVCUT YÜZEN PENCEREYE EKLE";
 "ADD TO FLOAT" = "YÜZEN PENCEREYE EKLE";
 "ADDED TO FLOAT." = "YÜZEN PENCEREYE EKLENDİ.";
@@ -250,8 +252,10 @@
 "Add Split" = "Bölme Noktası Ekle";
 "Add a bleep or silence range." = "Bir bip veya sessizlik aralığı ekle.";
 "Add files" = "Dosya ekle";
+"Add frame at playhead (M)" = "Oynatma konumundaki kareyi ekle (M)";
 "Add or change files" = "Dosya ekle veya değiştir";
 "Add selected range" = "Seçili aralığı ekle";
+"Add split at playhead (M)" = "Oynatma konumuna bölme noktası ekle (M)";
 "Add to Float" = "Yüzen pencereye ekle";
 "Add to an existing Float" = "Mevcut yüzen pencereye ekle";
 "Added to Float." = "Yüzen pencereye eklendi.";
@@ -799,6 +803,7 @@
 "DEVICES" = "AYGITLAR";
 "DISCONNECT & FORGET TOKEN" = "BAĞLANTIYI KES VE TOKENI SİL";
 "DISMISS" = "KAPAT";
+"DISMISS PREVIEW ERROR" = "ÖNİZLEME HATASINI KAPAT";
 "DOCUMENT XML IS TOO LARGE." = "BELGE XML'İ ÇOK BÜYÜK.";
 "DOCUMENTS" = "BELGELER";
 "DONE" = "BİTTİ";
@@ -876,6 +881,7 @@
 "Devices" = "Aygıtlar";
 "Disconnect & Forget Token" = "Bağlantıyı Kes ve Tokenı Sil";
 "Dismiss" = "Kapat";
+"Dismiss preview error" = "Önizleme hatasını kapat";
 "Document XML is too large." = "Belge XML'i çok büyük.";
 "Documents" = "Belgeler";
 "Done" = "Bitti";
@@ -1711,8 +1717,10 @@
 "PIXELATE" = "PİKSELLEŞTİR";
 "PLAY" = "OYNAT";
 "PLAY / PAUSE" = "OYNAT / DURAKLAT";
+"PLAY / PAUSE (SPACE)" = "OYNAT / DURAKLAT (SPACE)";
 "PLAY RESULT" = "SONUCU OYNAT";
 "PLAY SELECTED RANGE" = "SEÇİLİ ARALIĞI OYNAT";
+"PLAY SELECTED RANGE (⇧SPACE)" = "SEÇİLİ ARALIĞI OYNAT (⇧SPACE)";
 "PLAYBACK / DOCUMENT ORDER" = "OYNATMA / BELGE SIRASI";
 "PLAYBACK SPEED" = "OYNATMA HIZI";
 "PORTRAIT" = "DİKEY";
@@ -1783,10 +1791,12 @@
 "Pin" = "Sabitle";
 "Pixelate" = "Pikselleştir";
 "Play" = "Oynat";
+"Play / Pause (Space)" = "Oynat / Duraklat (Space)";
 "Play / pause" = "Oynat / duraklat";
 "Play Result" = "Sonucu Oynat";
 "Play Selected Range" = "Seçili Aralığı Oynat";
 "Play selected range" = "Seçili aralığı oynat";
+"Play selected range (⇧Space)" = "Seçili aralığı oynat (⇧Space)";
 "Playback / document order" = "Oynatma / belge sırası";
 "Playback speed" = "Oynatma hızı";
 "Portrait" = "Dikey";
@@ -1985,6 +1995,8 @@
 "SAVE" = "KAYDET";
 "SAVE 1 FRAME" = "1 KARE KAYDET";
 "SAVE A COPY" = "KOPYA KAYDET";
+"SAVE A CROPPED COPY (RETURN OR ⌘S)" = "KIRPILMIŞ KOPYAYI KAYDET (ENTER VEYA ⌘S)";
+"SAVE A FRESH COPY (⌘S)" = "YENİ BİR KOPYA KAYDET (⌘S)";
 "SAVE ANNOTATED COPY" = "İŞARETLENMİŞ KOPYAYI KAYDET";
 "SAVE AS" = "FARKLI KAYDET";
 "SAVE AUDIO COPY" = "SES KOPYASINI KAYDET";
@@ -2136,6 +2148,8 @@
 "Save Connection" = "Bağlantıyı Kaydet";
 "Save Downloads Here" = "İndirmeleri Buraya Kaydet";
 "Save a copy" = "Kopya kaydet";
+"Save a cropped copy (Return or ⌘S)" = "Kırpılmış kopyayı kaydet (Enter veya ⌘S)";
+"Save a fresh copy (⌘S)" = "Yeni bir kopya kaydet (⌘S)";
 "Save annotated copy" = "İşaretlenmiş kopyayı kaydet";
 "Save as" = "Farklı kaydet";
 "Save audio copy" = "Ses kopyasını kaydet";

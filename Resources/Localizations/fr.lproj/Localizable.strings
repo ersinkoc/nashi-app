@@ -167,11 +167,13 @@
 "ADD FILES TO AN EXISTING FLOAT" = "AJOUTER DES FICHIERS À UN FLOAT EXISTANT";
 "ADD FILES…" = "AJOUTER DES FICHIERS…";
 "ADD FRAME" = "AJOUTER UNE IMAGE";
+"ADD FRAME AT PLAYHEAD (M)" = "AJOUTER L’IMAGE À LA TÊTE DE LECTURE (M)";
 "ADD METADATA FIELD" = "AJOUTER UN CHAMP DE MÉTADONNÉES";
 "ADD OR CHANGE FILES" = "MODIFIER LA SÉLECTION";
 "ADD REDACTION" = "AJOUTER UN CAVIARDAGE";
 "ADD SELECTED RANGE" = "AJOUTER LA PLAGE SÉLECTIONNÉE";
 "ADD SPLIT" = "AJOUTER UNE COUPURE";
+"ADD SPLIT AT PLAYHEAD (M)" = "AJOUTER UNE COUPURE À LA TÊTE DE LECTURE (M)";
 "ADD TO AN EXISTING FLOAT" = "AJOUTER À UN FLOAT EXISTANT";
 "ADD TO FLOAT" = "AJOUTER AU FLOAT";
 "ADDED TO FLOAT." = "AJOUTÉ AU FLOAT.";
@@ -250,8 +252,10 @@
 "Add Split" = "Ajouter une coupure";
 "Add a bleep or silence range." = "Ajoutez une plage de bip ou de silence.";
 "Add files" = "Ajouter des fichiers";
+"Add frame at playhead (M)" = "Ajouter l’image à la tête de lecture (M)";
 "Add or change files" = "Modifier la sélection";
 "Add selected range" = "Ajouter la plage sélectionnée";
+"Add split at playhead (M)" = "Ajouter une coupure à la tête de lecture (M)";
 "Add to Float" = "Ajouter au Float";
 "Add to an existing Float" = "Ajouter à un Float existant";
 "Added to Float." = "Ajouté au Float.";
@@ -799,6 +803,7 @@
 "DEVICES" = "APPAREILS";
 "DISCONNECT & FORGET TOKEN" = "SE DÉCONNECTER ET OUBLIER LE JETON";
 "DISMISS" = "FERMER";
+"DISMISS PREVIEW ERROR" = "FERMER L’ERREUR D’APERÇU";
 "DOCUMENT XML IS TOO LARGE." = "LE XML DU DOCUMENT EST TROP VOLUMINEUX.";
 "DOCUMENTS" = "DOCUMENTS";
 "DONE" = "TERMINÉ";
@@ -876,6 +881,7 @@
 "Devices" = "Appareils";
 "Disconnect & Forget Token" = "Se déconnecter et oublier le jeton";
 "Dismiss" = "Fermer";
+"Dismiss preview error" = "Fermer l’erreur d’aperçu";
 "Document XML is too large." = "Le XML du document est trop volumineux.";
 "Documents" = "Documents";
 "Done" = "Terminé";
@@ -1711,8 +1717,10 @@
 "PIXELATE" = "PIXELLISER";
 "PLAY" = "LIRE";
 "PLAY / PAUSE" = "LECTURE / PAUSE";
+"PLAY / PAUSE (SPACE)" = "LECTURE / PAUSE (ESPACE)";
 "PLAY RESULT" = "LIRE LE RÉSULTAT";
 "PLAY SELECTED RANGE" = "LIRE LA PLAGE SÉLECTIONNÉE";
+"PLAY SELECTED RANGE (⇧SPACE)" = "LIRE LA PLAGE SÉLECTIONNÉE (⇧ESPACE)";
 "PLAYBACK / DOCUMENT ORDER" = "ORDRE DE LECTURE / DU DOCUMENT";
 "PLAYBACK SPEED" = "VITESSE DE LECTURE";
 "PORTRAIT" = "PORTRAIT";
@@ -1783,10 +1791,12 @@
 "Pin" = "Épingler";
 "Pixelate" = "Pixelliser";
 "Play" = "Lire";
+"Play / Pause (Space)" = "Lecture / Pause (Espace)";
 "Play / pause" = "Lecture / pause";
 "Play Result" = "Lire le résultat";
 "Play Selected Range" = "Lire la plage sélectionnée";
 "Play selected range" = "Lire la plage sélectionnée";
+"Play selected range (⇧Space)" = "Lire la plage sélectionnée (⇧Espace)";
 "Playback / document order" = "Ordre de lecture / du document";
 "Playback speed" = "Vitesse de lecture";
 "Portrait" = "Portrait";
@@ -1985,6 +1995,8 @@
 "SAVE" = "ENREGISTRER";
 "SAVE 1 FRAME" = "ENREGISTRER 1 IMAGE";
 "SAVE A COPY" = "ENREGISTRER UNE COPIE";
+"SAVE A CROPPED COPY (RETURN OR ⌘S)" = "ENREGISTRER LA COPIE RECADRÉE (RETOUR OU ⌘S)";
+"SAVE A FRESH COPY (⌘S)" = "ENREGISTRER UNE NOUVELLE COPIE (⌘S)";
 "SAVE ANNOTATED COPY" = "ENREGISTRER LA COPIE ANNOTÉE";
 "SAVE AS" = "ENREGISTRER SOUS";
 "SAVE AUDIO COPY" = "ENREGISTRER LA COPIE AUDIO";
@@ -2136,6 +2148,8 @@
 "Save Connection" = "Enregistrer la connexion";
 "Save Downloads Here" = "Enregistrer les téléchargements ici";
 "Save a copy" = "Enregistrer une copie";
+"Save a cropped copy (Return or ⌘S)" = "Enregistrer la copie recadrée (Retour ou ⌘S)";
+"Save a fresh copy (⌘S)" = "Enregistrer une nouvelle copie (⌘S)";
 "Save annotated copy" = "Enregistrer la copie annotée";
 "Save as" = "Enregistrer sous";
 "Save audio copy" = "Enregistrer la copie audio";
